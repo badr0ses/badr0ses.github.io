@@ -1,4 +1,4 @@
-// BEAUTY DATABASE IMPORT: Converts saved Starstable Database rows into this site's database format.
+// BEAUTY DATABASE IMPORT: Converts saved the game Database rows into this site's database format.
 import {readFile,writeFile} from 'node:fs/promises';
 
 const root=new URL('../',import.meta.url);

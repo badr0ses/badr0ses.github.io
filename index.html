@@ -11,12 +11,12 @@
 <link rel="stylesheet" href="map.css">
 <link rel="stylesheet" href="schedule-menu.css">
 <link rel="stylesheet" href="reputation.css">
-<link rel="stylesheet" href="quests.css">
+<link rel="stylesheet" href="quests.css?v=2">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="brand" href="#home" aria-label="Bad Roses home"><img src="assets/rose.svg" alt=""><span>Bad Roses<small>Horse Museum Community</small></span></a>
+  <a class="brand" href="#home" aria-label="Bad Roses home"><img src="assets/rose.svg" alt=""><span>Bad Roses<small>horse community</small></span></a>
   <nav class="main-nav" aria-label="Main navigation">
     <a href="#home" data-route="home">Main page</a>
     <a href="#database" data-route="database">Database</a>
@@ -47,24 +47,24 @@
 <section class="view active" id="home" data-view="home">
   <div class="hero">
     <div class="hero-content wrap">
-      <p class="eyebrow"><span class="rose-mark">𓆩♡𓆪</span> A Horse Museum Community</p>
+      <p class="eyebrow"><span class="rose-mark">𓆩♡𓆪</span> A horse community</p>
       <h1>Bad Roses<br><em>Community</em></h1>
-      <p class="hero-copy">Welcome to Bad Roses — a Horse Museum Community with an in-game club and an open community Discord.</p>
+      <p class="hero-copy">Welcome to Bad Roses — a horse community with an in-game club and an open community Discord.</p>
       <div class="hero-actions"><a class="button button-primary" href="#socials">Find our socials <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#database">Explore the database</a></div>
 
     </div>
-    <div class="hero-bottom"><span>BAD ROSES</span><span>A HORSE MUSEUM COMMUNITY</span></div>
+    <div class="hero-bottom"><span>BAD ROSES</span><span>A horse community</span></div>
   </div>
   <div class="wrap home-intro">
     <div class="section-heading"><p class="eyebrow">Welcome, Rose</p><h2>A little website<br><em>for the people who are interested.</em></h2></div>
-    <p class="intro-text">Bad Roses is a Horse Museum Community, with an in-game club and an open community Discord. Browse the item and beauty database, follow the quest and reputation guides, or check the weekly Spirit and championship schedules in UTC.</p>
+    <p class="intro-text">Bad Roses is a horse community, with an in-game club and an open community Discord. Browse the item and beauty database, follow the quest and reputation guides, or check the weekly Spirit and championship schedules in UTC+1.</p>
   </div>
   <div class="wrap home-grid">
     <a class="feature-card feature-database" href="#database"><span class="card-kicker">The database <span>01</span></span><h3>Browse through the database</h3><p>A browsable guide to clothing, gear, horse decorations, horses, pets, makeup and hairstyles.</p><div class="item-preview" id="home-items" aria-label="A few entries from the database"></div><span class="text-link">Open the database <b>→</b></span></a>
     <a class="feature-card feature-spirit" href="#spirit"><span class="card-kicker">On the map <span>02</span></span><h3>Find Spirit</h3><p>See Spirit’s weekly locations at a glance, with the location and timing notes close by.</p><div class="mini-schedule"><span>08:00</span><b>South Hoof Peninsula</b><i>MONDAY</i></div><div class="mini-schedule"><span>09:00</span><b>Sunfield Farm</b><i>MONDAY</i></div><span class="text-link">See the full schedule <b>→</b></span></a>
     <a class="feature-card feature-community" href="#waitlist"><span class="card-kicker">Ride with us <span>03</span></span><h3>Meet the Roses</h3><p>Join the community Discord and follow the waitlist channel’s steps if you’d like to join the club in-game.</p><div class="rose-stamp"><img src="assets/rose.svg" alt=""><span>YOU BELONG<br>TO ROSES</span></div><span class="text-link">How to join <b>→</b></span></a>
   </div>
-  <div class="wrap home-cta"><div><p class="eyebrow">A place for Horse Museum players</p><h2>Become part of the <em> Community</em></h2><p>Come say hello to the Bad Roses Community and find out what it is all about.</p></div><div class="cta-buttons"><a class="button button-discord" data-link="communityDiscord" href="#">Join our community Discord <span>↗</span></a></div></div>
+  <div class="wrap home-cta"><div><p class="eyebrow">A place for horse game players</p><h2>Become part of the <em> Community</em></h2><p>Come say hello to the Bad Roses Community and find out what it is all about.</p></div><div class="cta-buttons"><a class="button button-discord" data-link="communityDiscord" href="#">Join our community Discord <span>↗</span></a></div></div>
 </section>
 <!-- EDIT TEXT: Database page introduction, search tips, archive notes, and attribution. Item and category data is in data/. -->
 <section class="view" id="database" data-view="database">
@@ -103,10 +103,11 @@
     </div>
     <nav class="quest-catalog" aria-label="Quest guide list">
       <button type="button" data-quest-target="silverglade-steves-quest"><span>Quest guide 01 · Early game</span><strong>Silverglade Village and Steve’s Farm</strong><small>Level 4–5 · Starts in Moorland</small></button>
+      <button type="button" data-quest-target="harvest-counties-bridge-quest"><span>Quest guide 02 · Harvest Counties</span><strong>Repair the Bridge and Reach Jarlaheim</strong><small>Bridge materials · Wolf Hall Inn route</small></button>
     </nav>
 
     <!-- EDIT TEXT: Quest guide 01. Duplicate this quest-entry block when adding another guide. -->
-    <article class="quest-entry" id="silverglade-steves-quest">
+    <article class="quest-entry" id="silverglade-steves-quest" hidden>
       <header class="quest-entry-header">
         <div><p class="eyebrow">Quest guide 01 · Early game</p><h2>Unlocking Silverglade Village and Steve’s Farm</h2></div>
         <div class="quest-entry-meta"><span>Level 4–5</span><span>Moorland</span><span>Silverglade</span></div>
@@ -147,6 +148,51 @@
           <p>Press <kbd>L</kbd> to open the Quest Log. Check for unfinished tasks under <strong>Main Quests</strong> in Moorland or Fort Pinta.</p>
         </aside>
       </div>
+      </div>
+    </article>
+
+    <article class="quest-entry" id="harvest-counties-bridge-quest" hidden>
+      <header class="quest-entry-header">
+        <div><p class="eyebrow">Quest guide 02 · Harvest Counties</p><h2>Repairing the Bridge and Reaching Jarlaheim</h2></div>
+        <div class="quest-entry-meta"><span>Bridge repair</span><span>Wolf Hall Inn</span><span>Jarlaheim</span></div>
+      </header>
+      <div class="quest-guide">
+        <div class="quest-gallery">
+          <figure><img src="assets/harvest-counties-bridge-quest.png" alt="The repaired bridge leading into the Harvest Counties" loading="lazy" decoding="async"><figcaption>The bridge into the Harvest Counties</figcaption></figure>
+          <figure><img src="assets/jarlaheim-quest.png" alt="A view across the streets and stone buildings of Jarlaheim" loading="lazy" decoding="async"><figcaption>Jarlaheim</figcaption></figure>
+        </div>
+
+        <div class="quest-copy">
+          <section class="quest-requirements">
+            <p class="eyebrow">Building materials</p>
+            <h2>Speed up the bridge repair</h2>
+            <p class="quest-intro">The construction shop is next to Donald’s truck and equipment at the bridge site. You can buy the required materials there instead of completing the daily chores.</p>
+            <div class="quest-material-grid">
+              <div><h3>Treated Planks</h3><p><strong>200</strong> Jorvik Shillings<br>or <strong>5</strong> Star Coins</p></div>
+              <div><h3>Cement</h3><p><strong>200</strong> Jorvik Shillings<br>or <strong>5</strong> Star Coins</p></div>
+              <div><h3>Caulking</h3><p>Buy missing caulking from Billy Bulldozer near the bridge area.</p></div>
+            </div>
+          </section>
+
+          <section class="quest-steps-section">
+            <p class="eyebrow">Step-by-step questline</p>
+            <h2>From the bridge to Jarlaheim</h2>
+            <ol class="quest-steps">
+              <li><div><span>01</span><h3>Find Donald’s Construction Shop</h3></div><p>Go to the bridge construction site. The material shop is beside Donald’s truck and the nearby equipment.</p></li>
+              <li><div><span>02</span><h3>Collect or Buy the Materials</h3></div><p>Complete the daily chores or purchase Treated Planks and Cement for 200 Jorvik Shillings or 5 Star Coins per item. Billy Bulldozer also sells caulking near the bridge.</p></li>
+              <li><div><span>03</span><h3>Finish the Required Story Quests</h3></div><p>Buying materials only speeds up construction. Complete the related quests from Holdsworth and Conrad, even if you obtain the materials from GED.</p></li>
+              <li><div><span>04</span><h3>Complete the Bridge Repair</h3></div><p>Return to Donald and finish the bridge repair. This opens the route to the Wolf Hall Inn on the other side.</p></li>
+              <li><div><span>05</span><h3>Speak with Ed</h3></div><p>At the Wolf Hall Inn, talk to Ed and accept the quest called <strong>“On the other side of the bridge.”</strong></p></li>
+              <li><div><span>06</span><h3>Continue through the Harvest Counties</h3></div><p>Follow this questline through Jarlaheim and Paddock Island. Ed’s final quest is called <strong>“Over mountains, through forests,”</strong> which takes you farther into the area to meet Ms. Pike.</p></li>
+              <li><div><span>07</span><h3>Explore the Region</h3></div><p>Continue exploring to discover Jarlaheim, Paddock Island, and Jorvik Stables.</p></li>
+            </ol>
+          </section>
+
+          <aside class="quest-help">
+            <h2>Do not skip Holdsworth and Conrad</h2>
+            <p>Their quests are required to complete the bridge storyline. Purchasing the construction materials does not replace those quests.</p>
+          </aside>
+        </div>
       </div>
     </article>
   </div>
@@ -343,16 +389,16 @@
 </section>
 <!-- EDIT TEXT: Spirit schedule notes and location explanations. The schedule table data is in app.js. -->
 <section class="view" id="spirit" data-view="spirit">
-  <div class="page-banner spirit-banner"><div class="wrap"><p class="eyebrow">Everything you need to know about Spirit</p><h1>Where is <em>Spirit?</em></h1><p>Use the weekly route below to find Spirit in Jorvik. Times in the table are UTC.</p></div></div>
-  <div class="wrap spirit-layout"><div class="schedule-panel"><div class="schedule-top"><div><p class="eyebrow">Weekly route</p><h2>Spirit’s schedule</h2></div><div class="time-badge">UTC TIME</div></div><p class="table-hint">Swipe or scroll sideways to see each day.</p><div class="table-scroll"><table class="schedule-table" id="spirit-table"><caption>Spirit’s locations by day and UTC time</caption></table></div></div><aside class="schedule-notes"><p class="eyebrow">Reading the route</p><h2>Find the right<br><em>corner of Jorvik.</em></h2><div class="key-list"><div><b>SH</b><p>Lighthouse, middle, or close Epona</p></div><div><b>FG</b><p>Close to the excavator hill or the red cottage in Forgotten Fields</p></div><div><b>EF</b><p>Close North Link or Hollow Woods</p></div><div><b>QF</b><p>Both sides of Barney; near the tractor, or close to the big sign</p></div><div><b>FF</b><p>By the riding hall, or near the big tree</p></div><div><b>FP</b><p>Beach close to Doyle’s Abbey, around the big hill</p></div><div><b>ML</b><p>Between Conrad and the championship, or the beach</p></div><div><b>GHV</b><p>Close Pi, behind the northern gate, or near the wolves</p></div><div><b>HW</b><p>Abandoned summer house or close Valedale Village</p></div></div><div class="schedule-extra"><h3>A few things to know</h3><p>Spirit follows a weekly schedule and appears at different places depending on the day.</p><p>Times in this table are UTC (Coordinated Universal Time). Check or convert a time with <a href="https://www.utctime.net/" target="_blank" rel="noreferrer">UTC Time Converter ↗</a>.</p><p>Spirit disappears at 21:00 UTC and returns the next morning.</p></div></aside></div>
+  <div class="page-banner spirit-banner"><div class="wrap"><p class="eyebrow">Everything you need to know about Spirit</p><h1>Where is <em>Spirit?</em></h1><p>Use the weekly route below to find Spirit in Jorvik. Times in the table are UTC+1.</p></div></div>
+  <div class="wrap spirit-layout"><div class="schedule-panel"><div class="schedule-top"><div><p class="eyebrow">Weekly route</p><h2>Spirit’s schedule</h2></div><div class="time-badge">UTC+1 TIME</div></div><p class="table-hint">Swipe or scroll sideways to see each day.</p><div class="table-scroll"><table class="schedule-table" id="spirit-table"><caption>Spirit’s locations by day and UTC+1 time</caption></table></div></div><aside class="schedule-notes"><p class="eyebrow">Reading the route</p><h2>Find the right<br><em>corner of Jorvik.</em></h2><div class="key-list"><div><b>SH</b><p>Lighthouse, middle, or close Epona</p></div><div><b>FG</b><p>Close to the excavator hill or the red cottage in Forgotten Fields</p></div><div><b>EF</b><p>Close North Link or Hollow Woods</p></div><div><b>QF</b><p>Both sides of Barney; near the tractor, or close to the big sign</p></div><div><b>FF</b><p>By the riding hall, or near the big tree</p></div><div><b>FP</b><p>Beach close to Doyle’s Abbey, around the big hill</p></div><div><b>ML</b><p>Between Conrad and the championship, or the beach</p></div><div><b>GHV</b><p>Close Pi, behind the northern gate, or near the wolves</p></div><div><b>HW</b><p>Abandoned summer house or close Valedale Village</p></div></div><div class="schedule-extra"><h3>A few things to know</h3><p>Spirit follows a weekly schedule and appears at different places depending on the day.</p><p>Times in this table are UTC+1 (one hour ahead of Coordinated Universal Time). Check or convert a time with <a href="https://www.utctime.net/" target="_blank" rel="noreferrer">UTC Time Converter ↗</a>.</p><p>Spirit disappears at 21:00 UTC+1 and returns the next morning.</p></div></aside></div>
 </section>
 <!-- EDIT TEXT: Championship schedule introduction and schedule notes. The weekly table data is in app.js. -->
 <section class="view" id="championship" data-view="championship">
-  <div class="page-banner championship-banner"><div class="wrap"><p class="eyebrow">Plan your next championship!</p><h1>Championships<br><em>around the clock.</em></h1><p>Championship locations by day and hour.</p><span class="source-link">Weekly rotation · 06:00–23:00 UTC</span></div></div>
-  <div class="wrap championship-content"><div class="schedule-top"><div><p class="eyebrow">Weekly rotation</p><h2>Championship Schedule</h2></div><div class="time-badge">UTC TIME</div></div><p class="table-hint">Swipe or scroll sideways to see every day. Times in this table are UTC.</p><div class="table-scroll"><table class="schedule-table championship-table" id="champ-table"><caption>Championship locations by hour and day</caption></table></div><div class="champ-note"><span class="rose-mark">𓆩♡𓆪</span><p>This schedule is available across all the versions 2014, 2016, 2018 and 2020.</p></div></div>
+  <div class="page-banner championship-banner"><div class="wrap"><p class="eyebrow">Plan your next championship!</p><h1>Championships<br><em>around the clock.</em></h1><p>Championship locations by day and hour.</p><span class="source-link">Weekly rotation · 06:00–23:00 UTC+1</span></div></div>
+  <div class="wrap championship-content"><div class="schedule-top"><div><p class="eyebrow">Weekly rotation</p><h2>Championship Schedule</h2></div><div class="time-badge">UTC+1 TIME</div></div><p class="table-hint">Swipe or scroll sideways to see every day. Times in this table are UTC+1.</p><div class="table-scroll"><table class="schedule-table championship-table" id="champ-table"><caption>Championship locations by hour and day</caption></table></div><div class="champ-note"><span class="rose-mark">𓆩♡𓆪</span><p>This schedule is available across all the versions 2014, 2016, 2018 and 2020.</p></div></div>
 </section>
 <!-- EDIT TEXT: Privacy, external links, cookies, and game affiliation note. Review if site features change. -->
-<section class="view" id="privacy" data-view="privacy"><div class="page-banner"><div class="wrap"><p class="eyebrow">A small privacy note</p><h1>Clear skies,<br><em>clear choices.</em></h1><p>This fan site is a static information page. It has no accounts, forms, analytics, or advertising.</p></div></div><div class="wrap legal-copy"><h2>What this site does</h2><p>The site does not ask for or store personal information. It does not use analytics, advertising pixels, or a cookie banner. The database and schedule content are static files hosted with the site.</p><h2>External links and images</h2><p>Item photos are requested from image hosts linked in the supplied 2018 database. Following Discord, TikTok, or source links takes you to services with their own privacy policies. Those services may receive your IP address and browser request details. This site does not control their data practices.</p><h2>Cookies</h2><p>This site does not set cookies or use storage for tracking. If a future version adds analytics, forms, embedded social content, or other tracking technologies, this notice will need to be reviewed before adding them.</p><h2>A note on the game</h2><p>Bad Roses is an unofficial, non-commercial fan community. Star Stable, Star Stable Online, and related game content belong to their respective owners. This site is not affiliated with or endorsed by Star Stable Entertainment AB. Star Stable’s <a href="https://help.starstable.com/hc/en-us/articles/4404692524946-Your-License-to-use-the-game-service" target="_blank" rel="noreferrer">game-service license</a> describes restrictions on commercial use of game content; review it before adding monetization.</p><h2>Terms</h2><p>This version is an informational fan site with no accounts, payments, submissions, or other user transactions, so it does not include separate terms of service. Revisit this if the site later adds interactive services or monetization.</p><p class="small-note">This is general information about the features currently included on this site, not legal advice.</p></div></section>
+<section class="view" id="privacy" data-view="privacy"><div class="page-banner"><div class="wrap"><p class="eyebrow">A small privacy note</p><h1>Clear skies,<br><em>clear choices.</em></h1><p>This fan site is a static information page. It has no accounts, forms, analytics, or advertising.</p></div></div><div class="wrap legal-copy"><h2>What this site does</h2><p>The site does not ask for or store personal information. It does not use analytics, advertising pixels, or a cookie banner. The database and schedule content are static files hosted with the site.</p><h2>External links and images</h2><p>Item photos are requested from image hosts linked in the supplied 2018 database. Following Discord, TikTok, or source links takes you to services with their own privacy policies. Those services may receive your IP address and browser request details. This site does not control their data practices.</p><h2>Cookies</h2><p>This site does not set cookies or use storage for tracking. If a future version adds analytics, forms, embedded social content, or other tracking technologies, this notice will need to be reviewed before adding them.</p><h2>A note on the game</h2><p>Bad Roses is an unofficial, non-commercial fan community. All game names and related content belong to their respective owners. This site is not affiliated with or endorsed by the game publisher. Review the applicable game-service license before adding monetization.</p><h2>Terms</h2><p>This version is an informational fan site with no accounts, payments, submissions, or other user transactions, so it does not include separate terms of service. Revisit this if the site later adds interactive services or monetization.</p><p class="small-note">This is general information about the features currently included on this site, not legal advice.</p></div></section>
 </main>
 <footer class="site-footer"><div class="wrap footer-top"><a class="brand footer-brand" href="#home"><img src="assets/rose.svg" alt=""><span>Bad Roses<small>Grow together on Jorvik</small></span></a><p><br></p><nav aria-label="Footer navigation"><a href="#socials">Socials</a><a href="#waitlist">Join the waitlist</a><a href="#privacy">Privacy</a></nav></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Bad Roses · Community site</span><span><b></b></span></div></footer>
 <script src="site-config.js"></script>
@@ -360,6 +406,6 @@
 <script src="beauty-category.js" defer></script>
 <script src="map.js" defer></script>
 <script src="schedule-menu.js" defer></script>
-<script src="quests.js" defer></script>
+<script src="quests.js?v=6" defer></script>
 </body>
 </html>

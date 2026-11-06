@@ -95,7 +95,7 @@ X: 36, Y: 74    In a bush along the race track.
 Governor's Fall
 
 X: 2, Y: 7    In an alley behind Jollister, behind a trash can in the corner.
-X: 0, Y: 3    You will be standing in front of Star Stable HQ, Click on the keypad and enter the code 1085, a star will appear in the alley to the right.
+X: 0, Y: 3    You will be standing in front of the game HQ, Click on the keypad and enter the code 1085, a star will appear in the alley to the right.
 See notes    There is a green car driving around with a Star on top of it, You will have to chase it.
 
 The Graydew Mountains
