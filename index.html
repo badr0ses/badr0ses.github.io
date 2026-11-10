@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="map.css">
 <link rel="stylesheet" href="schedule-menu.css">
 <link rel="stylesheet" href="reputation.css">
-<link rel="stylesheet" href="quests.css?v=2">
+<link rel="stylesheet" href="quests.css?v=5">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -43,7 +43,7 @@
   <a class="header-join" href="#socials">Join the community <span aria-hidden="true">↗</span></a>
 </header>
 <main id="main">
-<!-- EDIT TEXT: Main page hero, welcome copy, database and schedule previews, and community call to action. -->
+<!-- EDIT TEXT: Main page hero, welcome copy, feature cards, and community call to action. -->
 <section class="view active" id="home" data-view="home">
   <div class="hero">
     <div class="hero-content wrap">
@@ -62,7 +62,17 @@
   <div class="wrap home-grid">
     <a class="feature-card feature-database" href="#database"><span class="card-kicker">The database <span>01</span></span><h3>Browse through the database</h3><p>A browsable guide to clothing, gear, horse decorations, horses, pets, makeup and hairstyles.</p><div class="item-preview" id="home-items" aria-label="A few entries from the database"></div><span class="text-link">Open the database <b>→</b></span></a>
     <a class="feature-card feature-spirit" href="#spirit"><span class="card-kicker">On the map <span>02</span></span><h3>Find Spirit</h3><p>See Spirit’s weekly locations at a glance, with the location and timing notes close by.</p><div class="mini-schedule"><span>08:00</span><b>South Hoof Peninsula</b><i>MONDAY</i></div><div class="mini-schedule"><span>09:00</span><b>Sunfield Farm</b><i>MONDAY</i></div><span class="text-link">See the full schedule <b>→</b></span></a>
-    <a class="feature-card feature-community" href="#waitlist"><span class="card-kicker">Ride with us <span>03</span></span><h3>Meet the Roses</h3><p>Join the community Discord and follow the waitlist channel’s steps if you’d like to join the club in-game.</p><div class="rose-stamp"><img src="assets/rose.svg" alt=""><span>YOU BELONG<br>TO ROSES</span></div><span class="text-link">How to join <b>→</b></span></a>
+    <a class="feature-card" href="#quests">
+      <span class="card-kicker">Quest guides <span>03</span></span>
+      <h3>Start a quest</h3>
+      <p>Find step-by-step walkthroughs, clue maps, and tips for exploring Jorvik.</p>
+      <ul class="feature-quest-list">
+        <li>James’s Treasure Hunt</li>
+        <li>Secret Quests</li>
+      </ul>
+      <span class="text-link">Browse quests <b aria-hidden="true">→</b></span>
+    </a>
+    <a class="feature-card feature-community" href="#waitlist"><span class="card-kicker">Ride with us <span>04</span></span><h3>Meet the Roses</h3><p>Join the community Discord and follow the waitlist channel’s steps if you’d like to join the club in-game.</p><div class="rose-stamp"><img src="assets/rose.svg" alt=""><span>YOU BELONG<br>TO ROSES</span></div><span class="text-link">How to join <b>→</b></span></a>
   </div>
   <div class="wrap home-cta"><div><p class="eyebrow">A place for horse game players</p><h2>Become part of the <em> Community</em></h2><p>Come say hello to the Bad Roses Community and find out what it is all about.</p></div><div class="cta-buttons"><a class="button button-discord" data-link="communityDiscord" href="#">Join our community Discord <span>↗</span></a></div></div>
 </section>
@@ -85,7 +95,7 @@
 <!-- EDIT TEXT: Social links and profile descriptions. Update URLs in site-config.js. -->
 <section class="view" id="socials" data-view="socials">
   <div class="page-banner socials-banner"><div class="wrap"><p class="eyebrow">Find Bad Roses online</p><h1>Follow the <em>petals.</em></h1><p>Join the conversation, meet the club, and see what’s happening around Jorvik.</p></div></div>
-  <div class="wrap socials-wrap"><article class="social-card discord-card"><div class="social-icon"><svg viewBox="0 0 24 24" aria-label="Discord logo" role="img"><path fill="currentColor" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419Z"/></svg></div><p class="eyebrow">Come say hello</p><h2>Community<br><em>Discord.</em></h2><p>Our open community server is where the waitlist lives and where everyone can meet the Roses.</p><a class="button button-discord" data-link="communityDiscord" href="#">Join the community <span>↗</span></a><span class="social-caption">OPEN TO EVERYONE</span></article><article class="social-card tiktok-card"><div class="social-icon"><svg viewBox="0 0 24 24" aria-label="TikTok logo" role="img"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></div><p class="eyebrow">Life around Jorvik</p><h2>Bad Roses<br><em>on TikTok.</em></h2><p>Find our short videos and little snapshots from club life.</p><a class="button button-tiktok" data-link="tiktok" href="#">Follow on TikTok <span>↗</span></a><span class="social-caption">CLIPS FROM JORVIK</span></article></div><p class="wrap social-footnote">Official social platforms are run by their respective companies. External links open their websites or apps.</p>
+  <div class="wrap socials-wrap"><article class="social-card discord-card"><div class="social-icon"><svg viewBox="0 0 24 24" aria-label="Discord logo" role="img"><path fill="currentColor" d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.419-2.1568 2.419Z"/></svg></div><p class="eyebrow">Come say hello</p><h2>Community<br><em>Discord.</em></h2><p>Join our open Discord community to meet active players and make new friends. If you want to join the Bad Roses club in-game, you can sign up for the waitlist there.</p><a class="button button-discord" data-link="communityDiscord" href="#">Join the community <span>↗</span></a><span class="social-caption">OPEN TO EVERYONE</span></article><article class="social-card tiktok-card"><div class="social-icon"><svg viewBox="0 0 24 24" aria-label="TikTok logo" role="img"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></div><p class="eyebrow">Life around Jorvik</p><h2>Bad Roses<br><em>on TikTok.</em></h2><p>Find our short videos and little snapshots from club life.</p><a class="button button-tiktok" data-link="tiktok" href="#">Follow on TikTok <span>↗</span></a><span class="social-caption">CLIPS FROM JORVIK</span></article></div><p class="wrap social-footnote">Official social platforms are run by their respective companies. External links open their websites or apps.</p>
 </section>
 <!-- EDIT TEXT: Quest guide introduction and Silverglade Village and Steve's Farm unlock steps. -->
 <section class="view" id="quests" data-view="quests">
@@ -104,6 +114,10 @@
     <nav class="quest-catalog" aria-label="Quest guide list">
       <button type="button" data-quest-target="silverglade-steves-quest"><span>Quest guide 01 · Early game</span><strong>Silverglade Village and Steve’s Farm</strong><small>Level 4–5 · Starts in Moorland</small></button>
       <button type="button" data-quest-target="harvest-counties-bridge-quest"><span>Quest guide 02 · Harvest Counties</span><strong>Repair the Bridge and Reach Jarlaheim</strong><small>Bridge materials · Wolf Hall Inn route</small></button>
+      <button type="button" data-quest-target="james-treasure-hunt-quest" aria-controls="james-treasure-hunt-quest" aria-expanded="false"><span>Quest guide 03 · Fort Pinta</span><strong>James’s Treasure Hunt</strong><small>Seven clues · Four ritual stones</small></button>
+      <button type="button" data-quest-target="secret-quests" aria-controls="secret-quests" aria-expanded="false"><span>Quest guide 04 · Across Jorvik</span><strong>Secret Quests</strong><small>Three hidden quests · Location maps</small></button>
+      <button type="button" data-quest-target="main-quests-2018" aria-controls="main-quests-2018" aria-expanded="false"><span>Quest guide 05 · 2018 archive</span><strong>Main Quests</strong><small>Story chapters · Moorland to Concorde</small></button>
+      <button type="button" data-quest-target="side-quests-2018" aria-controls="side-quests-2018" aria-expanded="false"><span>Quest guide 06 · 2018 archive</span><strong>Side Quests</strong><small>Optional questlines by area</small></button>
     </nav>
 
     <!-- EDIT TEXT: Quest guide 01. Duplicate this quest-entry block when adding another guide. -->
@@ -195,20 +209,501 @@
         </div>
       </div>
     </article>
+
+    <!-- EDIT TEXT: James’s Treasure Hunt, clue maps, and ritual stones. -->
+    <article class="quest-entry" id="james-treasure-hunt-quest" aria-labelledby="james-treasure-hunt-title" hidden>
+      <header class="quest-entry-header">
+        <div><p class="eyebrow">Quest guide 03 · Fort Pinta</p><h2 id="james-treasure-hunt-title">James’s Treasure Hunt</h2></div>
+        <div class="quest-entry-meta"><span>Multi-day quest</span><span>Starts in Fort Pinta</span></div>
+      </header>
+
+      <div class="quest-copy treasure-guide">
+        <section>
+          <p class="eyebrow">Part 01 · The map</p>
+          <h3>Find the missing pieces</h3>
+          <p class="quest-intro">Start with James in Fort Pinta. He has one piece of Mississippi Jones’s treasure map and needs your help finding the other three.</p>
+          <ol class="quest-steps">
+            <li>
+              <div><span aria-hidden="true">01</span><h4>Godfrey at Silverglade Winery</h4></div>
+              <p>Find the butler behind the username Butler_01. He’ll trade his piece for a share of the treasure.</p>
+            </li>
+            <li>
+              <div><span aria-hidden="true">02</span><h4>California Jones’s grave</h4></div>
+              <p>Check the bushes in the northeast corner of Doyle’s Abbey. The dandelions on the grave point to Mrs. Holdsworth in Moorland. She has the next piece.</p>
+            </li>
+            <li>
+              <div><span aria-hidden="true">03</span><h4>Washington Jones’s collection</h4></div>
+              <p>Ask the Councilman in Silverglade Village about the will, then visit the Councilman in Firgrove. Search by the old mine outside Firgrove and report back to him with the final piece.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="quest-steps-section">
+          <p class="eyebrow">Part 02 · The route</p>
+          <h3>Follow the seven clues</h3>
+          <div class="treasure-map-card">
+            <img src="assets/map%20missisipi.png" width="271" height="246" alt="The assembled treasure map with a red X at Fort Pinta’s entrance" loading="lazy" decoding="async">
+            <div>
+              <p class="eyebrow">Starting point</p>
+              <h4>Fort Pinta’s entrance</h4>
+              <p>Bring the pieces to James. Once he assembles the map, cross the bridge into Fort Pinta and check the wall on your left for the green quest marker.</p>
+            </div>
+          </div>
+          <ol class="treasure-clues">
+            <li>
+              <img src="assets/firstclue.webp" alt="Clue 1 map with a red X south of Doyle’s Abbey" loading="lazy" decoding="async">
+              <div><p class="eyebrow" aria-hidden="true">Clue 01</p><h4>The road to Doyle’s Abbey</h4><p>Look for a stone in the sand just off the road from Fort Pinta.</p></div>
+            </li>
+            <li>
+              <img src="assets/secondclue.webp" alt="Clue 2 map with a red X at the river mouth" loading="lazy" decoding="async">
+              <div><p class="eyebrow" aria-hidden="true">Clue 02</p><h4>The river mouth</h4><p>Follow the beach to the river and check the smallest stone pillar.</p></div>
+            </li>
+            <li>
+              <img src="assets/thirdclue.webp" alt="Clue 3 map with a red X by the river crossing" loading="lazy" decoding="async">
+              <div><p class="eyebrow" aria-hidden="true">Clue 03</p><h4>The bridge toward Firgrove</h4><p>Cross the bridge toward Firgrove, then turn right and search the beach.</p></div>
+            </li>
+            <li>
+              <img src="assets/fourthclue.webp" alt="Clue 4 map with a red X in the Fields of Gold" loading="lazy" decoding="async">
+              <div><p class="eyebrow" aria-hidden="true">Clue 04</p><h4>Fields of Gold</h4><p>Face Silverglade Castle from the bridge. Search between the stones in the field along that line.</p></div>
+            </li>
+            <li>
+              <img src="assets/fifthclue.webp" alt="Clue 5 map with a red X near the junction by Doyle’s Abbey" loading="lazy" decoding="async">
+              <div><p class="eyebrow" aria-hidden="true">Clue 05</p><h4>The three-way junction</h4><p>Take the road back toward Fort Pinta. Check the wall where three roads meet.</p></div>
+            </li>
+            <li>
+              <img src="assets/sixth%20clue.webp" alt="Clue 6 map with a red X on the cliff above the road" loading="lazy" decoding="async">
+              <div><p class="eyebrow" aria-hidden="true">Clue 06</p><h4>The cliff above the road</h4><p>Ride up the nearby cliff and look for a flowerpot at the top.</p></div>
+            </li>
+            <li>
+              <img src="assets/seventh%20clue.webp" alt="Clue 7 map with a red X near Silverglade Castle" loading="lazy" decoding="async">
+              <div><p class="eyebrow" aria-hidden="true">Clue 07</p><h4>The druid circle</h4><p>Ride toward the castle and inspect the large stone at the center of the monument.</p></div>
+            </li>
+          </ol>
+        </section>
+
+        <section class="quest-steps-section">
+          <p class="eyebrow">Part 03 · The ritual</p>
+          <h3>Gather the four stones</h3>
+          <p class="quest-intro">Ask Elizabeth Sunbeam in Valedale to read the runes. She’ll send you to collect four stones for the ritual.</p>
+          <ul class="treasure-stones">
+            <li>
+              <img src="assets/red-stone.png" width="543" height="341" alt="Glowing quest markers around the rock piles in Everwind Fields" loading="lazy" decoding="async">
+              <div><p class="eyebrow">Everwind Fields</p><h4>Red volcanic rock</h4><p>Ask Bengt, then search the rock piles behind the cliff.</p></div>
+            </li>
+            <li>
+              <img src="assets/earth-stone.png" width="542" height="363" alt="Glowing quest markers beside the vineyard wall" loading="lazy" decoding="async">
+              <div><p class="eyebrow">Silverglade Winery</p><h4>Earth Stone</h4><p>Talk to Judy and check the edges of the vineyard fields.</p></div>
+            </li>
+            <li>
+              <img src="assets/moss-stone.png" width="538" height="306" alt="The Moss Stone glowing by the water at Silversong River" loading="lazy" decoding="async">
+              <div><p class="eyebrow">Silversong River</p><h4>Moss Stone</h4><p>Search the beach beside the river.</p></div>
+            </li>
+            <li>
+              <img src="assets/star-stone.png" width="542" height="326" alt="The Star Stone glowing on a grassy bank beside the road" loading="lazy" decoding="async">
+              <div><p class="eyebrow">Road to Valedale Lake</p><h4>Star Stone</h4><p>Check the rocky outcrops along the climb to the lake.</p></div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="quest-steps-section">
+          <p class="eyebrow">Part 04 · The treasure</p>
+          <h3>Solve the runestone</h3>
+          <p class="quest-intro">Bring the stones back to Elizabeth, then read the runestone. Place the stones in this order, starting at the center and working outward.</p>
+          <ol class="treasure-stone-order">
+            <li>Red volcanic rock</li>
+            <li>Earth Stone</li>
+            <li>Moss Stone</li>
+            <li>Star Stone</li>
+          </ol>
+          <p class="quest-intro">Click a placement spot if you need a hint.</p>
+          <aside class="quest-help">
+            <h4>Share the treasure</h4>
+            <p>Open the chest and return to James in Fort Pinta. Then take the statue to the Firgrove Councilman, who distributes the reward shares. You get to keep the hat.</p>
+          </aside>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Secret quest starting points, solutions, and maps. -->
+    <article class="quest-entry" id="secret-quests" aria-labelledby="secret-quests-title" hidden>
+      <header class="quest-entry-header">
+        <div><p class="eyebrow">Quest guide 04 · Across Jorvik</p><h2 id="secret-quests-title">Secret Quests</h2></div>
+        <div class="quest-entry-meta"><span>Three hidden quests</span><span>Star Rider</span></div>
+      </header>
+
+      <div class="quest-copy secret-quest-guide">
+        <p class="quest-intro">You’ll need Star Rider and access to Goldenhills Valley to complete all three quests.</p>
+
+        <section class="secret-quest-card">
+          <div>
+            <p class="eyebrow">01 · Thorny Banks</p>
+            <h3>Message in a Bottle</h3>
+            <p>Pick up the bottle floating between two rocks just before Thorny Banks.</p>
+            <ol>
+              <li>Look for the carved tree at the edge of Hollow Woods. Landon and Anna’s names and the year 1972 identify it.</li>
+              <li>Talk to Landon, then deliver his reply to James in Fort Pinta.</li>
+              <li>After the first launch fails, speak to James again. Find gunpowder and use the cannon to send the bottle.</li>
+            </ol>
+          </div>
+          <div class="secret-quest-images">
+            <figure>
+              <img src="assets/firstlocation.webp" alt="A red X on the coast by Doyle’s Abbey, north of Fort Pinta" loading="lazy" decoding="async">
+              <figcaption>Bottle location</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/Messageinabottle.webp" alt="A small bottle floating beside a wooden wheel" loading="lazy" decoding="async">
+              <figcaption>What to look for</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/firstsolution.webp" alt="Red arrows leading to the carved tree at the edge of Hollow Woods" loading="lazy" decoding="async">
+              <figcaption>Carved tree solution</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="secret-quest-card">
+          <div>
+            <p class="eyebrow">02 · Firgrove road</p>
+            <h3>A Package by the Side of the Road</h3>
+            <p>Follow the road toward Firgrove and look beside the fence for the package.</p>
+            <ol>
+              <li>Take the package to Derek. He can make out only part of the address.</li>
+              <li>Deliver it to Felicity in Firgrove.</li>
+            </ol>
+          </div>
+          <div class="secret-quest-images">
+            <figure>
+              <img src="assets/2ndlocation.webp" alt="A red X marking the package beside the road to Firgrove" loading="lazy" decoding="async">
+              <figcaption>Package location</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="secret-quest-card">
+          <div>
+            <p class="eyebrow">03 · Goldenleaf Woods</p>
+            <h3>A Mysterious Dirt Pile in the Forest</h3>
+            <p>Follow the road into Goldenleaf Woods and keep straight until you see the dirt pile between three small mounds.</p>
+            <ol>
+              <li>Borrow Jasper’s shovel and dig at the pile to uncover a chest.</li>
+              <li>Get a crowbar from Bob and Rob in the Smugglers’ Cave and use it to open the chest.</li>
+            </ol>
+          </div>
+          <div class="secret-quest-images">
+            <figure>
+              <img src="assets/3rdlocation.webp" alt="A red X marking the dirt pile in Goldenhills Valley" loading="lazy" decoding="async">
+              <figcaption>Dirt pile location</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Main story chapters available by the end of 2018. -->
+    <article class="quest-entry" id="main-quests-2018" aria-labelledby="main-quests-2018-title" hidden>
+      <header class="quest-entry-header">
+        <div><p class="eyebrow">Quest guide 05 · 2018 archive</p><h2 id="main-quests-2018-title">Main Quests</h2></div>
+        <div class="quest-entry-meta"><span>Story progression</span><span>Through December 2018</span></div>
+      </header>
+      <div class="quest-copy quest-archive">
+        <p class="quest-intro">Follow the main story from the original Moorland opening through the 2018 search for Concorde. Open a chapter to see its starting point and key quests. The chapters contain story spoilers.</p>
+
+        <details>
+          <summary><span class="quest-archive-number">01</span><span><strong>Welcome to Moorland</strong><small>Justin, the Bobcats, and the stolen deed</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li><strong>Meet Justin and the Bobcats.</strong> Take your first riding lesson, meet the stable staff, and try the Bobcat track.</li>
+                <li><strong>Help Thomas Moorland.</strong> Follow his fight to keep the stables open. Ask Jasper about the old land papers.</li>
+                <li><strong>Stolen Documents.</strong> Chase down the masked rider. After recovering the deed, take the copies to the Councilman in Silverglade Village.</li>
+              </ol>
+            </div>
+            <figure class="quest-archive-portrait">
+              <img src="https://starstable.wiki.gg/images/Thomas-M.gif?55872c&amp;format=original" width="125" height="124" alt="Thomas Moorland’s classic in-game portrait" loading="lazy" referrerpolicy="no-referrer">
+              <figcaption>Thomas Moorland</figcaption>
+            </figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">02</span><span><strong>Silverglade Manor and Sabine</strong><small>Harold’s delivery and Justin’s letter</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li><strong>Flour for Cupcakes.</strong> Help Harold with the castle delivery. Follow up with Godfrey at Silverglade Manor as the investigation moves to the estate.</li>
+                <li><strong>Whose Horse Is That?</strong> Meet Sabine at the manor and ride the vineyard track.</li>
+                <li><strong>Sabine’s Request.</strong> Deliver her letter to Justin. Help Thomas look for his son and follow the trail back to the manor.</li>
+              </ol>
+            </div>
+            <figure><img src="assets/silverglade-village-quest.png" alt="Silverglade Village viewed from above" loading="lazy" decoding="async"><figcaption>Silverglade Village</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">03</span><span><strong>The missing Linda</strong><small>Family records, Valedale, and the letter trap</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li><strong>A Total Soap Opera Twist.</strong> Search for Anabelle Silverglade’s marriage records.</li>
+                <li><strong>Looking for Clues.</strong> Follow the leads about John Sandman before going to Valedale.</li>
+                <li><strong>The Journey to Valedale.</strong> Speak with Elizabeth Sunbeam, follow her investigation, and take what you learn back to Alex.</li>
+                <li><strong>The Letter Trap.</strong> Get a stamp from Judy and mail the decoy letter. Help Alex identify who picks it up.</li>
+                <li><strong>The Truth Unfolds.</strong> Speak with the Baroness, obtain the castle key, and free Linda.</li>
+              </ol>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">04</span><span><strong>The Keepers of Aideen</strong><small>The Druids, Dark Core, and the Pandoric rifts</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li>Continue with Alex, Linda, and Elizabeth to meet the Druids at the Secret Stone Circle.</li>
+                <li>Follow the Dark Core investigation from Moorland to the offshore rig as you search for Justin.</li>
+                <li>Learn to seal Pandoric rifts and keep up with the Druids’ reputation quests when the story pauses.</li>
+              </ol>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">05</span><span><strong>Starshine and the return of Lisa</strong><small>Greendale and the Sleeping Widow</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li>Follow Starshine’s lead near Jarlaheim and investigate the Pandoric crack with Linda.</li>
+                <li>Find the Sleeping Widow. Bring her the light and tears of Aideen to awaken her and help free Lisa.</li>
+                <li>Follow up with Lisa and the Druids, then continue the Aideen’s Song chapter.</li>
+              </ol>
+            </div>
+            <figure><img src="assets/jarlaheim-quest.png" alt="The streets and stone buildings of Jarlaheim" loading="lazy" decoding="async"><figcaption>Jarlaheim in the Harvest Counties</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">06</span><span><strong>Find Justin on South Hoof</strong><small>Linda’s lead, the Hermit, and the return to Elizabeth</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li>Follow up with Linda after the Dark Core oil rig storyline. The original route also used Liked reputation with the Lightning’s Inner Circle.</li>
+                <li>Travel to South Hoof and follow the Hermit’s trail to Justin. Help the Moorlands and return to Elizabeth to continue the story.</li>
+              </ol>
+            </div>
+            <figure><img src="assets/South_Hoof_Peninsula.webp" alt="The cliffs and standing stones of South Hoof Peninsula" loading="lazy" decoding="async"><figcaption>South Hoof Peninsula</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">07</span><span><strong>The first journey to Pandoria</strong><small>The keystone, Anne, and Evergray</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li>Help the Druids prepare the portal. Follow the vault and Stonecutter trials to recover the keystone.</li>
+                <li>Cross into Pandoria, find Anne, and escape to the Secret Stone Circle.</li>
+                <li>Continue with the Pandoria Codex and meet Evergray in New Hillcrest. Follow the rift investigation into the next story chapter.</li>
+              </ol>
+            </div>
+            <figure><img src="assets/pandora.jpg" alt="Glowing mushrooms in Pandoria’s purple landscape" loading="lazy" decoding="async"><figcaption>Pandoria</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">08</span><span><strong>Ydris and Concorde</strong><small>July 2018 · The Circus of Dreams</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ol>
+                <li>Help Alex in Dino Valley, then meet Justin in Moorland. His lead on Concorde takes you to Ydris’s circus.</li>
+                <li>Ask Pi for help with the barrier, get through the maze, and finish Ydris’s race to escape the circus.</li>
+                <li>Work with Evergray and Big Bonny on the clock. Return to the circus, stop the breach, and meet Rhiannon and Concorde in Valedale.</li>
+              </ol>
+            </div>
+          </div>
+        </details>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Side questlines documented in 2018 or earlier. -->
+    <article class="quest-entry" id="side-quests-2018" aria-labelledby="side-quests-2018-title" hidden>
+      <header class="quest-entry-header">
+        <div><p class="eyebrow">Quest guide 06 · 2018 archive</p><h2 id="side-quests-2018-title">Side Quests</h2></div>
+        <div class="quest-entry-meta"><span>Optional questlines</span><span>Grouped by area</span></div>
+      </header>
+      <div class="quest-copy quest-archive">
+        <p class="quest-intro">Choose an area to browse documented side questlines available by the end of 2018. Each entry gives you a starting point or a landmark to look for.</p>
+
+        <details>
+          <summary><span class="quest-archive-number">01</span><span><strong>Moorland and Fort Pinta</strong><small>Local errands, hidden finds, and James’s map</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>The Unhappy Cow.</strong> Help with the dandelion brew used to treat Rosie.</li>
+                <li><strong>Fort Pinta Advertising.</strong> Follow James’s errands and help with the photographs for Fort Pinta.</li>
+                <li><strong>James’s Treasure Hunt.</strong> Start with James in Fort Pinta and recover three missing map pieces. The Quests tab has the complete clue and stone walkthrough.</li>
+                <li><strong>Message in a Bottle.</strong> Pick up the bottle near Thorny Banks. Its clue leads to a carved tree in Hollow Woods and then to Landon.</li>
+              </ul>
+            </div>
+            <figure><img src="assets/map%20missisipi.png" alt="James’s assembled treasure map" loading="lazy" decoding="async"><figcaption>Mississippi Jones’s treasure map</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">02</span><span><strong>Silverglade Village and Steve’s Farm</strong><small>The clock, Steve’s mice, and Will’s race</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>Flowers for the Shop.</strong> Follow the Silverglade Village shop errand to collect flowers.</li>
+                <li><strong>The Broken Silverglade Clock.</strong> Ask the Councilman about the clock. Follow the trail to find the clockmaker, Big Bonny, and help with the repairs.</li>
+                <li><strong>While the Cat’s Away.</strong> Help Steve deal with the mice. Follow the farm errands for cheese and grain.</li>
+                <li><strong>Try the Windmill Race.</strong> Talk to Will at his mill and ride the course he introduces.</li>
+              </ul>
+            </div>
+            <figure class="quest-archive-portrait">
+              <img src="https://starstable.wiki.gg/images/Will.gif?f646ac&amp;format=original" width="123" height="123" alt="Will’s classic in-game portrait" loading="lazy" referrerpolicy="no-referrer">
+              <figcaption>Will</figcaption>
+            </figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">03</span><span><strong>Silverglade Equestrian Center</strong><small>A ghost in the wine cellar</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>A Ghost in the Wine Cellar.</strong> Speak to Tyra at the equestrian center. Investigate the cellar and help the GED trainee cover the damage by repairing it before the Baroness finds out.</li>
+                <li>Follow the repairs through the concrete delivery and finish the cellar work with the trainee.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">04</span><span><strong>Nilmer’s Highland</strong><small>Ydris’s fortune tent · 2018</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>The Amazing Ydris, Teller of Fortunes.</strong> Visit the fortune tent at the Circus of Dreams in Nilmer’s Highland. Interact with the tent to see Ydris’s prediction.</li>
+                <li>After the introduction, fortune telling becomes a repeatable visit.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">05</span><span><strong>Firgrove and Goldenhills Valley</strong><small>A lost package, Gretchen, and a buried chest</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>A Package by the Side of the Road.</strong> Check the fence along the Firgrove road. Take the package to Derek, then deliver it to Felicity.</li>
+                <li><strong>Gretchen Is Missing.</strong> Follow the family’s trail into Goldenhills Valley. Continue Helga and Gunther’s quests toward the summerhouse storyline.</li>
+                <li><strong>A Mysterious Dirt Pile.</strong> Look between the small mounds in Goldenleaf Woods. Borrow Jasper’s shovel and get a crowbar from Bob and Rob to open the chest.</li>
+              </ul>
+            </div>
+            <figure><img src="assets/goldenhills-reputation.png" alt="The gate leading into Goldenhills Valley" loading="lazy" decoding="async"><figcaption>Goldenhills Valley</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">06</span><span><strong>Harvest Counties and Epona</strong><small>The bridge, Jarlaheim, and Herman’s route</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>Repair the Harvest Counties bridge.</strong> Help Donald collect the construction materials. Cross to Wolf Hall Inn and speak to Ed to continue toward Jarlaheim.</li>
+                <li><strong>Jarlaheim and the road to Epona.</strong> Follow the mayor storyline and work for Ms. Drake at the GED office. The historical route also ran through the family and Dino Valley questlines before Herman’s message.</li>
+              </ul>
+            </div>
+            <figure><img src="assets/harvest-counties-bridge-quest.png" alt="The bridge leading into the Harvest Counties" loading="lazy" decoding="async"><figcaption>Harvest Counties bridge</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">07</span><span><strong>South Hoof and Jorvik City</strong><small>Madison, Nightdust, and the Pier 13 investigation</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>Madison and Nightdust.</strong> Follow Madison’s pony storyline from South Hoof. When the investigation reaches Jorvik City, meet Anastasia and Erik at the mall and continue to Pier 13.</li>
+                <li><strong>Return the suitcase.</strong> Follow the address to the storage building, investigate Mr. Anwir’s lab, and help Madison and Nightdust get out.</li>
+              </ul>
+            </div>
+            <figure><img src="assets/jorvik%20city%20aideens%20governors%20pier13.jpg" alt="Jorvik City map marking the mall and Pier 13" loading="lazy" decoding="async"><figcaption>Jorvik City and Pier 13</figcaption></figure>
+          </div>
+        </details>
+
+        <details>
+          <summary><span class="quest-archive-number">08</span><span><strong>Valley of the Hidden Dinosaur</strong><small>Nic’s expedition and the Kallters</small></span></summary>
+          <div class="quest-archive-body">
+            <div>
+              <ul>
+                <li><strong>Stoneground’s camp.</strong> Follow Nic’s balloon storyline into the valley, then help him and Professor Einstein with their camp and exploration quests.</li>
+                <li><strong>The Icengate expedition.</strong> Investigate the northern mountain and follow the tracks to meet the Kallters.</li>
+              </ul>
+            </div>
+            <figure><img src="assets/kallters-reputation.png" alt="Two Kallters standing in the snowy Valley of the Hidden Dinosaur" loading="lazy" decoding="async"><figcaption>The Kallters at the Icengate</figcaption></figure>
+          </div>
+        </details>
+      </div>
+    </article>
   </div>
 </section>
-<!-- EDIT TEXT: Reputation guide introduction, Kallters progression, and Epona requirements. -->
+<!-- EDIT TEXT: Reputation guide introduction and unlock requirements. -->
 <section class="view" id="reputation" data-view="reputation">
   <div class="page-banner reputation-banner">
     <div class="wrap">
-      <p class="eyebrow">Historical progression guide · 2014–2020</p>
+      <p class="eyebrow">Jorvik progression guides</p>
       <h1>Build your<br><em>reputation.</em></h1>
-      <p>Follow the older quest and reputation requirements for unlocking the Kallters and reaching Epona.</p>
+      <p>Find the quests and reputation milestones that unlock new areas, storylines, and horses across Jorvik.</p>
     </div>
   </div>
   <div class="wrap reputation-page">
+    <div class="reputation-library">
+      <h2 id="reputation-library-title">Choose a reputation guide</h2>
+      <p>Select a guide to open it. Select it again to close it.</p>
+      <nav class="reputation-catalog" aria-labelledby="reputation-library-title">
+        <a href="#kallters-guide">
+          <img src="assets/kallters-reputation.png" alt="" loading="lazy" decoding="async">
+          <span>Dino Valley &amp; the Kallters</span>
+        </a>
+        <a href="#epona-guide">
+          <img src="assets/epona-reputation.png" alt="" loading="lazy" decoding="async">
+          <span>Epona</span>
+        </a>
+        <a href="#goldenhills-guide">
+          <img src="assets/goldenhills-reputation.png" alt="" loading="lazy" decoding="async">
+          <span>Goldenhills Valley</span>
+        </a>
+        <a href="#welsh-ponies-guide">
+          <img src="assets/welsh%20pony%20hermit.webp" alt="" loading="lazy" decoding="async">
+          <span>Welsh Ponies</span>
+        </a>
+        <a href="#fishing-locations-guide">
+          <img src="assets/fishing-locations.png" alt="" loading="lazy" decoding="async">
+          <span>Fishing Locations</span>
+        </a>
+        <a href="#jorvik-city-guide">
+          <img src="assets/jorvik%20city%20aideens%20governors%20pier13.jpg" alt="" loading="lazy" decoding="async">
+          <span>Jorvik City</span>
+        </a>
+        <a href="#pandoria-guide">
+          <img src="assets/pandora.jpg" alt="" loading="lazy" decoding="async">
+          <span>Pandoria</span>
+        </a>
+        <a href="#south-hoof-guide">
+          <img src="assets/South_Hoof_Peninsula.webp" alt="" loading="lazy" decoding="async">
+          <span>South Hoof Peninsula</span>
+        </a>
+        <a href="#south-hoof-bridge-guide">
+          <img src="assets/new%20hillcrest%20to%20southoof%20bridge.jpg" alt="" loading="lazy" decoding="async">
+          <span>New Hillcrest Bridge</span>
+        </a>
+        <a href="#lead-your-horse-guide">
+          <img src="assets/leading%20your%20horse.png" alt="" loading="lazy" decoding="async">
+          <span>Leading Your Horse</span>
+        </a>
+      </nav>
+    </div>
+
     <!-- EDIT TEXT: Kallters guide. The matching image is assets/kallters-reputation.png. -->
-    <article class="reputation-guide" id="kallters-guide">
+    <article class="reputation-guide" id="kallters-guide" aria-labelledby="kallters-guide-title" tabindex="-1">
       <div class="reputation-image-column">
         <figure class="reputation-figure">
           <img src="assets/kallters-reputation.png" alt="Nanook and Sedna of the Kallters standing in Dino Valley" loading="lazy" decoding="async">
@@ -221,13 +716,19 @@
         </div>
       </div>
       <div class="reputation-copy">
-        <div class="reputation-heading"><span>01</span><div><p class="eyebrow">2016–2018</p><h2>Unlocking the Kallters</h2></div></div>
-        <p class="reputation-lead">To find and unlock the Kallters, complete a multi-day progression path in the Valley of the Hidden Dinosaur.</p>
+        <div class="reputation-heading"><span>01</span><div><p class="eyebrow">2016–2018</p><h2 id="kallters-guide-title">Dino Valley and the Kallters</h2></div></div>
+        <p class="reputation-lead">Open the mountain pass into the Valley of the Hidden Dinosaur, then follow the expedition quests to the Icengate.</p>
         <section class="reputation-block">
-          <h3>The progression path</h3>
+          <h3>Unlock Dino Valley</h3>
+          <ul class="reputation-list">
+            <li><strong>Level and reputation</strong><span>Reach player Level 15 and earn Liked reputation with Valedale.</span></li>
+            <li><strong>Nic’s balloon and the pass</strong><span>Help Nic Stoneground launch his balloon from Everwind Fields. Then speak to Elizabeth in Valedale and follow her quest to check the mountain pass.</span></li>
+          </ul>
+        </section>
+        <section class="reputation-block">
+          <h3>Find the Kallters</h3>
           <ol class="reputation-steps">
-            <li><strong>Enter Dino Valley.</strong><span>Reach at least Level 15 and complete the questline where you help Nic Stoneground repair his crashed hot air balloon. This opens the Valley of the Hidden Dinosaur.</span></li>
-            <li><strong>Help Nic Stoneground.</strong><span>Complete several days of exploration and setup quests for Nic Stoneground and Professor Einstein.</span></li>
+            <li><strong>Help Nic Stoneground.</strong><span>Once inside the valley, help Nic with his crashed balloon and complete the exploration and camp setup quests with him and Professor Einstein.</span></li>
             <li><strong>Discover the Icengate.</strong><span>After roughly three days of consistent questing in the valley, a quest leads you up the Hidden Road to the massive frozen Icengate.</span></li>
             <li><strong>Meet the outer expedition.</strong><span>Outside the gate, you finally meet Nanook and Sedna, the representatives of the Kallters’ outer expedition.</span></li>
           </ol>
@@ -236,15 +737,37 @@
           <h3>The reputation grind</h3>
           <p>Once unlocked, the Kallters work primarily as a reputation faction. Build their trust from <strong>Neutral</strong> to <strong>Popular</strong> to access their exclusive items and Generation 1 Fjord horses.</p>
           <div class="reputation-detail-grid">
-            <div><h4>The dailies</h4><p>Gather unique valley resources such as call stones, ice, thistles, ice berries, ice chestnuts, and snow weasels.</p></div>
-            <div><h4>The reward</h4><p>Reach the required reputation tier to purchase the Generation 1 Fjord horses sold outside the Icengate.</p></div>
+            <div class="kallters-dailies">
+              <p class="kallters-card-label">Repeatable quests</p>
+              <h4>The dailies</h4>
+              <p>Gather valley resources to earn reputation with the Kallters.</p>
+              <ul class="kallters-resources">
+                <li>Call stones</li>
+                <li>Ice</li>
+                <li>Thistles</li>
+                <li>Ice berries</li>
+                <li>Ice chestnuts</li>
+                <li>Snow weasels</li>
+              </ul>
+            </div>
+            <div class="kallters-reward">
+              <figure class="reputation-figure">
+                <img src="assets/Fjords.webp" width="600" height="421" alt="A gray Fjord horse standing in a snowy landscape" loading="lazy" decoding="async">
+              </figure>
+              <div class="kallters-reward-copy">
+                <p class="kallters-card-label">Reputation reward</p>
+                <h4>Generation 1 Fjord</h4>
+                <p>At Popular reputation, you could buy one outside the Icengate.</p>
+                <p class="kallters-price">About <strong>850 Star Coins</strong></p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
     </article>
 
     <!-- EDIT TEXT: Epona guide. The matching image is assets/epona-reputation.png. -->
-    <article class="reputation-guide reputation-guide-reversed" id="epona-guide">
+    <article class="reputation-guide reputation-guide-reversed" id="epona-guide" aria-labelledby="epona-guide-title" tabindex="-1">
       <div class="reputation-image-column">
         <figure class="reputation-figure">
           <img src="assets/epona-reputation.png" alt="The gated path leading toward Epona" loading="lazy" decoding="async">
@@ -252,19 +775,27 @@
         </figure>
         <div class="reputation-summary">
           <span>Minimum level</span><strong>Level 14</strong>
-          <span>Required standing</span><strong>Friendly</strong>
+          <span>Required standing</span><strong>Friendly with GED</strong>
           <span>Destination</span><strong>Epona</strong>
         </div>
       </div>
       <div class="reputation-copy">
-        <div class="reputation-heading"><span>02</span><div><p class="eyebrow">2016–2020</p><h2>Unlocking Epona</h2></div></div>
-        <p class="reputation-lead">Meet all of the following conditions to trigger Herman’s final text message and begin the Epona entrance questline.</p>
+        <div class="reputation-heading"><span>02</span><div><p class="eyebrow">Harvest Counties</p><h2 id="epona-guide-title">Unlocking Epona</h2></div></div>
+        <p class="reputation-lead">Build your reputation in Jarlaheim and follow Herman’s message to begin the route into Epona.</p>
         <section class="reputation-block">
-          <h3>Level requirement</h3>
-          <p>You must be at least <strong>Level 14</strong>. Because of the reputation work involved, many players naturally reach Level 16 before unlocking Epona.</p>
+          <h3>Updated unlock requirements</h3>
+          <ul class="reputation-list">
+            <li><strong>Player level</strong><span>Reach Level 14 or higher.</span></li>
+            <li><strong>Harvest Counties</strong><span>Repair the bridge from Moorland to open the region.</span></li>
+            <li><strong>Jarlaheim story</strong><span>Finish the mayor storyline and the quests from Jill and Ms. Drake.</span></li>
+            <li><strong>GED reputation</strong><span>Do Ms. Drake’s daily quests until you reach Friendly with the GED Jarlaheim Office.</span></li>
+          </ul>
         </section>
         <section class="reputation-block">
-          <h3>Friendly reputation required</h3>
+          <p>The later update removed the Dino Valley exploration and Firgrove tourist quests from Epona’s prerequisites. Herman’s text can arrive while you still have Jarlaheim quests to finish before the gates open.</p>
+        </section>
+        <section class="reputation-block">
+          <h3>Earlier reputation checklist (2016–2020)</h3>
           <ul class="reputation-list reputation-list-compact">
             <li>GED Jarlaheim Office with Ms. Drake</li>
             <li>Jorvik Stables</li>
@@ -273,7 +804,7 @@
           </ul>
         </section>
         <section class="reputation-block">
-          <h3>Key prerequisite questlines</h3>
+          <h3>Earlier quest checklist (2016–2020)</h3>
           <ul class="reputation-list">
             <li><strong>The Harvest Counties Bridge</strong><span>Rebuild the bridge connecting Moorland to the Harvest Counties.</span></li>
             <li><strong>The Jarlaheim Mayor storyline</strong><span>Help Jack Goldspur resolve Jarlaheim’s mayoral problems.</span></li>
@@ -296,7 +827,7 @@
     </article>
 
     <!-- EDIT TEXT: Goldenhills Valley guide. This information applies only to 2014–2018. The matching image is assets/goldenhills-reputation.png. -->
-    <article class="reputation-guide" id="goldenhills-guide">
+    <article class="reputation-guide" id="goldenhills-guide" aria-labelledby="goldenhills-guide-title" tabindex="-1">
       <div class="reputation-image-column">
         <figure class="reputation-figure">
           <img src="assets/goldenhills-reputation.png" alt="The open North Iron Gate leading into Goldenhills Valley" loading="lazy" decoding="async">
@@ -309,7 +840,7 @@
         </div>
       </div>
       <div class="reputation-copy">
-        <div class="reputation-heading"><span>03</span><div><p class="eyebrow">2014–2018 only</p><h2>Unlocking Goldenhills Valley</h2></div></div>
+        <div class="reputation-heading"><span>03</span><div><p class="eyebrow">2014–2018 only</p><h2 id="goldenhills-guide-title">Unlocking Goldenhills Valley</h2></div></div>
         <p class="reputation-lead">These requirements describe the ways to open the North Iron Gate in 2014 and 2018.</p>
         <section class="reputation-block">
           <h3>Goldenhills requirements in 2018</h3>
@@ -329,9 +860,10 @@
         <section class="reputation-block reputation-finale">
           <h3>Opening the North Iron Gate</h3>
           <ol class="reputation-steps">
-            <li><strong>Meet the Councilman.</strong><span>After completing the requirements, the Councilman in Silverglade Village gives you the quest chain to search for the missing gate key.</span></li>
-            <li><strong>Visit Conrad.</strong><span>Work with Conrad the Blacksmith in Moorland to create a replacement key.</span></li>
-            <li><strong>Open the valley.</strong><span>Complete the key quest and use the replacement to open the gates into Goldenhills Valley.</span></li>
+            <li><strong>Finish Techno’s quests.</strong><span>Find a new home for the Baroness’s watchdog and help build his doghouse. The follow-up leads into the gate storyline.</span></li>
+            <li><strong>Get a picture of the key.</strong><span>Follow the Silverglade Councilman’s investigation, obtain the camera, and get the key photo printed.</span></li>
+            <li><strong>Work with Conrad.</strong><span>Bring the photo to the blacksmith in Moorland, collect more iron ore, and finish the apprentice quests while he makes a replacement.</span></li>
+            <li><strong>Open the valley.</strong><span>Collect the finished key and follow the gate quests into Goldenhills Valley, including the southern gate follow-up.</span></li>
           </ol>
         </section>
         <section class="reputation-block">
@@ -339,6 +871,290 @@
           <div class="reputation-detail-grid">
             <div><h4>The quests stayed the same</h4><p>The route still used the main Silverglade storyline, including Mysteries of the Circus, The Meeting in Sacred Grove, and the final “The Key Is Ready” quest from the Councilman or Mayor.</p></div>
             <div><h4>The usual level increased</h4><p>Around 2014, players commonly reached this point at Level 12 or 13. By 2018, added early-game quests awarded more experience, so players often reached Level 14, 15, or even 16 before receiving the Goldenhills key quest.</p></div>
+          </div>
+        </section>
+        <section class="reputation-block">
+          <h3>Help Helga, Gunther, and Gretchen</h3>
+          <p>Open Goldenhills Valley before following the missing Gretchen storyline, since the search sends you into the valley. After finding Gretchen, continue the family’s quests and Mr. Kemball’s storyline to reach the summerhouse episode.</p>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Welsh Ponies guide. The matching image is assets/welsh pony hermit.webp. -->
+    <article class="reputation-guide reputation-guide-reversed" id="welsh-ponies-guide" aria-labelledby="welsh-ponies-guide-title" tabindex="-1">
+      <div class="reputation-image-column">
+        <figure class="reputation-figure">
+          <img src="assets/welsh%20pony%20hermit.webp" alt="Three Welsh Ponies running through a grassy field" loading="lazy" decoding="async">
+          <figcaption>Generation 2 Welsh Ponies · South Hoof Peninsula</figcaption>
+        </figure>
+        <div class="reputation-summary">
+          <span>Minimum level</span><strong>Level 7</strong>
+          <span>Reputation path</span><strong>Neutral to Friendly</strong>
+          <span>Region</span><strong>South Hoof Peninsula</strong>
+        </div>
+      </div>
+      <div class="reputation-copy">
+        <div class="reputation-heading"><span>04</span><div><p class="eyebrow">2018</p><h2 id="welsh-ponies-guide-title">Unlocking Welsh Ponies</h2></div></div>
+        <section class="reputation-block">
+          <h3>Welsh Pony requirements</h3>
+          <ul class="reputation-list">
+            <li><strong>Player level</strong><span>Reach at least Level 7 and unlock access to South Hoof Peninsula.</span></li>
+            <li><strong>Hermit reputation</strong><span>Reach Friendly with the Hermit on the South Hoof Peninsula.</span></li>
+          </ul>
+        </section>
+        <section class="reputation-block">
+          <h3>How to build reputation with the Hermit</h3>
+          <ol class="reputation-steps">
+            <li><strong>Daily quests</strong><span>At his cottage, complete the repeatable quests marked by a blue exclamation mark above his head.</span></li>
+            <li><strong>Daily races</strong><span>Take part in the two daily races that start near his cottage.</span></li>
+          </ol>
+        </section>
+        <section class="reputation-block reputation-finale">
+          <h3>Buying a Welsh Pony</h3>
+          <p>Once you reach <strong>Friendly</strong>, you can buy the Welsh Ponies standing around the Hermit’s cottage. In 2018, these Generation 2 ponies cost <strong>790 Star Coins</strong>.</p>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Fishing map, weekly catches, and payouts from Rachel Mistwood’s guide. -->
+    <article class="reputation-guide" id="fishing-locations-guide" aria-labelledby="fishing-locations-guide-title" tabindex="-1">
+      <div class="reputation-image-column">
+        <figure class="reputation-figure fishing-map">
+          <img src="assets/fishing-locations.png" width="222" height="222" alt="Map with seven colored markers for fishing spots around Cape West Fishing Village and Goldenhills Valley" loading="lazy" decoding="async">
+          <figcaption>Fishing spots in Goldenhills Valley</figcaption>
+        </figure>
+      </div>
+      <div class="reputation-copy">
+        <div class="reputation-heading"><span>05</span><div><p class="eyebrow">Jorvik Fishing Club</p><h2 id="fishing-locations-guide-title">Fishing Locations</h2></div></div>
+        <section class="reputation-block">
+          <h3>Cape West’s catch of the day</h3>
+          <table class="schedule-table fishing-rotation">
+            <caption>Mr. Trout’s weekly fishing rotation in Goldenhills Valley</caption>
+            <thead>
+              <tr><th scope="col">Day</th><th scope="col">Fish</th><th scope="col">Location</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Sunday</th><td>Plaice</td><td>Longbridge</td></tr>
+              <tr><th scope="row">Monday</th><td>Northern Pike</td><td>Labyrinth Shore</td></tr>
+              <tr><th scope="row">Tuesday</th><td>Perch</td><td>Broken Bridge</td></tr>
+              <tr><th scope="row">Wednesday</th><td>White Croaker</td><td>Little Beach Jetty</td></tr>
+              <tr><th scope="row">Thursday</th><td>Cod</td><td>Stable Beach Dock</td></tr>
+              <tr><th scope="row">Friday</th><td>Herring</td><td>East Dock</td></tr>
+              <tr><th scope="row">Saturday</th><td>Whitefish</td><td>Smuggler’s Den</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <div class="reputation-copy fishing-payouts">
+        <section class="reputation-block">
+          <h3 id="fishing-payouts-title">Weekly fishing payouts</h3>
+          <p>All rewards are in Jorvik Shillings. Each daily total includes the catches and bonus tasks from all three fishermen. A <span class="fishing-achievement">★</span> marks a catch that counts toward a fishing achievement.</p>
+          <div class="table-scroll" role="region" aria-labelledby="fishing-payouts-title" tabindex="0">
+            <table class="schedule-table">
+              <caption>Fishing quests, locations, and rewards by day and quest giver</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Daily total</th>
+                  <th scope="col">Mr. Trout <small>Cape West Fishing Village</small></th>
+                  <th scope="col">Mr. Cod <small>Moorland South Beach</small></th>
+                  <th scope="col">Mr. Pike <small>Harvest Counties</small></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Sunday</th><td class="fishing-total">340</td>
+                  <td><ul><li><strong class="fishing-achievement">★ Plaice</strong> · Long Bridge · 115</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Plaice</strong> · Thorny Banks · 95</li><li>Bonus hooks · 30</li></ul></td>
+                  <td><ul><li><strong>Walleye</strong> · Jorvik Stables · 50</li><li><strong class="fishing-achievement">★ Cod</strong> · Paddock Island Bridge · 50</li></ul></td>
+                </tr>
+                <tr>
+                  <th scope="row">Monday</th><td class="fishing-total">335</td>
+                  <td><ul><li><strong>Northern Pike</strong> · Labyrinth Shore Dock · 115</li></ul></td>
+                  <td><ul><li><strong>White Croaker</strong> · Fort Pinta · 95</li><li>Bonus worms · 25</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Pike</strong> · Mr. Pike’s Dock · 50</li><li><strong class="fishing-achievement">★ Cod</strong> · Paddock Island Bridge · 50</li></ul></td>
+                </tr>
+                <tr>
+                  <th scope="row">Tuesday</th><td class="fishing-total">395</td>
+                  <td><ul><li><strong class="fishing-achievement">★ Perch</strong> · Broken Bridge Dock · 115</li><li>Bonus lines · 55</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Cod</strong> · Silversong River · 100</li><li>Bonus worms · 25</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Pike</strong> · Mr. Pike’s Dock · 50</li><li><strong>Roaches</strong> · Seahorse Cliffs · 50</li></ul></td>
+                </tr>
+                <tr>
+                  <th scope="row">Wednesday</th><td class="fishing-total">415</td>
+                  <td><ul><li><strong>White Croaker</strong> · Little Beach Jetty · 115</li><li>Bonus traps · 55</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Herring</strong> · Valedale Dock · 115</li><li>Bonus nets · 30</li></ul></td>
+                  <td><ul><li><strong>Whitefish</strong> · Forgotten Fields · 50</li><li><strong>Roaches</strong> · Seahorse Cliffs · 50</li></ul></td>
+                </tr>
+                <tr>
+                  <th scope="row">Thursday</th><td class="fishing-total">415</td>
+                  <td><ul><li><strong class="fishing-achievement">★ Cod</strong> · Stable Beach Dock · 115</li><li>Bonus net · 55</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Perch</strong> · Valedale Mill · 115</li><li>Bonus hooks · 30</li></ul></td>
+                  <td><ul><li><strong>Whitefish</strong> · Forgotten Fields · 50</li><li><strong class="fishing-achievement">★ Perch</strong> · Paddock Island · 50</li></ul></td>
+                </tr>
+                <tr>
+                  <th scope="row">Friday</th><td class="fishing-total">415</td>
+                  <td><ul><li><strong class="fishing-achievement">★ Herring</strong> · East Dock · 115</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Plaice</strong> · Valedale Lake · 125</li><li><strong class="fishing-achievement">★ Perch</strong> · Moorland · 75</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Herring</strong> · Forgotten Fields · 50</li><li><strong class="fishing-achievement">★ Perch</strong> · Paddock Island · 50</li></ul></td>
+                </tr>
+                <tr>
+                  <th scope="row">Saturday</th><td class="fishing-total">395</td>
+                  <td><ul><li><strong>Whitefish</strong> · Smuggler’s Den · 115</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Plaice</strong> · Riding Arena · 150</li><li>Bonus nets · 30</li></ul></td>
+                  <td><ul><li><strong class="fishing-achievement">★ Herring</strong> · Forgotten Fields · 50</li><li><strong>Walleye</strong> · Jorvik Stables · 50</li></ul></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Jorvik City access and bus destinations. -->
+    <article class="reputation-guide reputation-guide-reversed" id="jorvik-city-guide" aria-labelledby="jorvik-city-guide-title" tabindex="-1">
+      <div class="reputation-image-column">
+        <figure class="reputation-figure reputation-figure-contain">
+          <img src="assets/jorvik%20city%20aideens%20governors%20pier13.jpg" alt="Map of Jorvik City showing the mall, Aideen’s Plaza, Governor’s Fall, and Pier 13" loading="lazy" decoding="async">
+          <figcaption>Jorvik City bus destinations</figcaption>
+        </figure>
+        <div class="reputation-summary">
+          <span>City districts</span><strong>Level 9 · Star Rider</strong>
+          <span>First bus stop</span><strong>Fort Pinta</strong>
+        </div>
+      </div>
+      <div class="reputation-copy">
+        <div class="reputation-heading"><span>06</span><div><p class="eyebrow">Travel unlock</p><h2 id="jorvik-city-guide-title">Unlocking Jorvik City</h2></div></div>
+        <section class="reputation-block">
+          <h3>From the mall to the city</h3>
+          <ol class="reputation-steps">
+            <li><strong>Get a bus ticket.</strong><span>Start James’s delivery quests in Fort Pinta. The quest that sends you to Jorvik City Mall opens bus travel.</span></li>
+            <li><strong>Finish James’s deliveries.</strong><span>Give Jack B. his coffee at the mall café to continue the delivery quests.</span></li>
+            <li><strong>Meet the Janitor.</strong><span>Reach player Level 9 with Star Rider and finish the mall deliveries. Start “The Flowery Janitor” to explore the city beyond the mall.</span></li>
+          </ol>
+        </section>
+        <section class="reputation-block">
+          <h3>City destinations</h3>
+          <ul class="reputation-list reputation-list-compact">
+            <li>Jorvik City Mall</li>
+            <li>Aideen’s Plaza</li>
+            <li>Governor’s Fall</li>
+            <li>Pier 13</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Pandoria, the Soul Riders’ rescue quests, and Soul Riding. -->
+    <article class="reputation-guide" id="pandoria-guide" aria-labelledby="pandoria-guide-title" tabindex="-1">
+      <div class="reputation-image-column">
+        <figure class="reputation-figure">
+          <img src="assets/pandora.jpg" alt="Glowing mushrooms and floating islands in the purple landscape of Pandoria" loading="lazy" decoding="async">
+          <figcaption>Pandoria</figcaption>
+        </figure>
+        <div class="reputation-summary">
+          <span>Storyline</span><strong>Soul Riders</strong>
+          <span>Early reputation gate</span><strong>Liked with Lightning’s Inner Circle</strong>
+        </div>
+      </div>
+      <div class="reputation-copy">
+        <div class="reputation-heading"><span>07</span><div><p class="eyebrow">Main story</p><h2 id="pandoria-guide-title">Unlocking Pandoria</h2></div></div>
+        <section class="reputation-block">
+          <h3>Find Justin Moorland</h3>
+          <ol class="reputation-steps">
+            <li><strong>Finish the Moorland theft quests.</strong><span>Help track down the thief and complete Jenna’s follow-up in Moorland.</span></li>
+            <li><strong>Build Lightning reputation.</strong><span>Reach Liked with the Keepers of Aideen’s Lightning’s Inner Circle.</span></li>
+            <li><strong>Follow Linda’s lead.</strong><span>After seeing Darko on the oil rig, speak to Linda in the library. Follow the story to South Hoof, find Justin, and report back to Elizabeth.</span></li>
+          </ol>
+        </section>
+        <section class="reputation-block">
+          <h3>Open the portal and bring Anne home</h3>
+          <ol class="reputation-steps">
+            <li><strong>Prepare the rescue.</strong><span>Continue with the Druids after Justin returns. Follow the vault, Labyrinth, and Stonecutter quests to obtain the keystone for Pandoria.</span></li>
+            <li><strong>Make the first crossing.</strong><span>Take the keystone to the portal, follow the trail to Anne, and escape back to the Secret Stone Circle.</span></li>
+            <li><strong>Continue the search.</strong><span>Follow the Pandoria Codex and Evergray quests. The meeting in New Hillcrest requires access to Epona. Continue through the rift quests as the Soul Riders prepare their next attempt.</span></li>
+            <li><strong>Finish Lisa’s song scene.</strong><span>Complete the scene where you listen to Lisa with Linda and Alex, then follow the rescue quests that bring Anne back.</span></li>
+          </ol>
+        </section>
+        <section class="reputation-block">
+          <h3>Return visits and Druid training</h3>
+          <div class="reputation-detail-grid">
+            <div><h4>Revisit Pandoria</h4><p>Finish Elizabeth’s conversation about Starbreeds in Fripp’s room. After that, look for a Pandoria portal at a different location each day.</p></div>
+            <div><h4>Start Soul Riding</h4><p>After bringing Anne home, Star Riders can begin Druid training with Rhiannon at the training ring above Valedale.</p></div>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: First-time access to South Hoof Peninsula. -->
+    <article class="reputation-guide reputation-guide-reversed" id="south-hoof-guide" aria-labelledby="south-hoof-guide-title" tabindex="-1">
+      <div class="reputation-image-column">
+        <figure class="reputation-figure">
+          <img src="assets/South_Hoof_Peninsula.webp" alt="Grassy cliffs and standing stones on South Hoof Peninsula" loading="lazy" decoding="async">
+          <figcaption>South Hoof Peninsula</figcaption>
+        </figure>
+        <div class="reputation-summary">
+          <span>Minimum level</span><strong>Level 7 · Star Rider</strong>
+          <span>Quest start</span><strong>Fort Pinta</strong>
+        </div>
+      </div>
+      <div class="reputation-copy">
+        <div class="reputation-heading"><span>08</span><div><p class="eyebrow">Travel unlock</p><h2 id="south-hoof-guide-title">Unlocking South Hoof Peninsula</h2></div></div>
+        <section class="reputation-block">
+          <h3>Your first trip from Fort Pinta</h3>
+          <ol class="reputation-steps">
+            <li><strong>Meet James.</strong><span>Speak to James in Fort Pinta and reach player Level 7 with Star Rider.</span></li>
+            <li><strong>Read his message.</strong><span>James will text you about trouble at the South Hoof lighthouse.</span></li>
+            <li><strong>Ask Elin for help.</strong><span>Find Elin at Fort Pinta Beach and gather the boat parts she asks for. Follow the quest across the harbor to South Hoof.</span></li>
+          </ol>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: The New Hillcrest bridge repair quest. -->
+    <article class="reputation-guide" id="south-hoof-bridge-guide" aria-labelledby="south-hoof-bridge-guide-title" tabindex="-1">
+      <div class="reputation-image-column">
+        <figure class="reputation-figure reputation-figure-contain">
+          <img src="assets/new%20hillcrest%20to%20southoof%20bridge.jpg" alt="Damaged wooden bridge between New Hillcrest and South Hoof Peninsula" loading="lazy" decoding="async">
+          <figcaption>The bridge before repairs</figcaption>
+        </figure>
+        <div class="reputation-summary">
+          <span>Required standing</span><strong>Liked with New Hillcrest</strong>
+          <span>Quest start</span><strong>New Hillcrest town square</strong>
+        </div>
+      </div>
+      <div class="reputation-copy">
+        <div class="reputation-heading"><span>09</span><div><p class="eyebrow">Epona to South Hoof</p><h2 id="south-hoof-bridge-guide-title">Repairing the New Hillcrest Bridge</h2></div></div>
+        <section class="reputation-block">
+          <h3>Open the crossing to South Hoof</h3>
+          <ol class="reputation-steps">
+            <li><strong>Build local reputation.</strong><span>Unlock Epona, then reach Liked with New Hillcrest.</span></li>
+            <li><strong>Ask about the town slogan.</strong><span>Talk to Bernardine Winterwell in the town square and collect the residents’ opinions on changing the slogan.</span></li>
+            <li><strong>Meet Donald.</strong><span>Return to Bernardine, then find Donald by the bridge and complete his repair tasks. You can finish the chain in one day.</span></li>
+          </ol>
+        </section>
+      </div>
+    </article>
+
+    <!-- EDIT TEXT: Historical horse leading and the newer level-based unlock. -->
+    <article class="reputation-guide reputation-guide-reversed" id="lead-your-horse-guide" aria-labelledby="lead-your-horse-guide-title" tabindex="-1">
+      <div class="reputation-image-column">
+        <figure class="reputation-figure reputation-figure-contain">
+          <img src="assets/leading%20your%20horse.png" alt="A dismounted rider standing beside a black horse" loading="lazy" decoding="async">
+          <figcaption>Leading your horse on foot</figcaption>
+        </figure>
+        <div class="reputation-summary">
+          <span>Horse Progression unlock</span><strong>Horse Level 3</strong>
+          <span>Original trainer price</span><strong>135 Star Coins</strong>
+        </div>
+      </div>
+      <div class="reputation-copy">
+        <div class="reputation-heading"><span>10</span><div><p class="eyebrow">Horse skills</p><h2 id="lead-your-horse-guide-title">Leading Your Horse</h2></div></div>
+        <section class="reputation-block">
+          <h3>How the unlock changed</h3>
+          <div class="reputation-detail-grid">
+            <div><h4>Original trainer unlock</h4><p>Star Riders at player Level 10 could buy horse-leading training for 135 Star Coins from a horse trainer. To use it, dismount, stand by the horse’s head, and select Lead near the horseshoe menu.</p></div>
+            <div><h4>Horse Progression update</h4><p>Since the 2023 update, players can unlock the Lead Rope by raising an individual horse to horse Level 3. Riders who bought the skill through a trainer kept it for all their horses.</p></div>
           </div>
         </section>
       </div>
@@ -395,10 +1211,38 @@
 <!-- EDIT TEXT: Championship schedule introduction and schedule notes. The weekly table data is in app.js. -->
 <section class="view" id="championship" data-view="championship">
   <div class="page-banner championship-banner"><div class="wrap"><p class="eyebrow">Plan your next championship!</p><h1>Championships<br><em>around the clock.</em></h1><p>Championship locations by day and hour.</p><span class="source-link">Weekly rotation · 06:00–23:00 UTC+1</span></div></div>
-  <div class="wrap championship-content"><div class="schedule-top"><div><p class="eyebrow">Weekly rotation</p><h2>Championship Schedule</h2></div><div class="time-badge">UTC+1 TIME</div></div><p class="table-hint">Swipe or scroll sideways to see every day. Times in this table are UTC+1.</p><div class="table-scroll"><table class="schedule-table championship-table" id="champ-table"><caption>Championship locations by hour and day</caption></table></div><div class="champ-note"><span class="rose-mark">𓆩♡𓆪</span><p>This schedule is available in 2018 version</p></div></div>
+  <div class="wrap championship-content"><div class="schedule-top"><div><p class="eyebrow">Weekly rotation</p><h2>Championship Schedule</h2></div><div class="time-badge">UTC+1 TIME</div></div>
+    <div class="champ-next">
+      <div class="champ-next-details">
+        <span class="champ-next-crest"><img src="assets/rose.svg" alt="" width="32" height="38"></span>
+        <div role="status">
+          <p class="eyebrow">Next championship</p>
+          <p class="champ-next-venue" id="champ-next-venue"></p>
+          <p class="champ-next-time" id="champ-next-time"></p>
+        </div>
+      </div>
+      <div class="champ-clock">
+        <p class="eyebrow" id="champ-countdown-label">Starts in</p>
+        <div class="champ-countdown" role="timer" aria-labelledby="champ-countdown-label">
+          <div class="champ-clock-tile">
+            <span class="champ-clock-value" id="champ-countdown-hours"></span>
+            <span class="champ-clock-unit">Hours</span>
+          </div>
+          <div class="champ-clock-tile">
+            <span class="champ-clock-value" id="champ-countdown-minutes"></span>
+            <span class="champ-clock-unit">Minutes</span>
+          </div>
+          <div class="champ-clock-tile">
+            <span class="champ-clock-value" id="champ-countdown-seconds"></span>
+            <span class="champ-clock-unit">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="table-hint">Swipe or scroll sideways to see every day. Times in this table are UTC+1.</p><div class="table-scroll"><table class="schedule-table championship-table" id="champ-table"><caption>Championship locations by hour and day</caption></table></div><div class="champ-note"><span class="rose-mark">𓆩♡𓆪</span><p>This schedule is available in 2018 version</p></div></div>
 </section>
 <!-- EDIT TEXT: Privacy, external links, cookies, and game affiliation note. Review if site features change. -->
-<section class="view" id="privacy" data-view="privacy"><div class="page-banner"><div class="wrap"><p class="eyebrow">A small privacy note</p><h1>Clear skies,<br><em>clear choices.</em></h1><p>This fan site is a static information page. It has no accounts, forms, analytics, or advertising.</p></div></div><div class="wrap legal-copy"><h2>What this site does</h2><p>The site does not ask for or store personal information. It does not use analytics, advertising pixels, or a cookie banner. The database and schedule content are static files hosted with the site.</p><h2>External links and images</h2><p>Item photos are requested from image hosts linked in the supplied 2018 database. Following Discord, TikTok, or source links takes you to services with their own privacy policies. Those services may receive your IP address and browser request details. This site does not control their data practices.</p><h2>Cookies</h2><p>This site does not set cookies or use storage for tracking. If a future version adds analytics, forms, embedded social content, or other tracking technologies, this notice will need to be reviewed before adding them.</p><h2>A note on the game</h2><p>Bad Roses is an unofficial, non-commercial fan community. All game names and related content belong to their respective owners. This site is not affiliated with or endorsed by the game publisher. Review the applicable game-service license before adding monetization.</p><h2>Terms</h2><p>This version is an informational fan site with no accounts, payments, submissions, or other user transactions, so it does not include separate terms of service. Revisit this if the site later adds interactive services or monetization.</p><p class="small-note">This is general information about the features currently included on this site, not legal advice.</p></div></section>
+<section class="view" id="privacy" data-view="privacy"><div class="page-banner"><div class="wrap"><p class="eyebrow">A small privacy note</p><h1>Clear skies,<br><em>clear choices.</em></h1><p>This fan site is a static information page. It has no accounts, forms, analytics, or advertising.</p></div></div><div class="wrap legal-copy"><h2>What this site does</h2><p>The site does not ask for or store personal information. It does not use analytics, advertising pixels, or a cookie banner. The database and schedule content are static files hosted with the site.</p><h2>External links and images</h2><p>Some database and quest images load from external image hosts. Following Discord, TikTok, or source links takes you to services with their own privacy policies. Those services may receive your IP address and browser request details. This site does not control their data practices.</p><h2>Cookies</h2><p>This site does not set cookies or use storage for tracking. If a future version adds analytics, forms, embedded social content, or other tracking technologies, this notice will need to be reviewed before adding them.</p><h2>A note on the game</h2><p>Bad Roses is an unofficial, non-commercial fan community. All game names and related content belong to their respective owners. This site is not affiliated with or endorsed by the game publisher. Review the applicable game-service license before adding monetization.</p><h2>Terms</h2><p>This version is an informational fan site with no accounts, payments, submissions, or other user transactions, so it does not include separate terms of service. Revisit this if the site later adds interactive services or monetization.</p><p class="small-note">This is general information about the features currently included on this site, not legal advice.</p></div></section>
 </main>
 <footer class="site-footer"><div class="wrap footer-top"><a class="brand footer-brand" href="#home"><img src="assets/rose.svg" alt=""><span>Bad Roses<small>Grow together on Jorvik</small></span></a><p><br></p><nav aria-label="Footer navigation"><a href="#socials">Socials</a><a href="#waitlist">Join the waitlist</a><a href="#privacy">Privacy</a></nav></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Bad Roses · Community site</span><span><b></b></span></div></footer>
 <script src="site-config.js"></script>

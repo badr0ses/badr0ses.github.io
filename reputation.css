@@ -1,13 +1,22 @@
 /* REPUTATION PAGE: Change the guide layout, cards, images, and requirement lists here. */
 .reputation-banner{background:radial-gradient(ellipse at 82% 30%,rgba(143,38,55,.24),transparent 34%),linear-gradient(120deg,#211116,#130b0d)}
 .reputation-page{padding:46px 0 92px;display:grid;gap:28px}
-.reputation-guide{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.45fr);border:1px solid var(--line);background:#191013}
+.reputation-library h2{margin:0 0 6px;font:clamp(26px,3vw,36px)/1.1 var(--serif)}
+.reputation-library>p{margin:0 0 16px;color:var(--muted);font-size:12px}
+.reputation-catalog{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+.reputation-catalog a{display:grid;grid-template-columns:52px minmax(0,1fr);align-items:center;gap:10px;padding:8px;border:1px solid var(--line);background:#191013;color:var(--cream);font:clamp(15px,2vw,19px)/1.15 var(--serif);text-decoration:none}
+.reputation-catalog img{display:block;width:52px;height:44px;object-fit:cover}
+.reputation-catalog a:hover,.reputation-catalog a[aria-current="location"]{border-color:var(--rose-light);background:#32181f}
+.reputation-catalog a:focus-visible{outline:2px solid var(--rose-light);outline-offset:2px}
+.reputation-guide{display:grid;grid-template-columns:minmax(280px,.72fr) minmax(0,1.45fr);scroll-margin-top:20px;border:1px solid var(--line);background:#191013}
+.reputation-guide:not(:target){display:none}
 .reputation-guide-reversed{grid-template-columns:minmax(0,1.45fr) minmax(280px,.72fr)}
 .reputation-guide-reversed .reputation-image-column{order:2}
 .reputation-image-column{border-right:1px solid var(--line);background:#140d0f}
 .reputation-guide-reversed .reputation-image-column{border-right:0;border-left:1px solid var(--line)}
 .reputation-figure{margin:0}
 .reputation-figure img{display:block;width:100%;aspect-ratio:1.3/1;object-fit:cover}
+.reputation-figure-contain img{object-fit:contain}
 .reputation-figure figcaption{padding:11px 15px;border-top:1px solid var(--line);color:var(--muted2);font-size:9px;letter-spacing:.05em}
 .reputation-summary{display:grid;grid-template-columns:1fr auto;gap:9px 18px;padding:20px}
 .reputation-summary span{color:var(--muted2);font-size:9px;letter-spacing:.1em;text-transform:uppercase}
@@ -31,6 +40,52 @@
 .reputation-detail-grid>div{padding:17px;border:1px solid var(--line);background:#211417}
 .reputation-detail-grid h4{margin:0 0 7px;color:var(--cream);font:17px var(--serif)}
 .reputation-detail-grid p{margin:0;color:var(--muted);font-size:10px;line-height:1.55}
+.reputation-grind .reputation-detail-grid > div {
+  background: linear-gradient(145deg, #2b1920, #1b1115 80%);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.reputation-grind .reputation-detail-grid h4 {font-size: clamp(20px, 2vw, 24px)}
+.reputation-grind .reputation-detail-grid p {font-size: 12px; line-height: 1.55}
+.reputation-grind .reputation-detail-grid .kallters-card-label {
+  margin-bottom: 5px;
+  color: var(--rose-light);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.kallters-dailies {display: flex; flex-direction: column}
+.kallters-resources {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: space-evenly;
+  gap: 7px;
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+.kallters-resources li {
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #211417;
+  color: var(--cream);
+  font-size: 11px;
+}
+.reputation-grind .reputation-detail-grid .kallters-reward {padding: 0}
+.kallters-reward .reputation-figure img {height: auto; min-height: 0; aspect-ratio: auto}
+.kallters-reward-copy {padding: 17px; border-top: 1px solid var(--line)}
+.kallters-reward-copy .kallters-price {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 10px;
+  border: 1px solid var(--line2);
+  border-radius: 5px;
+  background: #32181f;
+  color: var(--rose-light);
+}
 .reputation-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:9px}
 .reputation-list li{padding:14px;border:1px solid var(--line);background:#201316}
 .reputation-list strong,.reputation-list span{display:block}
@@ -40,5 +95,20 @@
 .reputation-list-compact li::before{content:"";position:absolute;left:14px;top:19px;width:5px;height:5px;border:1px solid var(--rose);transform:rotate(45deg)}
 .reputation-finale{padding:22px;border:1px solid #61333d;background:#211317}
 .reputation-finale .reputation-steps li:last-child{padding-bottom:0}
+.fishing-map{grid-column:1/-1;text-align:center}
+.reputation-figure.fishing-map img{width:min(calc(100% - 32px),420px);height:auto;min-height:0;aspect-ratio:1;object-fit:contain;margin:16px auto}
+.schedule-table.fishing-rotation{min-width:0;font-size:12px}
+.fishing-payouts{grid-column:1/-1;min-width:0;border-top:1px solid var(--line)}
+.fishing-payouts .reputation-block{margin-top:0}
+.fishing-payouts .table-scroll{margin:13px 0}
+.fishing-payouts .schedule-table{font-size:12px}
+.fishing-payouts .schedule-table td{vertical-align:top}
+.fishing-payouts thead small{display:block;margin-top:3px;color:#dfd2d2;font:11px var(--sans)}
+.fishing-payouts ul{display:grid;gap:5px;list-style:none;margin:0;padding:0}
+.fishing-payouts .fishing-achievement{color:#a6ccff;font-weight:700}
+.fishing-total{font-weight:700;white-space:nowrap}
 @media(max-width:980px){.reputation-guide,.reputation-guide-reversed{grid-template-columns:1fr}.reputation-guide-reversed .reputation-image-column{order:0}.reputation-image-column,.reputation-guide-reversed .reputation-image-column{display:grid;grid-template-columns:minmax(250px,.9fr) 1fr;border:0;border-bottom:1px solid var(--line)}.reputation-figure img{height:100%;min-height:260px}.reputation-summary{align-content:center}}
 @media(max-width:700px){.reputation-page{padding-top:25px}.reputation-image-column,.reputation-guide-reversed .reputation-image-column{display:block}.reputation-copy{padding:25px 19px 31px}.reputation-lead{font-size:16px}.reputation-steps li{grid-template-columns:25px 1fr}.reputation-steps li span{grid-column:2}.reputation-detail-grid,.reputation-list{grid-template-columns:1fr}.reputation-finale{padding:17px}}
+@media(max-width:980px){.reputation-catalog{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.reputation-catalog{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.reputation-catalog a{grid-template-columns:40px minmax(0,1fr);gap:7px;overflow-wrap:anywhere}.reputation-catalog img{width:40px;height:36px}}

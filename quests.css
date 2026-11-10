@@ -51,5 +51,224 @@
 .quest-help p{margin:8px 0 0;color:var(--muted);font-size:11px;line-height:1.65}
 .quest-help strong{color:var(--cream)}
 .quest-help kbd{display:inline-block;min-width:25px;padding:1px 7px;border:1px solid var(--line2);background:#120b0d;color:var(--rose-light);font:12px var(--sans);text-align:center}
-@media(max-width:980px){.quest-guide{grid-template-columns:1fr}.quest-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;border-right:0;border-bottom:1px solid var(--line)}.quest-gallery figure{margin:0}}
+
+.treasure-guide,
+.secret-quest-guide,
+.quest-archive {
+  max-width: 1080px;
+  margin-inline: auto;
+}
+.treasure-guide section > h3 {
+  margin: 0;
+  color: var(--cream);
+  font: clamp(24px, 3vw, 34px)/1.15 var(--serif);
+}
+.treasure-guide h4 {
+  margin: 0;
+  color: var(--cream);
+  font: 18px/1.2 var(--serif);
+}
+.treasure-guide p:not(.eyebrow) {font-size: 13px}
+.treasure-map-card,
+.treasure-clues li,
+.treasure-stones li,
+.secret-quest-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #211417;
+}
+.treasure-map-card {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(16px, 4vw, 38px);
+  margin-top: 20px;
+  padding: clamp(14px, 2.5vw, 24px);
+  background: linear-gradient(135deg, #2d1b20, #211417);
+}
+.treasure-map-card img {display: block; width: 100%; height: auto}
+.treasure-clues,
+.treasure-stones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+}
+.treasure-clues li {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  padding: 12px;
+}
+.treasure-clues img {display: block; width: 100%; height: 120px; object-fit: contain}
+.treasure-stones li {overflow: hidden}
+.treasure-stones img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  background: #120b0d;
+}
+.treasure-stones li > div {padding: 15px 16px; border-top: 1px solid var(--line)}
+.treasure-map-card .eyebrow,
+.treasure-clues .eyebrow,
+.treasure-stones .eyebrow {margin: 0 0 5px}
+.treasure-map-card p:last-child,
+.treasure-clues p:last-child,
+.treasure-stones p:last-child {margin: 6px 0 0; color: var(--muted); line-height: 1.6}
+.treasure-stone-order {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  list-style: none;
+  counter-reset: treasure-stone;
+  margin: 16px 0 0;
+  padding: 0;
+}
+.treasure-stone-order li {
+  counter-increment: treasure-stone;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: #211417;
+  color: var(--cream);
+  font: 16px/1.2 var(--serif);
+}
+.treasure-stone-order li::before {
+  content: counter(treasure-stone);
+  display: grid;
+  flex: 0 0 24px;
+  place-items: center;
+  height: 24px;
+  border: 1px solid var(--line2);
+  border-radius: 50%;
+  color: var(--rose-light);
+  font: 12px/1 var(--sans);
+}
+
+.secret-quest-guide .quest-intro {margin-top: 0; font-size: 13px}
+.secret-quest-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: start;
+  gap: 18px;
+  margin-top: 16px;
+  padding: clamp(13px, 2.5vw, 23px);
+}
+.secret-quest-card .eyebrow {margin: 0 0 5px}
+.secret-quest-card h3 {margin: 0; color: var(--cream); font: clamp(20px, 2.5vw, 26px)/1.2 var(--serif)}
+.secret-quest-card p:not(.eyebrow),
+.secret-quest-card ol {margin: 8px 0 0; color: var(--muted); font-size: 13px; line-height: 1.6}
+.secret-quest-card ol {padding-left: 20px}
+.secret-quest-card li + li {margin-top: 5px}
+.secret-quest-card li::marker {color: var(--rose-light)}
+.secret-quest-images {display: flex; flex-wrap: wrap; gap: 10px}
+.secret-quest-images figure {
+  width: 98px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #140d0f;
+}
+.secret-quest-images img {display: block; width: 100%; height: 124px; object-fit: contain}
+.secret-quest-images figcaption {padding: 6px; color: var(--muted); font-size: 10px; text-align: center}
+
+.quest-archive > .quest-intro {
+  margin: 0 0 20px;
+  font-size: 13px;
+}
+.quest-archive details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #211417;
+}
+.quest-archive details + details {margin-top: 10px}
+.quest-archive details[open] {border-color: var(--line2)}
+.quest-archive summary {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  list-style: none;
+}
+.quest-archive summary::-webkit-details-marker {display: none}
+.quest-archive summary::after {
+  content: "+";
+  color: var(--rose-light);
+  font: 20px/1 var(--sans);
+}
+.quest-archive details[open] summary::after {content: "−"}
+.quest-archive summary:focus-visible {outline: 2px solid var(--rose-light); outline-offset: -2px}
+.quest-archive summary strong {
+  display: block;
+  color: var(--cream);
+  font: clamp(17px, 2.3vw, 22px)/1.2 var(--serif);
+}
+.quest-archive summary small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.quest-archive-number {
+  display: grid;
+  place-items: center;
+  height: 32px;
+  border: 1px solid var(--line2);
+  color: var(--rose-light);
+  font: 12px var(--serif);
+}
+.quest-archive-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 16px 24px;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+}
+.quest-archive-body > div {flex: 1 1 260px; min-width: 0}
+.quest-archive-body :is(ol, ul) {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.quest-archive-body li + li {margin-top: 6px}
+.quest-archive-body li::marker {color: var(--rose-light)}
+.quest-archive-body li strong {color: var(--cream)}
+.quest-archive-body figure {
+  width: min(100%, 220px);
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #140d0f;
+}
+.quest-archive-body figure.quest-archive-portrait {width: min(100%, 128px)}
+.quest-archive-body img {display: block; width: 100%; height: auto}
+.quest-archive-body figcaption {padding: 6px 8px; font-size: 10px; color: var(--muted)}
+
+@media(max-width:980px){.quest-catalog{grid-template-columns:repeat(2,minmax(0,1fr))}.quest-guide{grid-template-columns:1fr}.quest-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;border-right:0;border-bottom:1px solid var(--line)}.quest-gallery figure{margin:0}}
+@media (max-width: 850px) {
+  .secret-quest-card {grid-template-columns: 1fr}
+}
 @media(max-width:700px){.quests-page{padding-top:25px}.quest-library-heading,.quest-entry-header{display:block}.quest-library-heading>p{margin-top:12px}.quest-catalog{grid-template-columns:1fr}.quest-entry-meta{justify-content:flex-start;margin-top:16px}.quest-gallery{grid-template-columns:1fr}.quest-copy{padding:25px 19px 31px}.quest-requirement-grid,.quest-material-grid{grid-template-columns:1fr}.quest-steps li{grid-template-columns:1fr;gap:8px}.quest-help{padding:18px}}
+@media (max-width: 700px) {
+  .treasure-clues, .treasure-stones {grid-template-columns: 1fr}
+  .treasure-stone-order {grid-template-columns: repeat(2, minmax(0, 1fr))}
+}
+@media (max-width: 480px) {
+  .treasure-map-card {grid-template-columns: 1fr}
+  .treasure-map-card img {max-width: 195px; justify-self: center}
+  .treasure-clues li {grid-template-columns: 76px minmax(0, 1fr); gap: 10px}
+}

@@ -36,10 +36,9 @@
   }
 
   function updateActiveStates(){
-    const route=location.hash.slice(1);
     dropdowns.forEach(dropdown=>{
       const button=dropdown.querySelector('.schedule-menu-button');
-      const active=[...dropdown.querySelectorAll('[data-route]')].some(link=>link.dataset.route===route);
+      const active=dropdown.querySelector('[data-route][aria-current="page"]');
       if(active)button.setAttribute('aria-current','page');
       else button.removeAttribute('aria-current');
     });
