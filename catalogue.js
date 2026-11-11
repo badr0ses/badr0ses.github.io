@@ -451,7 +451,10 @@
     byId('result-count').textContent = 'Opening the catalogue…';
     byId('catalogue-retry').hidden = true;
     try {
-      const [dataResponse, metaResponse, variantsResponse] = await Promise.all([fetch('data/database.json?v=morgan-photo-1'), fetch('data/catalogue-meta.json?v=morgan-photo-1'),fetch('data/catalogue-variants.json?v=morgan-photo-1')]);
+      const [dataResponse, metaResponse, variantsResponse] = await Promise.all(
+        ['data/database.json?v=morgan-photo-1', 'data/catalogue-meta.json?v=morgan-photo-1', 'data/catalogue-variants.json?v=morgan-photo-1']
+          .map(url => fetch(url, { cache: 'no-store' }))
+      );
       if (!dataResponse.ok || !metaResponse.ok || !variantsResponse.ok) throw new Error('Could not load catalogue');
       const [data, meta, variants] = await Promise.all([dataResponse.json(), metaResponse.json(),variantsResponse.json()]);
       variantGroups = variants;
