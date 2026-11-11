@@ -1,0 +1,399 @@
+{
+  "styles": {
+    "1": {
+      "name": "Layered shoulder-length hair",
+      "length": "Medium"
+    },
+    "2": {
+      "name": "Side-parted bob",
+      "length": "Short"
+    },
+    "3": {
+      "name": "Asymmetric sidecut bob",
+      "length": "Short"
+    },
+    "4": {
+      "name": "Side-parted fringed bob",
+      "length": "Short"
+    },
+    "5": {
+      "name": "Spiky punk hair",
+      "length": "Short"
+    },
+    "6": {
+      "name": "Thick dreadlocks",
+      "length": "Long"
+    },
+    "7": {
+      "name": "Short ponytail",
+      "length": "Short"
+    },
+    "8": {
+      "name": "Thin dreadlocks",
+      "length": "Long"
+    },
+    "9": {
+      "name": "Pigtails with blunt bangs",
+      "length": "Medium"
+    },
+    "10": {
+      "name": "Wavy bob with bun",
+      "length": "Short"
+    },
+    "11": {
+      "name": "Broad ponytail with side fringe",
+      "length": "Long"
+    },
+    "12": {
+      "name": "Single braided ponytail",
+      "length": "Long"
+    },
+    "13": {
+      "name": "Braided pigtails with bangs",
+      "length": "Long"
+    },
+    "14": {
+      "name": "Long side-swept hair",
+      "length": "Long"
+    },
+    "15": {
+      "name": "Ponytail with blunt bangs",
+      "length": "Long"
+    },
+    "16": {
+      "name": "Dreadlocks with side fringe",
+      "length": "Medium"
+    },
+    "17": {
+      "name": "Left-parted fringed bob",
+      "length": "Short"
+    },
+    "18": {
+      "name": "Long centre-parted hair",
+      "length": "Long"
+    },
+    "19": {
+      "name": "Pageboy bob",
+      "length": "Short"
+    },
+    "20": {
+      "name": "Side-parted wavy hair",
+      "length": "Long"
+    },
+    "21": {
+      "name": "Long straight hair",
+      "length": "Long"
+    },
+    "22": {
+      "name": "Layered ponytail with fringe",
+      "length": "Long"
+    },
+    "23": {
+      "name": "Long braided ponytail",
+      "length": "Long"
+    },
+    "24": {
+      "name": "Side braid with ponytail",
+      "length": "Long"
+    },
+    "31": {
+      "name": "Braided half-updo",
+      "length": "Long"
+    },
+    "32": {
+      "name": "Half-updo with side braid",
+      "length": "Long"
+    },
+    "33": {
+      "name": "JoJo Siwa hairstyle with bow",
+      "length": "Long"
+    },
+    "34": {
+      "name": "Short wavy bob",
+      "length": "Short"
+    }
+  },
+  "palettes": {
+    "1": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Magenta",
+      "Light brown",
+      "White",
+      "Burgundy",
+      "Strawberry blonde"
+    ],
+    "2": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "White with pink fringe",
+      "Golden brown",
+      "Red",
+      "Platinum blonde",
+      "Light brown",
+      "Turquoise",
+      "Dark brown"
+    ],
+    "3": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Black with purple streaks",
+      "White",
+      "Red",
+      "White with turquoise streaks",
+      "Strawberry blonde",
+      null,
+      "Midnight blue"
+    ],
+    "4": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Black with red streaks",
+      "Red",
+      "White",
+      "Strawberry blonde",
+      "Light brown"
+    ],
+    "5": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Black with purple streaks",
+      "White",
+      "White with mint tips",
+      "Red",
+      "Blue"
+    ],
+    "6": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Black with turquoise streaks",
+      "Red",
+      "White",
+      "Strawberry blonde",
+      "Golden brown"
+    ],
+    "7": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Lavender and pink",
+      "White",
+      "Red",
+      "Light brown",
+      "Strawberry blonde"
+    ],
+    "8": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Black with purple streaks",
+      "White",
+      "Red",
+      "Light brown",
+      "Turquoise and pink"
+    ],
+    "9": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Mint green",
+      "White",
+      "Red",
+      "Golden brown",
+      "Strawberry blonde"
+    ],
+    "10": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "White",
+      "Golden brown",
+      "Red",
+      "Lavender",
+      "Golden blonde"
+    ],
+    "11": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Mint green",
+      "White",
+      "Red",
+      "Light brown",
+      "Strawberry blonde",
+      "Purple"
+    ],
+    "12": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Lavender and pink",
+      "White",
+      "Red",
+      "Light brown",
+      "Strawberry blonde",
+      "Turquoise"
+    ],
+    "14": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Red",
+      "White",
+      "Purple",
+      "Blue",
+      "Light brown",
+      "Pink and turquoise stripes",
+      "Copper",
+      "Midnight blue"
+    ],
+    "15": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Blue",
+      "Green",
+      "White",
+      "Red",
+      "Dark brown",
+      "White with mint tips",
+      "Purple",
+      "White with blue fringe"
+    ],
+    "16": {
+      "2": "Blonde",
+      "4": "Golden brown with blonde fringe",
+      "6": "Black with purple fringe",
+      "8": "Black with red fringe",
+      "10": "Black with magenta streaks"
+    },
+    "20": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Red",
+      "White",
+      "Light brown",
+      "White with mint tips",
+      "White with lavender tips",
+      "Pink and purple ombre",
+      "Green"
+    ],
+    "21": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Red",
+      "Platinum blonde",
+      "Brown and blonde stripes",
+      "Black with red streaks",
+      "White and green stripes",
+      "Blue and green ombre",
+      "Black with pink streaks"
+    ],
+    "22": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Red",
+      "Platinum blonde"
+    ],
+    "23": [
+      "Brown",
+      "Ginger",
+      "Blonde",
+      "Black",
+      "Pink",
+      "Red",
+      "Platinum blonde"
+    ],
+    "24": [
+      "Magenta",
+      "Copper",
+      "Midnight blue",
+      "Brown",
+      "Blonde"
+    ],
+    "31": [
+      "Black",
+      "Dark brown",
+      "Light brown",
+      "Magenta",
+      "Ginger",
+      "Blonde"
+    ],
+    "32": [
+      "Black",
+      "Dark brown",
+      "Light brown",
+      "Magenta",
+      "Ginger",
+      "Blonde"
+    ],
+    "33": [
+      "Strawberry blonde",
+      null,
+      "Platinum blonde",
+      "Ash blonde",
+      "Black",
+      "Ginger",
+      "Brown",
+      "Burgundy",
+      "Light brown",
+      "Pink",
+      "Turquoise"
+    ],
+    "34": [
+      "Blonde",
+      null,
+      "Ginger",
+      "Burgundy",
+      "Light brown",
+      "Dark brown",
+      "Midnight blue",
+      "Silver with blue tips",
+      "Green",
+      "Purple"
+    ]
+  }
+}

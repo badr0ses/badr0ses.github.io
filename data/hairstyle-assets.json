@@ -1,0 +1,2704 @@
+{
+  "photos": [
+    {
+      "key": "H001",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181805.png",
+      "model": 11,
+      "material": "Hair_11",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 568,
+        "height": 563,
+        "sourceWidth": 568,
+        "sourceHeight": 563
+      }
+    },
+    {
+      "key": "H002",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181812.png",
+      "model": 11,
+      "material": "Hair_11_01",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 528,
+        "height": 593,
+        "sourceWidth": 528,
+        "sourceHeight": 593
+      }
+    },
+    {
+      "key": "H003",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181816.png",
+      "model": 11,
+      "material": "Hair_11_02",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 525,
+        "height": 578,
+        "sourceWidth": 525,
+        "sourceHeight": 578
+      }
+    },
+    {
+      "key": "H004",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181820.png",
+      "model": 11,
+      "material": "Hair_11_03",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 511,
+        "height": 615,
+        "sourceWidth": 511,
+        "sourceHeight": 615
+      }
+    },
+    {
+      "key": "H005",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181824.png",
+      "model": 11,
+      "material": "Hair_11_04",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 554,
+        "height": 600,
+        "sourceWidth": 554,
+        "sourceHeight": 600
+      }
+    },
+    {
+      "key": "H006",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181828.png",
+      "model": 11,
+      "material": "Hair_11_05",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 468,
+        "height": 602,
+        "sourceWidth": 468,
+        "sourceHeight": 602
+      }
+    },
+    {
+      "key": "H007",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181832.png",
+      "model": 11,
+      "material": "Hair_11_06",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 498,
+        "height": 582,
+        "sourceWidth": 498,
+        "sourceHeight": 582
+      }
+    },
+    {
+      "key": "H008",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181836.png",
+      "model": 11,
+      "material": "Hair_11_07",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 488,
+        "height": 586,
+        "sourceWidth": 488,
+        "sourceHeight": 586
+      }
+    },
+    {
+      "key": "H009",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181839.png",
+      "model": 11,
+      "material": "Hair_11_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 503,
+        "height": 598,
+        "sourceWidth": 503,
+        "sourceHeight": 598
+      }
+    },
+    {
+      "key": "H010",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181842.png",
+      "model": 11,
+      "material": "Hair_11_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 491,
+        "height": 622,
+        "sourceWidth": 491,
+        "sourceHeight": 622
+      }
+    },
+    {
+      "key": "H011",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181846.png",
+      "model": 7,
+      "material": "Hair_7",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 386,
+        "height": 411,
+        "sourceWidth": 386,
+        "sourceHeight": 411
+      }
+    },
+    {
+      "key": "H012",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181850.png",
+      "model": 7,
+      "material": "Hair_7_01",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 422,
+        "height": 404,
+        "sourceWidth": 422,
+        "sourceHeight": 404
+      }
+    },
+    {
+      "key": "H013",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181853.png",
+      "model": 7,
+      "material": "Hair_7_02",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 412,
+        "height": 431,
+        "sourceWidth": 412,
+        "sourceHeight": 431
+      }
+    },
+    {
+      "key": "H014",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181856.png",
+      "model": 7,
+      "material": "Hair_7_03",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 412,
+        "height": 403,
+        "sourceWidth": 412,
+        "sourceHeight": 403
+      }
+    },
+    {
+      "key": "H015",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181900.png",
+      "model": 7,
+      "material": "Hair_7_04",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 438,
+        "height": 440,
+        "sourceWidth": 438,
+        "sourceHeight": 440
+      }
+    },
+    {
+      "key": "H016",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181902.png",
+      "model": 7,
+      "material": "Hair_7_05",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 423,
+        "sourceWidth": 390,
+        "sourceHeight": 423
+      }
+    },
+    {
+      "key": "H017",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181906.png",
+      "model": 7,
+      "material": "Hair_7_06",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 372,
+        "height": 414,
+        "sourceWidth": 372,
+        "sourceHeight": 414
+      }
+    },
+    {
+      "key": "H018",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181910.png",
+      "model": 7,
+      "material": "Hair_7_07",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 451,
+        "height": 456,
+        "sourceWidth": 451,
+        "sourceHeight": 456
+      }
+    },
+    {
+      "key": "H019",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181913.png",
+      "model": 7,
+      "material": "Hair_7_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 457,
+        "height": 443,
+        "sourceWidth": 457,
+        "sourceHeight": 443
+      }
+    },
+    {
+      "key": "H020",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181916.png",
+      "model": 7,
+      "material": "Hair_7_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 432,
+        "height": 452,
+        "sourceWidth": 432,
+        "sourceHeight": 452
+      }
+    },
+    {
+      "key": "H021",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181925.png",
+      "model": 13,
+      "material": "Hair_12_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 489,
+        "height": 611,
+        "sourceWidth": 489,
+        "sourceHeight": 611
+      }
+    },
+    {
+      "key": "H022",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 181930.png",
+      "model": 13,
+      "material": "Hair_12_06",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 403,
+        "height": 571,
+        "sourceWidth": 403,
+        "sourceHeight": 571
+      }
+    },
+    {
+      "key": "H023",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182001.png",
+      "model": 9,
+      "material": "Hair_9_05",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 422,
+        "height": 461,
+        "sourceWidth": 422,
+        "sourceHeight": 461
+      }
+    },
+    {
+      "key": "H024",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182005.png",
+      "model": 9,
+      "material": "Hair_9_06",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 439,
+        "height": 484,
+        "sourceWidth": 439,
+        "sourceHeight": 484
+      }
+    },
+    {
+      "key": "H025",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182008.png",
+      "model": 9,
+      "material": "Hair_9_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 435,
+        "height": 468,
+        "sourceWidth": 435,
+        "sourceHeight": 468
+      }
+    },
+    {
+      "key": "H026",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182012.png",
+      "model": 9,
+      "material": "Hair_9_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 486,
+        "height": 468,
+        "sourceWidth": 486,
+        "sourceHeight": 468
+      }
+    },
+    {
+      "key": "H027",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182016.png",
+      "model": 11,
+      "material": "Hair_11_06",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 478,
+        "height": 486,
+        "sourceWidth": 478,
+        "sourceHeight": 486
+      }
+    },
+    {
+      "key": "H028",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182019.png",
+      "model": 11,
+      "material": "Hair_11_07",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 461,
+        "height": 485,
+        "sourceWidth": 461,
+        "sourceHeight": 485
+      }
+    },
+    {
+      "key": "H029",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182142.png",
+      "model": 11,
+      "material": "Hair_11_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 422,
+        "height": 490,
+        "sourceWidth": 422,
+        "sourceHeight": 490
+      }
+    },
+    {
+      "key": "H030",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182146.png",
+      "model": 11,
+      "material": "Hair_11_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 490,
+        "height": 518,
+        "sourceWidth": 490,
+        "sourceHeight": 518
+      }
+    },
+    {
+      "key": "H031",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182149.png",
+      "model": 6,
+      "material": "Hair_6_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 532,
+        "height": 499,
+        "sourceWidth": 532,
+        "sourceHeight": 499
+      }
+    },
+    {
+      "key": "H032",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182153.png",
+      "model": 6,
+      "material": "Hair_6_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 484,
+        "height": 510,
+        "sourceWidth": 484,
+        "sourceHeight": 510
+      }
+    },
+    {
+      "key": "H033",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182201.png",
+      "model": 12,
+      "material": "Hair_12_05",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 482,
+        "height": 642,
+        "sourceWidth": 482,
+        "sourceHeight": 642
+      }
+    },
+    {
+      "key": "H034",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182303.png",
+      "model": 12,
+      "material": "Hair_12_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 519,
+        "height": 668,
+        "sourceWidth": 519,
+        "sourceHeight": 668
+      }
+    },
+    {
+      "key": "H035",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182307.png",
+      "model": 7,
+      "material": "Hair_7_07",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 475,
+        "height": 667,
+        "sourceWidth": 475,
+        "sourceHeight": 667
+      }
+    },
+    {
+      "key": "H036",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182312.png",
+      "model": 7,
+      "material": "Hair_7_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 494,
+        "height": 629,
+        "sourceWidth": 494,
+        "sourceHeight": 629
+      }
+    },
+    {
+      "key": "H037",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182318.png",
+      "model": 1,
+      "material": "Hair_1_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 583,
+        "height": 613,
+        "sourceWidth": 583,
+        "sourceHeight": 613
+      }
+    },
+    {
+      "key": "H038",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182321.png",
+      "model": 1,
+      "material": "Hair_1_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 542,
+        "height": 580,
+        "sourceWidth": 542,
+        "sourceHeight": 580
+      }
+    },
+    {
+      "key": "H039",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182324.png",
+      "model": 1,
+      "material": "Hair_1_05",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 492,
+        "height": 554,
+        "sourceWidth": 492,
+        "sourceHeight": 554
+      }
+    },
+    {
+      "key": "H040",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182335.png",
+      "model": 2,
+      "material": "Hair_2_05",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 456,
+        "height": 477,
+        "sourceWidth": 456,
+        "sourceHeight": 477
+      }
+    },
+    {
+      "key": "H041",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182338.png",
+      "model": 2,
+      "material": "Hair_2_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 447,
+        "height": 441,
+        "sourceWidth": 447,
+        "sourceHeight": 441
+      }
+    },
+    {
+      "key": "H042",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182342.png",
+      "model": 2,
+      "material": "Hair_2_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 484,
+        "height": 478,
+        "sourceWidth": 484,
+        "sourceHeight": 478
+      }
+    },
+    {
+      "key": "H043",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182345.png",
+      "model": 5,
+      "material": "Hair_5_05",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 544,
+        "height": 527,
+        "sourceWidth": 544,
+        "sourceHeight": 527
+      }
+    },
+    {
+      "key": "H044",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182349.png",
+      "model": 5,
+      "material": "Hair_5_07",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 578,
+        "height": 558,
+        "sourceWidth": 578,
+        "sourceHeight": 558
+      }
+    },
+    {
+      "key": "H045",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182352.png",
+      "model": 5,
+      "material": "Hair_5_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 460,
+        "height": 500,
+        "sourceWidth": 460,
+        "sourceHeight": 500
+      }
+    },
+    {
+      "key": "H046",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182355.png",
+      "model": 4,
+      "material": "Hair_4_07",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 477,
+        "height": 535,
+        "sourceWidth": 477,
+        "sourceHeight": 535
+      }
+    },
+    {
+      "key": "H047",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182358.png",
+      "model": 4,
+      "material": "Hair_4_08",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 441,
+        "height": 536,
+        "sourceWidth": 441,
+        "sourceHeight": 536
+      }
+    },
+    {
+      "key": "H048",
+      "image": "assets/HAIRSTYLES/cape west fishing village/Screenshot 2026-11-11 182402.png",
+      "model": 4,
+      "material": "Hair_4_09",
+      "location": "Cape West Fishing Village",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 423,
+        "height": 496,
+        "sourceWidth": 423,
+        "sourceHeight": 496
+      }
+    },
+    {
+      "key": "H049",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183211.png",
+      "model": 24,
+      "material": "Hair_24",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 319,
+        "height": 366,
+        "sourceWidth": 319,
+        "sourceHeight": 366
+      }
+    },
+    {
+      "key": "H050",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183337.png",
+      "model": 24,
+      "material": "Hair_24_01",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 322,
+        "height": 373,
+        "sourceWidth": 322,
+        "sourceHeight": 373
+      }
+    },
+    {
+      "key": "H051",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183340.png",
+      "model": 24,
+      "material": "Hair_24_02",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 257,
+        "height": 324,
+        "sourceWidth": 257,
+        "sourceHeight": 324
+      }
+    },
+    {
+      "key": "H052",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183343.png",
+      "model": 24,
+      "material": "Hair_24_03",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 269,
+        "height": 380,
+        "sourceWidth": 269,
+        "sourceHeight": 380
+      }
+    },
+    {
+      "key": "H053",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183347.png",
+      "model": 24,
+      "material": "Hair_24_04",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 333,
+        "height": 340,
+        "sourceWidth": 333,
+        "sourceHeight": 340
+      }
+    },
+    {
+      "key": "H054",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183358.png",
+      "model": 31,
+      "material": "Hair_31",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 446,
+        "height": 569,
+        "sourceWidth": 446,
+        "sourceHeight": 569
+      }
+    },
+    {
+      "key": "H055",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183401.png",
+      "model": 31,
+      "material": "Hair_31_01",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 505,
+        "height": 574,
+        "sourceWidth": 505,
+        "sourceHeight": 574
+      }
+    },
+    {
+      "key": "H056",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183405.png",
+      "model": 31,
+      "material": "Hair_31_02",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 458,
+        "height": 568,
+        "sourceWidth": 458,
+        "sourceHeight": 568
+      }
+    },
+    {
+      "key": "H057",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183408.png",
+      "model": 31,
+      "material": "Hair_31_03",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 479,
+        "height": 580,
+        "sourceWidth": 479,
+        "sourceHeight": 580
+      }
+    },
+    {
+      "key": "H058",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183412.png",
+      "model": 31,
+      "material": "Hair_31_04",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 503,
+        "height": 563,
+        "sourceWidth": 503,
+        "sourceHeight": 563
+      }
+    },
+    {
+      "key": "H059",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183416.png",
+      "model": 31,
+      "material": "Hair_31_05",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 406,
+        "height": 611,
+        "sourceWidth": 406,
+        "sourceHeight": 611
+      }
+    },
+    {
+      "key": "H060",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183423.png",
+      "model": 32,
+      "material": "Hair_32",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 429,
+        "height": 578,
+        "sourceWidth": 429,
+        "sourceHeight": 578
+      }
+    },
+    {
+      "key": "H061",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183427.png",
+      "model": 32,
+      "material": "Hair_32_01",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 436,
+        "height": 582,
+        "sourceWidth": 436,
+        "sourceHeight": 582
+      }
+    },
+    {
+      "key": "H062",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183431.png",
+      "model": 32,
+      "material": "Hair_32_01",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 437,
+        "height": 577,
+        "sourceWidth": 437,
+        "sourceHeight": 577
+      }
+    },
+    {
+      "key": "H063",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183441.png",
+      "model": 32,
+      "material": "Hair_32_02",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 387,
+        "height": 540,
+        "sourceWidth": 387,
+        "sourceHeight": 540
+      }
+    },
+    {
+      "key": "H064",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183446.png",
+      "model": 32,
+      "material": "Hair_32_03",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 423,
+        "height": 549,
+        "sourceWidth": 423,
+        "sourceHeight": 549
+      }
+    },
+    {
+      "key": "H065",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183449.png",
+      "model": 32,
+      "material": "Hair_32_04",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 366,
+        "height": 553,
+        "sourceWidth": 366,
+        "sourceHeight": 553
+      }
+    },
+    {
+      "key": "H066",
+      "image": "assets/HAIRSTYLES/dundull/Screenshot 2026-11-11 183452.png",
+      "model": 32,
+      "material": "Hair_32_05",
+      "location": "Dundull",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 441,
+        "height": 574,
+        "sourceWidth": 441,
+        "sourceHeight": 574
+      }
+    },
+    {
+      "key": "H067",
+      "image": "assets/HAIRSTYLES/fort pinta/0k4129h.png",
+      "model": 1,
+      "material": "Hair_1",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 744,
+        "height": 675,
+        "sourceWidth": 744,
+        "sourceHeight": 675
+      }
+    },
+    {
+      "key": "H068",
+      "image": "assets/HAIRSTYLES/fort pinta/1brmsv9.png",
+      "model": 15,
+      "material": "Hair_15_07",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 651,
+        "height": 723,
+        "sourceWidth": 651,
+        "sourceHeight": 723
+      }
+    },
+    {
+      "key": "H069",
+      "image": "assets/HAIRSTYLES/fort pinta/22kjh7d.png",
+      "model": 3,
+      "material": "Hair_3_02",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 766,
+        "height": 681,
+        "sourceWidth": 766,
+        "sourceHeight": 681
+      }
+    },
+    {
+      "key": "H070",
+      "image": "assets/HAIRSTYLES/fort pinta/2408753.png",
+      "model": 15,
+      "material": "Hair_15_02",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 610,
+        "height": 699,
+        "sourceWidth": 610,
+        "sourceHeight": 699
+      }
+    },
+    {
+      "key": "H071",
+      "image": "assets/HAIRSTYLES/fort pinta/2wt3htv.png",
+      "model": 3,
+      "material": "Hair_3_09",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 706,
+        "height": 689,
+        "sourceWidth": 706,
+        "sourceHeight": 689
+      }
+    },
+    {
+      "key": "H072",
+      "image": "assets/HAIRSTYLES/fort pinta/3p6699m.png",
+      "model": 1,
+      "material": "Hair_1",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 763,
+        "height": 722,
+        "sourceWidth": 763,
+        "sourceHeight": 722
+      }
+    },
+    {
+      "key": "H073",
+      "image": "assets/HAIRSTYLES/fort pinta/48xd6fw.png",
+      "model": 15,
+      "material": "Hair_15_05",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 670,
+        "height": 734,
+        "sourceWidth": 670,
+        "sourceHeight": 734
+      }
+    },
+    {
+      "key": "H074",
+      "image": "assets/HAIRSTYLES/fort pinta/5ntvxbv.png",
+      "model": 3,
+      "material": "Hair_3_04",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 708,
+        "height": 700,
+        "sourceWidth": 708,
+        "sourceHeight": 700
+      }
+    },
+    {
+      "key": "H075",
+      "image": "assets/HAIRSTYLES/fort pinta/5qsr90f.png",
+      "model": 15,
+      "material": "Hair_15_03",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 627,
+        "height": 706,
+        "sourceWidth": 627,
+        "sourceHeight": 706
+      }
+    },
+    {
+      "key": "H076",
+      "image": "assets/HAIRSTYLES/fort pinta/5wmq2bp.png",
+      "model": 3,
+      "material": "Hair_3_06",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 771,
+        "height": 680,
+        "sourceWidth": 771,
+        "sourceHeight": 680
+      }
+    },
+    {
+      "key": "H077",
+      "image": "assets/HAIRSTYLES/fort pinta/9zr02wv.png",
+      "model": 3,
+      "material": "Hair_3_03",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 709,
+        "height": 673,
+        "sourceWidth": 709,
+        "sourceHeight": 673
+      }
+    },
+    {
+      "key": "H078",
+      "image": "assets/HAIRSTYLES/fort pinta/b4dwz2k.png",
+      "model": 15,
+      "material": "Hair_15_06",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 699,
+        "height": 735,
+        "sourceWidth": 699,
+        "sourceHeight": 735
+      }
+    },
+    {
+      "key": "H079",
+      "image": "assets/HAIRSTYLES/fort pinta/dfxzxvs.png",
+      "model": 3,
+      "material": "Hair_3_08",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 707,
+        "height": 686,
+        "sourceWidth": 707,
+        "sourceHeight": 686
+      }
+    },
+    {
+      "key": "H080",
+      "image": "assets/HAIRSTYLES/fort pinta/f7zm3vz.png",
+      "model": 1,
+      "material": "Hair_1_01",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 735,
+        "height": 659,
+        "sourceWidth": 735,
+        "sourceHeight": 659
+      }
+    },
+    {
+      "key": "H081",
+      "image": "assets/HAIRSTYLES/fort pinta/h1hf00p.png",
+      "model": 3,
+      "material": "Hair_3_07",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 728,
+        "height": 657,
+        "sourceWidth": 728,
+        "sourceHeight": 657
+      }
+    },
+    {
+      "key": "H082",
+      "image": "assets/HAIRSTYLES/fort pinta/jmtk04n.png",
+      "model": 15,
+      "material": "Hair_15_08",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 664,
+        "height": 715,
+        "sourceWidth": 664,
+        "sourceHeight": 715
+      }
+    },
+    {
+      "key": "H083",
+      "image": "assets/HAIRSTYLES/fort pinta/k8tkbvt.png",
+      "model": 15,
+      "material": "Hair_15",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 645,
+        "height": 714,
+        "sourceWidth": 645,
+        "sourceHeight": 714
+      }
+    },
+    {
+      "key": "H084",
+      "image": "assets/HAIRSTYLES/fort pinta/mxfjw7s.png",
+      "model": 3,
+      "material": "Hair_3",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 709,
+        "height": 651,
+        "sourceWidth": 709,
+        "sourceHeight": 651
+      }
+    },
+    {
+      "key": "H085",
+      "image": "assets/HAIRSTYLES/fort pinta/p435pq7.png",
+      "model": 15,
+      "material": "Hair_15_01",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 644,
+        "height": 707,
+        "sourceWidth": 644,
+        "sourceHeight": 707
+      }
+    },
+    {
+      "key": "H086",
+      "image": "assets/HAIRSTYLES/fort pinta/pk2jrhs.png",
+      "model": 2,
+      "material": "Hair_2_05",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 727,
+        "height": 704,
+        "sourceWidth": 727,
+        "sourceHeight": 704
+      }
+    },
+    {
+      "key": "H087",
+      "image": "assets/HAIRSTYLES/fort pinta/ps2qq2p.png",
+      "model": 1,
+      "material": "Hair_1_05",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 701,
+        "height": 673,
+        "sourceWidth": 701,
+        "sourceHeight": 673
+      }
+    },
+    {
+      "key": "H088",
+      "image": "assets/HAIRSTYLES/fort pinta/qkdshdm.png",
+      "model": 15,
+      "material": "Hair_15_04",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 660,
+        "height": 725,
+        "sourceWidth": 660,
+        "sourceHeight": 725
+      }
+    },
+    {
+      "key": "H089",
+      "image": "assets/HAIRSTYLES/fort pinta/t9rhmq3.png",
+      "model": 2,
+      "material": "Hair_2",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 741,
+        "height": 714,
+        "sourceWidth": 741,
+        "sourceHeight": 714
+      }
+    },
+    {
+      "key": "H090",
+      "image": "assets/HAIRSTYLES/fort pinta/vk42jpx.png",
+      "model": 2,
+      "material": "Hair_2_04",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 707,
+        "height": 692,
+        "sourceWidth": 707,
+        "sourceHeight": 692
+      }
+    },
+    {
+      "key": "H091",
+      "image": "assets/HAIRSTYLES/fort pinta/vmsds3r.png",
+      "model": 3,
+      "material": "Hair_3_05",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 758,
+        "height": 721,
+        "sourceWidth": 758,
+        "sourceHeight": 721
+      }
+    },
+    {
+      "key": "H092",
+      "image": "assets/HAIRSTYLES/fort pinta/vtq2352.png",
+      "model": 1,
+      "material": "Hair_1_02",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 717,
+        "height": 646,
+        "sourceWidth": 717,
+        "sourceHeight": 646
+      }
+    },
+    {
+      "key": "H093",
+      "image": "assets/HAIRSTYLES/fort pinta/wpkwhfn.png",
+      "model": 15,
+      "material": "Hair_15_09",
+      "location": "Fort Pinta",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 643,
+        "height": 711,
+        "sourceWidth": 643,
+        "sourceHeight": 711
+      }
+    },
+    {
+      "key": "H094",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173317.png",
+      "model": 18,
+      "material": "Hair_1",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H095",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173329.png",
+      "model": 18,
+      "material": "Hair_1_02",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H096",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173340.png",
+      "model": 18,
+      "material": "Hair_1_04",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H097",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173347.png",
+      "model": 18,
+      "material": "Hair_1_06",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H098",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173352.png",
+      "model": 18,
+      "material": "Hair_1_08",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H099",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173357.png",
+      "model": 18,
+      "material": "Hair_1_05",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H100",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173402.png",
+      "model": 20,
+      "material": "Hair_20_02",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H101",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173412.png",
+      "model": 20,
+      "material": "Hair_20_03",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H102",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173418.png",
+      "model": 20,
+      "material": "Hair_20_05",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H103",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173422.png",
+      "model": 20,
+      "material": "Hair_20_06",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H104",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173427.png",
+      "model": 20,
+      "material": "Hair_20_09",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H105",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173434.png",
+      "model": 20,
+      "material": "Hair_20_11",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H106",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173439.png",
+      "model": 21,
+      "material": "Hair_21",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H107",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173447.png",
+      "model": 21,
+      "material": "Hair_21_01",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H108",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173451.png",
+      "model": 21,
+      "material": "Hair_21_02",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H109",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173457.png",
+      "model": 21,
+      "material": "Hair_21_03",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H110",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173501.png",
+      "model": 21,
+      "material": "Hair_21_04",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H111",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173507.png",
+      "model": 21,
+      "material": "Hair_21_05",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H112",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173518.png",
+      "model": 22,
+      "material": "Hair_22_06",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H113",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173523.png",
+      "model": 22,
+      "material": "Hair_22",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H114",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173527.png",
+      "model": 22,
+      "material": "Hair_22_01",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H115",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173533.png",
+      "model": 22,
+      "material": "Hair_22_02",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H116",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173538.png",
+      "model": 22,
+      "material": "Hair_22_03",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H117",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173549.png",
+      "model": 22,
+      "material": "Hair_22_05",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H118",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173752.png",
+      "model": 16,
+      "material": "Hair_16_02",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H119",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173930.png",
+      "model": 16,
+      "material": "Hair_16_02",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H120",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173934.png",
+      "model": 16,
+      "material": "Hair_16_04",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1918,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H121",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173940.png",
+      "model": 16,
+      "material": "Hair_16_06",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H122",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173954.png",
+      "model": 16,
+      "material": "Hair_16_08",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H123",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_173959.png",
+      "model": 19,
+      "material": "Hair_14_10",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H124",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174005.png",
+      "model": 20,
+      "material": "Hair_20_09",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H125",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174009.png",
+      "model": 20,
+      "material": "Hair_20_10",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H126",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174018.png",
+      "model": 15,
+      "material": "Hair_15_11",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1918,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H127",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174030.png",
+      "model": 15,
+      "material": "Hair_15_12",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H128",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174037.png",
+      "model": 21,
+      "material": "Hair_21_06",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 911,
+        "y": 361,
+        "width": 484,
+        "height": 561,
+        "sourceWidth": 1897,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H129",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174109.png",
+      "model": 21,
+      "material": "Hair_21_08",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H130",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174115.png",
+      "model": 21,
+      "material": "Hair_21_09",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H131",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174124.png",
+      "model": 21,
+      "material": "Hair_21_10",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1078
+      }
+    },
+    {
+      "key": "H132",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174131.png",
+      "model": 22,
+      "material": "Hair_22_04",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H133",
+      "image": "assets/HAIRSTYLES/jarlaheim/Screenshot_2026-11-11_174136.png",
+      "model": 22,
+      "material": "Hair_22_06",
+      "location": "Jarlaheim",
+      "frame": {
+        "x": 921,
+        "y": 361,
+        "width": 489,
+        "height": 561,
+        "sourceWidth": 1918,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H134",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172423.png",
+      "model": 1,
+      "material": "Hair_1",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H135",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172430.png",
+      "model": 1,
+      "material": "Hair_1_01",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H136",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172435.png",
+      "model": 1,
+      "material": "Hair_1_02",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H137",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172441.png",
+      "model": 1,
+      "material": "Hair_1_04",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H138",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172455.png",
+      "model": 1,
+      "material": "Hair_1_06",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H139",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172500.png",
+      "model": 1,
+      "material": "Hair_1_07",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H140",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172607.png",
+      "model": 2,
+      "material": "Hair_2",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 377,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1078
+      }
+    },
+    {
+      "key": "H141",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172613.png",
+      "model": 2,
+      "material": "Hair_2_01",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H142",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172624.png",
+      "model": 2,
+      "material": "Hair_2_02",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H143",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172634.png",
+      "model": 2,
+      "material": "Hair_2_03",
+      "location": "Silverglade",
+      "frame": {
+        "x": 850,
+        "y": 378,
+        "width": 449,
+        "height": 507,
+        "sourceWidth": 1911,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H144",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172642.png",
+      "model": 2,
+      "material": "Hair_2_04",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H145",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172652.png",
+      "model": 3,
+      "material": "Hair_3",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H146",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172657.png",
+      "model": 3,
+      "material": "Hair_3_01",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H147",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172704.png",
+      "model": 4,
+      "material": "Hair_4",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H148",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172709.png",
+      "model": 4,
+      "material": "Hair_4_01",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H149",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172717.png",
+      "model": 4,
+      "material": "Hair_4_02",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H150",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172722.png",
+      "model": 4,
+      "material": "Hair_4_03",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H151",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172732.png",
+      "model": 4,
+      "material": "Hair_4_04",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H152",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172737.png",
+      "model": 4,
+      "material": "Hair_4_05",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H153",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_172742.png",
+      "model": 4,
+      "material": "Hair_4_06",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H154",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_174500.png",
+      "model": 12,
+      "material": "Hair_12",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H155",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_174505.png",
+      "model": 12,
+      "material": "Hair_12_01",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1918,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H156",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_174510.png",
+      "model": 12,
+      "material": "Hair_12_02",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H157",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_174514.png",
+      "model": 12,
+      "material": "Hair_12_03",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H158",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_174522.png",
+      "model": 12,
+      "material": "Hair_12_04",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H159",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_174527.png",
+      "model": 12,
+      "material": "Hair_12_06",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H160",
+      "image": "assets/HAIRSTYLES/silverglade/Screenshot_2026-11-11_174534.png",
+      "model": 12,
+      "material": "Hair_12_09",
+      "location": "Silverglade",
+      "frame": {
+        "x": 854,
+        "y": 378,
+        "width": 451,
+        "height": 507,
+        "sourceWidth": 1919,
+        "sourceHeight": 1079
+      }
+    },
+    {
+      "key": "H161",
+      "image": "assets/HAIRSTYLES/firgrove/0156FA2C-5461-4B5B-AD59-78935C3478F8.png",
+      "model": 19,
+      "material": "Hair_14_11",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 850,
+        "height": 854,
+        "sourceWidth": 850,
+        "sourceHeight": 854
+      }
+    },
+    {
+      "key": "H162",
+      "image": "assets/HAIRSTYLES/firgrove/13770B11-709A-4A0F-9691-ED7C26209B10.png",
+      "model": 17,
+      "material": "Hair_2_11",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 867,
+        "height": 752,
+        "sourceWidth": 867,
+        "sourceHeight": 752
+      }
+    },
+    {
+      "key": "H163",
+      "image": "assets/HAIRSTYLES/firgrove/3A3CEADE-65F0-43CC-9DF6-0158AC91D72E.png",
+      "model": 17,
+      "material": "Hair_2_03",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 932,
+        "height": 802,
+        "sourceWidth": 932,
+        "sourceHeight": 802
+      }
+    },
+    {
+      "key": "H164",
+      "image": "assets/HAIRSTYLES/firgrove/5C6628D5-E7BA-42F3-A88B-215D97334FDC.png",
+      "model": 19,
+      "material": "Hair_14_01",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 990,
+        "height": 861,
+        "sourceWidth": 990,
+        "sourceHeight": 861
+      }
+    },
+    {
+      "key": "H165",
+      "image": "assets/HAIRSTYLES/firgrove/66AD3AD3-D5E2-4B25-B0D1-63BC90ED00D9.png",
+      "model": 19,
+      "material": "Hair_14_03",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1010,
+        "height": 872,
+        "sourceWidth": 1010,
+        "sourceHeight": 872
+      }
+    },
+    {
+      "key": "H166",
+      "image": "assets/HAIRSTYLES/firgrove/7A11A786-4238-4C2F-807F-A19A10AE374A.png",
+      "model": 19,
+      "material": "Hair_14_05",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 1099,
+        "height": 924,
+        "sourceWidth": 1099,
+        "sourceHeight": 924
+      }
+    },
+    {
+      "key": "H167",
+      "image": "assets/HAIRSTYLES/firgrove/C5A04D96-4339-4183-859D-D4BF386562DA.png",
+      "model": 17,
+      "material": "Hair_2_07",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 973,
+        "height": 868,
+        "sourceWidth": 973,
+        "sourceHeight": 868
+      }
+    },
+    {
+      "key": "H168",
+      "image": "assets/HAIRSTYLES/firgrove/D505670F-54FB-42DC-920A-451925E6116E.png",
+      "model": 17,
+      "material": "Hair_2_05",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 879,
+        "height": 773,
+        "sourceWidth": 879,
+        "sourceHeight": 773
+      }
+    },
+    {
+      "key": "H169",
+      "image": "assets/HAIRSTYLES/firgrove/F1DE0546-A07F-4AF1-A671-54645836705F.png",
+      "model": 17,
+      "material": "Hair_2_01",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 888,
+        "height": 777,
+        "sourceWidth": 888,
+        "sourceHeight": 777
+      }
+    },
+    {
+      "key": "H170",
+      "image": "assets/HAIRSTYLES/firgrove/FB6467E0-C8AE-4AAC-A2F7-BA4957E5A2CA.png",
+      "model": 19,
+      "material": "Hair_14_07",
+      "location": "Firgrove",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 980,
+        "height": 876,
+        "sourceWidth": 980,
+        "sourceHeight": 876
+      }
+    },
+    {
+      "key": "H171",
+      "image": "assets/HAIRSTYLES/jorvik city mall/27zv9f3.png",
+      "model": 32,
+      "material": "Hair_32_04",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 434,
+        "height": 760,
+        "sourceWidth": 434,
+        "sourceHeight": 760
+      }
+    },
+    {
+      "key": "H172",
+      "image": "assets/HAIRSTYLES/jorvik city mall/4mr9777.png",
+      "model": 32,
+      "material": "Hair_32_03",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 449,
+        "height": 726,
+        "sourceWidth": 449,
+        "sourceHeight": 726
+      }
+    },
+    {
+      "key": "H173",
+      "image": "assets/HAIRSTYLES/jorvik city mall/76vk5zb.png",
+      "model": 31,
+      "material": "Hair_31_04",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 448,
+        "height": 701,
+        "sourceWidth": 448,
+        "sourceHeight": 701
+      }
+    },
+    {
+      "key": "H174",
+      "image": "assets/HAIRSTYLES/jorvik city mall/7p3pnxw.png",
+      "model": 31,
+      "material": "Hair_31_05",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 462,
+        "height": 709,
+        "sourceWidth": 462,
+        "sourceHeight": 709
+      }
+    },
+    {
+      "key": "H175",
+      "image": "assets/HAIRSTYLES/jorvik city mall/dxnr9ww.png",
+      "model": 32,
+      "material": "Hair_32_05",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 435,
+        "height": 764,
+        "sourceWidth": 435,
+        "sourceHeight": 764
+      }
+    },
+    {
+      "key": "H176",
+      "image": "assets/HAIRSTYLES/jorvik city mall/f0qbzqd.png",
+      "model": 31,
+      "material": "Hair_31_03",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 553,
+        "height": 714,
+        "sourceWidth": 553,
+        "sourceHeight": 714
+      }
+    },
+    {
+      "key": "H177",
+      "image": "assets/HAIRSTYLES/jorvik city mall/jvs9rbx.png",
+      "model": 32,
+      "material": "Hair_32_02",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 452,
+        "height": 737,
+        "sourceWidth": 452,
+        "sourceHeight": 737
+      }
+    },
+    {
+      "key": "H178",
+      "image": "assets/HAIRSTYLES/jorvik city mall/kt29vfs.png",
+      "model": 31,
+      "material": "Hair_31_01",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 551,
+        "height": 647,
+        "sourceWidth": 551,
+        "sourceHeight": 647
+      }
+    },
+    {
+      "key": "H179",
+      "image": "assets/HAIRSTYLES/jorvik city mall/mhvt140.png",
+      "model": 31,
+      "material": "Hair_31",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 601,
+        "height": 668,
+        "sourceWidth": 601,
+        "sourceHeight": 668
+      }
+    },
+    {
+      "key": "H180",
+      "image": "assets/HAIRSTYLES/jorvik city mall/tm34nt4.png",
+      "model": 31,
+      "material": "Hair_31_02",
+      "location": "Jorvik City Mall",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "width": 433,
+        "height": 689,
+        "sourceWidth": 433,
+        "sourceHeight": 689
+      }
+    }
+  ]
+}

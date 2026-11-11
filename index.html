@@ -6,8 +6,9 @@
 <meta name="theme-color" content="#170d10">
 <meta name="description" content="Bad Roses">
 <title>Bad Roses</title>
-<link rel="icon" href="assets/rose.svg" type="image/svg+xml">
+<link rel="icon" href="assets/bad%20roses%20logo.png" type="image/png">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="catalogue.css?v=6">
 <link rel="stylesheet" href="map.css">
 <link rel="stylesheet" href="schedule-menu.css">
 <link rel="stylesheet" href="reputation.css">
@@ -16,7 +17,7 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="brand" href="#home" aria-label="Bad Roses home"><img src="assets/rose.svg" alt=""><span>Bad Roses<small>horse community</small></span></a>
+  <a class="brand" href="#home" aria-label="Bad Roses home"><img src="assets/bad%20roses%20logo.png" alt=""><span>Bad Roses<small>horse community</small></span></a>
   <nav class="main-nav" aria-label="Main navigation">
     <a href="#home" data-route="home">Main page</a>
     <a href="#database" data-route="database">Database</a>
@@ -72,25 +73,64 @@
       </ul>
       <span class="text-link">Browse quests <b aria-hidden="true">→</b></span>
     </a>
-    <a class="feature-card feature-community" href="#waitlist"><span class="card-kicker">Ride with us <span>04</span></span><h3>Meet the Roses</h3><p>Join the community Discord and follow the waitlist channel’s steps if you’d like to join the club in-game.</p><div class="rose-stamp"><img src="assets/rose.svg" alt=""><span>YOU BELONG<br>TO ROSES</span></div><span class="text-link">How to join <b>→</b></span></a>
+    <a class="feature-card feature-community" href="#waitlist"><span class="card-kicker">Ride with us <span>04</span></span><h3>Meet the Roses</h3><p>Join the community Discord and follow the waitlist channel’s steps if you’d like to join the club in-game.</p><div class="rose-stamp"><img src="assets/bad%20roses%20logo.png" alt=""><span>YOU BELONG<br>TO ROSES</span></div><span class="text-link">How to join <b>→</b></span></a>
   </div>
   <div class="wrap home-cta"><div><p class="eyebrow">A place for horse game players</p><h2>Become part of the <em> Community</em></h2><p>Come say hello to the Bad Roses Community and find out what it is all about.</p></div><div class="cta-buttons"><a class="button button-discord" data-link="communityDiscord" href="#">Join our community Discord <span>↗</span></a></div></div>
 </section>
 <!-- EDIT TEXT: Database page introduction, search tips, archive notes, and attribution. Item and category data is in data/. -->
 <section class="view" id="database" data-view="database">
-  <div class="page-banner"><div class="wrap"><p class="eyebrow">The Bad Roses Database</p><h1>A field guide to <em>Jorvik.</em></h1><p>Find an item by name, where it came from, or what it can do. Browse more than 5,500 items, horses, pets, makeup looks and hairstyles.</p><div class="archive-meta"><span>6 collections</span></div></div></div>
-  <div class="wrap database-wrap">
-    <div class="search-panel"><label for="db-search">Find something in the archive</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="db-search" type="search" placeholder="Search names, descriptions, shops, stats…" autocomplete="off"><kbd> / </kbd></div><p>Tip: try “Moorland”, “flower” or “speed 3”.</p></div>
-    <div class="db-layout">
-      <aside class="db-sidebar"><h2>Collections</h2><div class="category-list" id="category-list"></div><div class="filter-group"><label for="section-filter">Refine category</label><select id="section-filter"><option value="">All sections</option></select></div><div class="filter-group"><label for="sort-filter">Sort entries</label><select id="sort-filter"><option value="az">Name A–Z</option><option value="za">Name Z–A</option><option value="category">Category</option></select></div></aside>
-      <div class="db-results"><div class="results-head"><p id="result-count" aria-live="polite">Loading the archive…</p><button class="text-button" id="clear-filters" type="button">Clear filters</button></div><div class="item-grid" id="item-grid"></div><button class="button button-outline load-more" id="load-more" type="button">Show more entries <span aria-hidden="true">↓</span></button><div class="empty-state" id="empty-state" hidden><img src="assets/rose.svg" alt=""><h3>No matches found</h3><p>Try another search or clear your filters.</p></div></div>
+  <div class="page-banner catalogue-banner">
+    <div class="wrap catalogue-banner-layout">
+      <div><p class="eyebrow">The Bad Roses Database · Nalya Legacy</p><h1>Find your next <em>favourite.</em></h1><p class="catalogue-intro">Horses, little details, and everything in between. A collection from your corner of Jorvik.</p></div>
+      <dl class="catalogue-summary" aria-label="Catalogue overview">
+        <div><dt>Entries</dt><dd id="catalogue-total">6,697</dd></div>
+        <div><dt>Horses</dt><dd id="catalogue-horses">247</dd></div>
+        <div><dt>Shops</dt><dd id="catalogue-shops">257</dd></div>
+      </dl>
     </div>
+  </div>
+  <div class="wrap catalogue-wrap">
+    <label class="catalogue-search" for="db-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search the catalogue</span><input id="db-search" type="search" placeholder="Search a name, breed, shop or event…" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+    <nav class="catalogue-shortcuts" aria-label="Explore the catalogue">
+      <button type="button" data-catalogue-focus="all" aria-pressed="true">All finds</button>
+      <button type="button" data-catalogue-focus="horses" aria-pressed="false">Horses</button>
+      <button type="button" data-catalogue-focus="hair" aria-pressed="false">Hairstyles &amp; colours</button>
+      <button type="button" data-catalogue-focus="makeup" aria-pressed="false">Makeup</button>
+      <button type="button" data-catalogue-focus="wishlist" id="catalogue-wishlist-tab" aria-pressed="false">♡ My wishlist (<span id="catalogue-wishlist-count">0</span>)</button>
+    </nav>
+    <p class="catalogue-wishlist-note" id="catalogue-wishlist-note" hidden></p>
+    <p class="sr-only" id="catalogue-wishlist-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    <div class="catalogue-layout">
+      <aside class="catalogue-filters" aria-label="Catalogue filters">
+        <div class="catalogue-filter-heading"><h2>Collections</h2><button type="button" class="catalogue-reset" id="clear-filters">Reset all</button></div>
+        <div class="category-list" id="category-list"></div>
+        <div class="catalogue-refinements">
+          <div class="filter-group"><label for="section-filter">Item type</label><select id="section-filter"><option value="">All types</option></select></div>
+          <div id="catalogue-hair-filters" class="catalogue-hair-filters" hidden><div class="filter-group"><label for="hair-type-filter">Hairstyle</label><select id="hair-type-filter"><option value="">Every hairstyle</option></select></div><div class="filter-group"><label for="hair-colour-filter">Hair colour</label><select id="hair-colour-filter"><option value="">Every colour</option></select></div></div>
+          <div class="filter-group"><label for="location-filter">Location / region</label><select id="location-filter"><option value="">Every location</option></select></div>
+          <details class="catalogue-advanced"><summary>Price, level &amp; event</summary><div class="catalogue-advanced-content">
+          <div class="filter-group"><label for="event-filter">Event</label><select id="event-filter"><option value="">All event statuses</option><option value="event">Event-tagged entries</option><option value="untagged">Unknown</option></select></div>
+          <div class="filter-group"><label for="level-filter">Your level</label><input id="level-filter" type="number" min="0" max="100" placeholder="Any level" inputmode="numeric"></div>
+          <div class="filter-group"><label for="currency-filter">Currency</label><select id="currency-filter"><option value="">Any currency</option><option value="SC">Star Coins</option><option value="JS">Jorvik Shillings</option><option value="tokens">Tokens / trade items</option><option value="none">No price listed</option></select></div>
+          <div class="catalogue-budget-row"><div class="filter-group"><label for="sc-filter">Max SC</label><input id="sc-filter" type="number" min="0" placeholder="Any" inputmode="numeric"></div><div class="filter-group"><label for="js-filter">Max JS</label><input id="js-filter" type="number" min="0" placeholder="Any" inputmode="numeric"></div></div>
+          </div></details>
+        </div>
+      </aside>
+      <div class="catalogue-results">
+        <div class="catalogue-results-head"><div><h2 id="result-count" aria-live="polite" aria-atomic="true">Opening the catalogue…</h2><p id="result-context">All collections</p></div><div class="catalogue-sort"><label for="sort-filter">Sort</label><select id="sort-filter" aria-label="Sort catalogue"><option value="featured">Featured</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option><option value="priceSC">Star Coins: low to high</option><option value="priceJS">Shillings: low to high</option><option value="requiredLevel">Required level</option></select></div></div>
+        <button type="button" id="catalogue-retry" class="button button-outline" hidden>Try loading again</button>
+        <div class="catalogue-grid" id="item-grid"></div>
+        <div class="catalogue-empty" id="empty-state" hidden><h3>Nothing here just yet.</h3><p>Try a different name or give your filters a little more room.</p><button type="button" id="empty-clear-filters" class="button button-outline">Clear filters</button></div>
+        <div class="catalogue-pagination"><button type="button" id="load-more" class="button button-outline" hidden>Show more</button><p id="catalogue-showing"></p></div>
+      </div>
+    </div>
+
   </div>
 </section>
 <!-- EDIT TEXT: Waitlist instructions and community Discord call to action. -->
 <section class="view" id="waitlist" data-view="waitlist">
   <div class="page-banner waitlist-banner"><div class="wrap"><p class="eyebrow">A place at the table</p><h1>Every Rose starts<br><em>somewhere.</em></h1><p>We keep a waitlist for our in-game club. Everyone is welcome to join it.</p></div></div>
-  <div class="wrap waitlist-content"><div class="waitlist-steps"><p class="eyebrow">Three easy steps</p><h2>Your path to<br><em>Bad Roses.</em></h2><ol><li><span>01</span><div><h3>Join the community Discord</h3><p>Our community server is the front door. Come say hello and get settled in.</p></div></li><li><span>02</span><div><h3>Open the waitlist channel</h3><p>Head to the club waitlist channel in the community server.</p></div></li><li><span>03</span><div><h3>Follow the pinned instructions</h3><p>Everything you need to join the list is explained there. Anyone can put their name down.</p></div></li></ol><a class="button button-discord button-large" data-link="communityDiscord" href="#"><span class="discord-logo" aria-hidden="true"></span> Join the community Discord <span class="button-arrow">↗</span></a><p class="small-note">Joining the waitlist is not the same as joining the in-game club. Club openings are handled through the waitlist channel.</p></div><aside class="waitlist-aside"><div class="rose-art"><img src="assets/rose.svg" alt="A red rose"><span>GROW<br>TOGETHER</span></div><h3>Already a Rose?</h3><p>Club members also have a club Discord. Its details are not shared on this page.</p></aside></div>
+  <div class="wrap waitlist-content"><div class="waitlist-steps"><p class="eyebrow">Three easy steps</p><h2>Your path to<br><em>Bad Roses.</em></h2><ol><li><span>01</span><div><h3>Join the community Discord</h3><p>Our community server is the front door. Come say hello and get settled in.</p></div></li><li><span>02</span><div><h3>Open the waitlist channel</h3><p>Head to the club waitlist channel in the community server.</p></div></li><li><span>03</span><div><h3>Follow the pinned instructions</h3><p>Everything you need to join the list is explained there. Anyone can put their name down.</p></div></li></ol><a class="button button-discord button-large" data-link="communityDiscord" href="#"><span class="discord-logo" aria-hidden="true"></span> Join the community Discord <span class="button-arrow">↗</span></a><p class="small-note">Joining the waitlist is not the same as joining the in-game club. Club openings are handled through the waitlist channel.</p></div><aside class="waitlist-aside"><div class="rose-art"><img src="assets/bad%20roses%20logo.png" alt="Bad Roses logo"><span>GROW<br>TOGETHER</span></div><h3>Already a Rose?</h3><p>Club members also have a club Discord. Its details are not shared on this page.</p></aside></div>
 </section>
 <!-- EDIT TEXT: Social links and profile descriptions. Update URLs in site-config.js. -->
 <section class="view" id="socials" data-view="socials">
@@ -1214,7 +1254,7 @@
   <div class="wrap championship-content"><div class="schedule-top"><div><p class="eyebrow">Weekly rotation</p><h2>Championship Schedule</h2></div><div class="time-badge">UTC+1 TIME</div></div>
     <div class="champ-next">
       <div class="champ-next-details">
-        <span class="champ-next-crest"><img src="assets/rose.svg" alt="" width="32" height="38"></span>
+        <span class="champ-next-crest"><img src="assets/bad%20roses%20logo.png" alt="" width="48" height="32"></span>
         <div role="status">
           <p class="eyebrow">Next championship</p>
           <p class="champ-next-venue" id="champ-next-venue"></p>
@@ -1242,14 +1282,17 @@
     <p class="table-hint">Swipe or scroll sideways to see every day. Times in this table are UTC+1.</p><div class="table-scroll"><table class="schedule-table championship-table" id="champ-table"><caption>Championship locations by hour and day</caption></table></div><div class="champ-note"><span class="rose-mark">𓆩♡𓆪</span><p>This schedule is available in 2018 version</p></div></div>
 </section>
 <!-- EDIT TEXT: Privacy, external links, cookies, and game affiliation note. Review if site features change. -->
-<section class="view" id="privacy" data-view="privacy"><div class="page-banner"><div class="wrap"><p class="eyebrow">A small privacy note</p><h1>Clear skies,<br><em>clear choices.</em></h1><p>This fan site is a static information page. It has no accounts, forms, analytics, or advertising.</p></div></div><div class="wrap legal-copy"><h2>What this site does</h2><p>The site does not ask for or store personal information. It does not use analytics, advertising pixels, or a cookie banner. The database and schedule content are static files hosted with the site.</p><h2>External links and images</h2><p>Some database and quest images load from external image hosts. Following Discord, TikTok, or source links takes you to services with their own privacy policies. Those services may receive your IP address and browser request details. This site does not control their data practices.</p><h2>Cookies</h2><p>This site does not set cookies or use storage for tracking. If a future version adds analytics, forms, embedded social content, or other tracking technologies, this notice will need to be reviewed before adding them.</p><h2>A note on the game</h2><p>Bad Roses is an unofficial, non-commercial fan community. All game names and related content belong to their respective owners. This site is not affiliated with or endorsed by the game publisher. Review the applicable game-service license before adding monetization.</p><h2>Terms</h2><p>This version is an informational fan site with no accounts, payments, submissions, or other user transactions, so it does not include separate terms of service. Revisit this if the site later adds interactive services or monetization.</p><p class="small-note">This is general information about the features currently included on this site, not legal advice.</p></div></section>
+<section class="view" id="privacy" data-view="privacy"><div class="page-banner"><div class="wrap"><p class="eyebrow">A small privacy note</p><h1>Clear skies,<br><em>clear choices.</em></h1><p>This fan site is a static information page. It has no accounts, forms, analytics, or advertising.</p></div></div><div class="wrap legal-copy"><h2>What this site does</h2><p>The site does not ask for or store personal information. It does not use analytics, advertising pixels, or a cookie banner. The database and schedule content are static files hosted with the site.</p><h2>Your wishlist</h2><p>Wishlist choices are saved only in your browser on this device. No account is needed and wishlist choices are not sent to a server. Clearing browser data removes them; they do not sync between browsers or devices. If browser storage is unavailable, choices last for the current page visit only.</p><h2>External links and images</h2><p>Some database and quest images load from external image hosts. Following Discord, TikTok, or source links takes you to services with their own privacy policies. Those services may receive your IP address and browser request details. This site does not control their data practices.</p><h2>Cookies</h2><p>This site does not set cookies or use storage for tracking. If a future version adds analytics, forms, embedded social content, or other tracking technologies, this notice will need to be reviewed before adding them.</p><h2>A note on the game</h2><p>Bad Roses is an unofficial, non-commercial fan community. All game names and related content belong to their respective owners. This site is not affiliated with or endorsed by the game publisher. Review the applicable game-service license before adding monetization.</p><h2>Terms</h2><p>This version is an informational fan site with no accounts, payments, submissions, or other user transactions, so it does not include separate terms of service. Revisit this if the site later adds interactive services or monetization.</p><p class="small-note">This is general information about the features currently included on this site, not legal advice.</p></div></section>
 </main>
-<footer class="site-footer"><div class="wrap footer-top"><a class="brand footer-brand" href="#home"><img src="assets/rose.svg" alt=""><span>Bad Roses<small>Grow together on Jorvik</small></span></a><p><br></p><nav aria-label="Footer navigation"><a href="#socials">Socials</a><a href="#waitlist">Join the waitlist</a><a href="#privacy">Privacy</a></nav></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Bad Roses · Community site</span><span><b></b></span></div></footer>
+<footer class="site-footer"><div class="wrap footer-top"><a class="brand footer-brand" href="#home"><img src="assets/bad%20roses%20logo.png" alt=""><span>Bad Roses<small>Grow together on Jorvik</small></span></a><p><br></p><nav aria-label="Footer navigation"><a href="#socials">Socials</a><a href="#waitlist">Join the waitlist</a><a href="#privacy">Privacy</a></nav></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Bad Roses · Community site</span><span><b></b></span></div></footer>
 <script src="site-config.js"></script>
-<script src="app.js" defer></script>
-<script src="beauty-category.js" defer></script>
+<script src="wishlist.js?v=1" defer></script>
+<script src="catalogue.js?v=14" defer></script>
+<script src="app.js?v=nalya-1" defer></script>
+
 <script src="map.js" defer></script>
 <script src="schedule-menu.js" defer></script>
 <script src="quests.js?v=6" defer></script>
+<dialog id="catalogue-dialog" class="catalogue-dialog" aria-labelledby="catalogue-dialog-title"><button type="button" class="catalogue-dialog-close" id="catalogue-dialog-close" aria-label="Close item details" autofocus>×</button><div id="catalogue-dialog-content" class="catalogue-dialog-content"></div></dialog>
 </body>
 </html>
