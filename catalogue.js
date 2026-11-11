@@ -379,7 +379,7 @@
     const notes = [];
     if (item.section === 'Hairstyles' && !item.hairPhotoMatched) notes.push('A matching portrait is not available for this colour, so the original game hairstyle icon is shown.');
     if (item.lockedForPurchase) notes.push('The client marks this item as locked for purchase.');
-    if (item.reward) notes.push('The client marks this item as a reward.');
+    if (item.reward) notes.push('This item is marked as a reward.');
     if (notes.length) content.append(el('p', 'catalogue-record-note', notes.join(' ')));
     body.replaceChildren(visual, content);
     const wasOpen = dialog.open;
