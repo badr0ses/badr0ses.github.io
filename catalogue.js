@@ -94,7 +94,7 @@
   }
 
   function picture(item, large = false) {
-    const figure = el('figure', 'catalogue-picture' + (large ? ' catalogue-picture-large' : '') + (item.image?.includes('/photos/') ? ' catalogue-photo' : '') + (item.section === 'Hairstyles' ? ' catalogue-hair' : ''));
+    const figure = el('figure', 'catalogue-picture' + (large ? ' catalogue-picture-large' : '') + (item.image?.includes('/photos/') || item.imageKind === 'In-game screenshot' ? ' catalogue-photo' : '') + (item.section === 'Hairstyles' ? ' catalogue-hair' : ''));
     const unavailable = () => {
       figure.replaceChildren(el('span', 'catalogue-no-image', 'Preview unavailable'));
     };
@@ -451,7 +451,7 @@
     byId('result-count').textContent = 'Opening the catalogue…';
     byId('catalogue-retry').hidden = true;
     try {
-      const [dataResponse, metaResponse, variantsResponse] = await Promise.all([fetch('data/database.json?v=hair-assets-4'), fetch('data/catalogue-meta.json?v=hair-assets-4'),fetch('data/catalogue-variants.json?v=hair-assets-4')]);
+      const [dataResponse, metaResponse, variantsResponse] = await Promise.all([fetch('data/database.json?v=morgan-photo-1'), fetch('data/catalogue-meta.json?v=morgan-photo-1'),fetch('data/catalogue-variants.json?v=morgan-photo-1')]);
       if (!dataResponse.ok || !metaResponse.ok || !variantsResponse.ok) throw new Error('Could not load catalogue');
       const [data, meta, variants] = await Promise.all([dataResponse.json(), metaResponse.json(),variantsResponse.json()]);
       variantGroups = variants;

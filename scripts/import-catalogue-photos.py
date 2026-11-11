@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from nalya_formats import Archive, Scene, field
 from hairstyle_assets import hairstyle_updates
+from horse_photo_corrections import horse_photo_updates
 
 # Client breed IDs -> SSODB breed code and model generation, never newest-by-name.
 HORSE_MODELS = {
@@ -223,10 +224,14 @@ def main():
     galleries = {key: ids for key, ids in galleries.items() if not key.startswith('hair-')}
     galleries.update(hair_galleries)
     assert original_ids==set(by_id), 'Source website must never add catalogue records'
+    for entry_id, patch in horse_photo_updates(entries).items():
+        overlays.setdefault(entry_id, {}).update(patch)
+        by_id[entry_id].update(patch)
     save(ROOT/'data/catalogue-visuals.json',overlays)
     save(ROOT/'data/catalogue-variants.json',galleries)
     save(ROOT/'data/catalogue-photo-report.json',{'recordsAdded':0,'clientIds':len(original_ids),
         'horsePhotos':sum(e['kind']=='horse' and e.get('image','').startswith('assets/catalogue/photos/') for e in by_id.values()),
+        'horseSuppliedScreenshots':sum(e['kind']=='horse' and e['imageKind']=='In-game screenshot' for e in by_id.values()),
         'hairPhotos':sum(e['section']=='Hairstyles' and e.get('image','').startswith('assets/catalogue/photos/') for e in by_id.values()),
         'hairGameImages':sum(e['section']=='Hairstyles' and e.get('image')==e.get('fallbackImage') for e in by_id.values()),
         'makeupGameImages':sum(e['section']=='Makeup' and e.get('image')==e.get('fallbackImage') for e in by_id.values()),

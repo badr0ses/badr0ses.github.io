@@ -21,6 +21,7 @@ sys.path.insert(0,str(ROOT/'tmp/nalya-tools'))
 from PIL import Image,ImageDraw
 from nalya_formats import Archive, Scene, field
 from nalya_images import texture_png
+from horse_photo_corrections import horse_photo_updates
 
 spec=importlib.util.spec_from_file_location('catalogue_photos',ROOT/'scripts/import-catalogue-photos.py')
 photos=importlib.util.module_from_spec(spec)
@@ -186,12 +187,15 @@ def main():
             'variant':color[:1].upper()+color[1:] if color else entry['variant'],
             'photoMatch':'Local coat texture and legacy model','photoBodyId':entry['bodyId'],
             'photoModel':{'breedCode':match['model'][0],'generation':match['model'][1],'imageId':match['imageId']}})
+    for entry_id, patch in horse_photo_updates(entries).items():
+        overlays.setdefault(entry_id, {}).update(patch)
     photos.save(ROOT/'data/catalogue-visuals.json',overlays)
     photos.save(ROOT/'data/catalogue-coat-matches.json',{'matches':matches,'unmatchedModels':problems})
     effective=[dict(entry,**overlays.get(entry['id'],{})) for entry in entries]
     photos.save(ROOT/'data/catalogue-photo-report.json',{
         'recordsAdded':0,'records':len(entries),
         'horsesWithPhotos':sum(entry['kind']=='horse' and '/photos/' in (entry['image'] or '') and entry['image'].endswith(('.jpg','.webp')) for entry in effective),
+        'horseSuppliedScreenshots':sum(entry['kind']=='horse' and entry['imageKind']=='In-game screenshot' for entry in effective),
         'hairColourPortraits':sum(entry['section']=='Hairstyles' and '/photos/' in (entry['image'] or '') for entry in effective),
         'makeupRecordsWithViews':sum(bool(entry.get('imageViews')) for entry in effective),
         'gameCoatTextureFallbacks':[entry['id'] for entry in effective if entry['kind']=='horse' and 'Game coat texture' in entry['imageKind']]})

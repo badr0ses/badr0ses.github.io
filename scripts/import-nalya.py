@@ -19,6 +19,7 @@ from nalya_formats import Archive, Scene, field, hash_name, translations
 from nalya_images import texture_png
 from catalogue_visibility import exclusion_reason
 from hairstyle_assets import hairstyle_updates
+from horse_photo_corrections import horse_photo_updates
 
 ROOT = Path(__file__).resolve().parents[1]
 TYPE_NAMES = {
@@ -306,6 +307,9 @@ def main():
         entry['events'] = sorted(set(entry['events']) | events_from_names(entry['title'], entry['internalName']))
     excluded = Counter(reason for entry in entries if (reason := exclusion_reason(entry)))
     entries = [entry for entry in entries if exclusion_reason(entry) is None]
+    horse_updates = horse_photo_updates(entries)
+    for entry in entries:
+        entry.update(horse_updates.get(entry['id'], {}))
     hair_updates, hair_groups = hairstyle_updates(entries, archive)
     for entry in entries:
         entry.update(hair_updates.get(entry['id'], {}))

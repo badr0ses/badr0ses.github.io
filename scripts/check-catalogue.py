@@ -9,6 +9,7 @@ import zlib
 
 from nalya_formats import Archive, Scene, field
 from catalogue_visibility import exclusion_reason
+from horse_photo_corrections import horse_photo_updates
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -45,6 +46,11 @@ def main():
     assert sum(item['kind'] == 'horse' for item in entries) == meta['horses']
     assert sum(not item['unlisted'] for item in entries) == meta['browsable']
     assert sum(bool(item['locations']) for item in entries) == meta['withLocation']
+    reviewed_photos = horse_photo_updates(entries)
+    reviewed_images = {patch['image'] for patch in reviewed_photos.values()}
+    for item in entries:
+        for key, value in reviewed_photos.get(item['id'], {}).items():
+            assert item.get(key) == value, (item['id'], key)
     local_images = set()
     for item in entries:
         assert exclusion_reason(item) is None, item['id']
@@ -61,7 +67,7 @@ def main():
                 continue
             if image.startswith('https://'):
                 continue
-            assert image.startswith(('assets/catalogue/icons/', 'assets/catalogue/photos/', 'assets/HAIRSTYLES/')) and '..' not in image
+            assert (image.startswith(('assets/catalogue/icons/', 'assets/catalogue/photos/', 'assets/HAIRSTYLES/')) or image in reviewed_images) and '..' not in image
             path = (ROOT / image).resolve()
             assert path.is_relative_to(ROOT) and path.is_file(), (item['id'], image)
             local_images.add(path)

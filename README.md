@@ -73,3 +73,5 @@ To refresh the supplied hairstyle assets without reimporting other entries, run 
 Hairstyle colours appear as separate cards (duplicate records for the same model/material share a preview), with the full style gallery still available in details. Supplied images at different salons are labelled by location; selecting a location filter uses that salon's matching portrait. Cards show a location badge when there is no known event, without repeating the location underneath. The legacy price/availability sentence has been removed from detail views.
 
 The long braided ponytail (`Hair_23`) and its seven colours are excluded from the public catalogue by request. The visibility policy preserves this exclusion during rebuilds.
+
+Reviewed horse screenshots are recorded in `data/horse-photo-corrections.json` and take priority over automatic photo matching in every import. The bay Morgan (`horse-142`, body `6124`) uses the supplied Crescent Moon Village screenshot; its client location remains Crescent Moon Village. Other Morgan coats retain their own recorded locations.
