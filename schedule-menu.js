@@ -20,6 +20,11 @@
   function positionMenu(dropdown){
     const button=dropdown.querySelector('.schedule-menu-button');
     const menu=dropdown.querySelector('.schedule-menu');
+    if(window.matchMedia('(max-width: 1100px)').matches){
+      menu.style.removeProperty('top');
+      menu.style.removeProperty('left');
+      return;
+    }
     const rect=button.getBoundingClientRect();
     const width=menu.offsetWidth||205;
     menu.style.top=`${Math.round(rect.bottom+6)}px`;
@@ -66,7 +71,9 @@
     }
   });
   window.addEventListener('resize',()=>closeAll());
-  window.addEventListener('scroll',()=>closeAll(),{passive:true});
+  window.addEventListener('scroll',()=>{
+    if(!window.matchMedia('(max-width: 1100px)').matches)closeAll();
+  },{passive:true});
   window.addEventListener('hashchange',updateActiveStates);
   updateActiveStates();
 })();

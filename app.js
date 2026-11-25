@@ -34,7 +34,7 @@ function setRoute() {
     closingLink.focus({ preventScroll: true });
     reputationCatalog.closest('.reputation-library').scrollIntoView();
   } else {
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }
   if (active === 'database') renderDatabase();
 }

@@ -1,0 +1,529 @@
+/* The same image-led, rose-coloured design on every page and tool. */
+.view { --page-image: url('assets/rose-banner.png'); }
+.view:not(#home) {
+  background: radial-gradient(ellipse at 50% 5%, #51243344, transparent 65%), var(--bg2);
+}
+#database { --page-image: url('assets/Fjords.webp'); --card: var(--panel); --border: var(--line); }
+#quests { --page-image: url('assets/jarlaheim-quest.png'); }
+#reputation { --page-image: url('assets/goldenhills-reputation.png'); }
+#map { --page-image: url('assets/jorvik-map.png'); }
+#spirit { --page-image: url('assets/spirit-meadow.png'); }
+#championship { --page-image: url('assets/championship-festival.png'); }
+
+.view:not(#home) .page-banner {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 76px 0 78px;
+  min-height: 400px;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  border: 0;
+  background: linear-gradient(90deg, #1a0d14d9, #28131cbd, #1a0d14d9), var(--page-image) center 45% / cover;
+}
+.view:not(#home) .page-banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 19px;
+  background: var(--bg2);
+  clip-path: polygon(0 72%, 7% 42%, 17% 63%, 28% 20%, 40% 57%, 53% 32%, 66% 68%, 78% 25%, 89% 50%, 100% 25%, 100% 100%, 0 100%);
+}
+#spirit.view .page-banner { background-position: center, center 22%; }
+.view:not(#home) .page-banner h1 {
+  max-width: 1000px;
+  margin-inline: auto;
+  font: clamp(3.5rem, 6.2vw, 6rem)/1.02 var(--serif);
+  letter-spacing: -.045em;
+  text-shadow: 0 5px 30px #0c05098c;
+}
+.view:not(#home) .page-banner h1 em { color: var(--rose-light); }
+.view:not(#home) .page-banner .eyebrow {
+  margin-bottom: 22px;
+  color: #f2b4bd;
+  font-size: .875rem;
+  letter-spacing: .15em;
+}
+.view:not(#home) .page-banner p:not(.eyebrow) {
+  max-width: 670px;
+  margin: 22px auto 0;
+  color: #efdcdf;
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+.view:not(#home) .page-banner .source-link { display: inline-block; margin-top: 20px; padding: 8px 17px; border: 1px solid #ef8c9855; border-radius: 30px; background: #1a0e1466; color: #f4c7cf; font-size: .875rem; }
+.catalogue-banner-layout { flex-direction: column; align-items: center; gap: 30px; }
+.catalogue-summary { justify-content: center; gap: 0; margin: 0; padding: 18px 12px; background: #170d116e; border: 1px solid #ef8c984d; border-radius: 12px; backdrop-filter: blur(8px); }
+.catalogue-summary div, .catalogue-summary div:first-child { padding: 0 28px; border: 0; }
+.catalogue-summary div + div { border-left: 1px solid #ef8c984d; }
+.catalogue-summary dd { margin: 0 0 4px; font: 2rem/1.1 var(--serif); color: var(--cream); }
+.catalogue-summary dt { color: #d2b7be; font-size: .75rem; letter-spacing: .08em; }
+
+.catalogue-wrap, .quests-page, .reputation-page,
+.spirit-layout, .championship-content {
+  width: min(1240px, calc(100% - 80px));
+  padding-top: 64px;
+  padding-bottom: 90px;
+}
+.view:not(#home) :is(input, select) { accent-color: var(--rose); }
+.view:not(#home) select, .catalogue-dialog select {
+  appearance: none;
+  padding-right: 36px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23ef8c98' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-position: right 14px center;
+  background-repeat: no-repeat;
+}
+
+/* Catalogue: a generous search bar, collection panel, and visual product cards. */
+.catalogue-search { min-height: 64px; max-width: 830px; margin: -92px auto 26px; position: relative; z-index: 1; padding: 15px 24px; border: 1px solid #9b5264; border-radius: 40px; background: #29191f; box-shadow: 0 8px 35px #0b05083d; }
+.catalogue-search input { font-size: 1rem; }
+.catalogue-search > span { color: var(--rose-light); }
+.catalogue-search kbd { color: var(--muted); font-size: .875rem; }
+.catalogue-search:focus-within { border-color: var(--rose-light); box-shadow: 0 0 0 3px #ef8c9826; }
+.catalogue-shortcuts { justify-content: center; gap: 10px; margin: 0 0 36px; padding: 0 0 30px; border-color: var(--line); }
+.catalogue-shortcuts button { min-height: 46px; padding: 10px 20px; border-color: #71404f; color: var(--muted); background: #211319; font-size: .9375rem; }
+.catalogue-shortcuts button:hover { background: #3a202a; color: var(--cream); }
+.catalogue-shortcuts button[aria-pressed='true'] { background: var(--rose); color: #210e15; border-color: var(--rose); font-weight: 650; }
+#catalogue-wishlist-tab { margin-left: 0; }
+.catalogue-layout { grid-template-columns: 260px minmax(0, 1fr); gap: 32px; }
+.catalogue-filters { padding: 24px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+.catalogue-filter-heading { gap: 10px; margin-bottom: 20px; }
+.catalogue-filter-heading h2 { font-size: 1.75rem; }
+.catalogue-reset { font-size: .875rem; color: var(--rose-light); }
+.catalogue-filters .category-list { gap: 5px; border-color: var(--line); }
+.catalogue-filters .category-button { min-height: 44px; padding: 10px; border-radius: 7px; font-size: .875rem; }
+.catalogue-filters .category-button span:last-child { color: var(--rose-light); font-size: .75rem; }
+.catalogue-filters .category-button.selected { color: var(--cream); background: #613040; }
+.catalogue-filters .category-button:hover { background: #432430; }
+.catalogue-filters .filter-group label { font-size: .875rem; color: var(--muted); letter-spacing: 0; text-transform: none; }
+.catalogue-filters select, .catalogue-filters input[type='number'] { min-height: 46px; padding: 10px; border: 1px solid #70404d; border-radius: 7px; background-color: #1c1116; color: var(--text); font-size: .9375rem; }
+.catalogue-filters select { padding-right: 30px; }
+.catalogue-advanced { border-color: var(--line); }
+.catalogue-advanced summary { font-size: .9375rem; color: var(--rose-light); }
+.catalogue-results-head { align-items: flex-end; margin-bottom: 25px; gap: 20px; }
+.catalogue-results-head h2 { font-size: 2rem; }
+.catalogue-results-head p { color: var(--muted); font-size: .875rem; line-height: 1.5; }
+.catalogue-sort { font-size: .875rem; color: var(--muted); }
+.catalogue-sort select { min-height: 44px; max-width: 200px; padding: 9px 32px 9px 12px; font-size: .875rem; border: 1px solid #70404d; background-color: #24171a; color: var(--text); border-radius: 24px; }
+.catalogue-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.catalogue-card { background: var(--panel); border: 1px solid #603540; border-radius: 12px; box-shadow: 0 8px 24px #08040726; }
+.catalogue-card:hover { border-color: var(--rose-light); transform: translateY(-5px); }
+.catalogue-picture { height: 235px; background: #32202a; }
+.catalogue-picture.catalogue-hair img { background: #2a1b23; }
+.catalogue-card-body { padding: 23px; }
+.catalogue-card-top { font-size: .75rem; color: var(--rose-light); letter-spacing: .04em; }
+.catalogue-card-top span:last-child { color: var(--muted); }
+.catalogue-card h3 { font-size: 1.8rem; line-height: 1.15; margin: 12px 0 15px; }
+.catalogue-name { color: var(--cream); }
+.catalogue-name:hover { color: var(--rose-light); }
+.catalogue-card .catalogue-variant, .catalogue-location { color: var(--muted); font-size: .9375rem; }
+.catalogue-card-bottom { padding-top: 18px; gap: 10px; }
+.catalogue-prices { font-size: 1rem; }
+.catalogue-level { color: var(--muted); font-size: .8125rem; }
+.catalogue-badges span { font-size: .75rem; padding: 5px 8px; border-radius: 20px; }
+.catalogue-place { border-color: #9f5b7055; background: #ef8c980c; color: #e6bec8; }
+.catalogue-variant-count { font-size: .75rem; padding: 6px 11px; border-color: #ad6b8066; background: #26131ede; }
+.catalogue-wishlist-save { border-color: #e5a2b655; background: #2a1622eb; color: #f5c3cd; }
+.catalogue-wishlist-save[aria-pressed='true'] { background: var(--rose); border-color: var(--rose-light); color: #210e15; }
+.catalogue-pagination { padding-top: 40px; }
+.catalogue-pagination .button { font-size: 1rem; padding: 13px 30px; border-radius: 30px; border-color: var(--rose); color: var(--rose-light); }
+.catalogue-pagination p, .catalogue-wishlist-note { font-size: .875rem; color: var(--muted); }
+.catalogue-empty { border-color: var(--line2); background: var(--panel); border-radius: 12px; }
+.catalogue-empty p { font-size: 1rem; }
+.catalogue-dialog { border: 1px solid #9e5c70; background: #24171a; color: var(--cream); border-radius: 16px; width: min(1120px, calc(100vw - 40px)); }
+.catalogue-dialog-close { width: 44px; height: 44px; font-size: 28px; border-color: #ae7485; background: #291620f2; }
+.catalogue-dialog-content { grid-template-columns: 40% minmax(0, 1fr); }
+.catalogue-dialog-visual { padding: 34px 0 34px 34px; }
+.catalogue-picture-large { height: 350px; background: #32202a; }
+.catalogue-dialog-copy { padding: 45px 38px 38px; }
+.catalogue-dialog-copy .eyebrow { font-size: .75rem; color: var(--rose-light); }
+.catalogue-dialog-copy h2 { font-size: 2.75rem; }
+.catalogue-description { font-size: 1rem; line-height: 1.8; color: var(--muted); }
+.catalogue-wishlist-detail span { font-size: .875rem; }
+.catalogue-facts { gap: 24px; }
+.catalogue-facts dt { color: var(--rose-light); font-size: .75rem; }
+.catalogue-facts dd, .catalogue-shop-list { font-size: 1rem; }
+.catalogue-variants-heading { color: var(--muted); font-size: .875rem; }
+.catalogue-variant-choice { background: #35202a; border-color: #87516666; color: var(--muted); border-radius: 8px; }
+.catalogue-variant-choice[aria-pressed='true'] { color: var(--cream); border-color: var(--rose-light); box-shadow: 0 0 0 1px var(--rose-light); }
+.catalogue-variant-choice span { font-size: .8125rem; padding: 7px; }
+.catalogue-image-views button { min-height: 44px; color: var(--muted); font-size: .875rem; border-color: var(--line2); border-radius: 25px; }
+.catalogue-stat-list dt { font-size: .8125rem; color: var(--muted); }
+.catalogue-stat-list dd { color: var(--rose-light); }
+
+/* Quest and reputation libraries become image-led collections. */
+.quest-library-heading { display: block; max-width: 760px; margin: 0 auto 42px; text-align: center; }
+.quest-library-heading h2, .reputation-library > h2 { font: clamp(2.25rem, 3.7vw, 3.5rem)/1.12 var(--serif); letter-spacing: -.035em; }
+.quest-library-heading > p, .reputation-library > p { max-width: 650px; margin: 17px auto 0; color: var(--muted); font-size: 1rem; line-height: 1.8; }
+.quest-library-heading .eyebrow { margin-bottom: 15px; }
+.quest-catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin-bottom: 60px; }
+.quest-catalog button { display: flex; flex-direction: column; gap: 0; position: relative; padding: 0 0 25px; overflow: hidden; border: 1px solid #603540; border-radius: 12px; background: var(--panel); box-shadow: 0 8px 24px #08040726; transition: transform .2s, border-color .2s; }
+.quest-card-image { display: block; width: 100%; height: 205px; object-fit: cover; margin-bottom: 32px; }
+.quest-catalog button:first-child .quest-card-image,
+.quest-catalog button:last-child .quest-card-image { transform: scale(1.1); clip-path: inset(4.55%); }
+.quest-catalog button > span { position: absolute; top: 185px; left: 22px; max-width: calc(100% - 44px); padding: 7px 12px; border-radius: 4px; background: #6e2c3e; border: 1px solid #9e566b; color: var(--cream); font-size: .75rem; letter-spacing: .06em; }
+.quest-catalog strong { padding: 0 24px; margin: 0 0 15px; font: 1.9rem/1.15 var(--serif); }
+.quest-catalog small { padding: 0 24px; margin-top: auto; color: var(--muted); font-size: .875rem; line-height: 1.6; }
+.quest-catalog button::after { content: 'Read guide'; display: block; align-self: flex-start; margin: 23px 24px 0; color: var(--rose-light); border-bottom: 1px solid #ef8c9855; font-size: .875rem; font-weight: 650; }
+.quest-catalog button:hover, .quest-catalog button:focus-visible { transform: translateY(-5px); background: var(--panel); border-color: var(--rose-light); }
+.quest-catalog button[aria-pressed='true'] { background: #432430; border-color: var(--rose-light); box-shadow: 0 0 0 1px var(--rose-light); }
+.quest-catalog button[aria-pressed='true']::after { content: 'Close guide'; color: var(--cream); }
+.reputation-library { text-align: center; }
+.reputation-library > h2 { margin: 0; }
+.reputation-catalog { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; margin-top: 38px; text-align: left; }
+.reputation-catalog a { display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 0; overflow: hidden; border: 1px solid #603540; border-radius: 12px; background: var(--panel); box-shadow: 0 8px 24px #08040726; transition: transform .2s, border-color .2s; }
+.reputation-catalog img { width: 100%; height: 205px; object-fit: cover; }
+.reputation-catalog span { padding: 25px 24px 0; font: 1.9rem/1.15 var(--serif); }
+.reputation-catalog a::after { content: 'Explore guide'; margin: auto 24px 24px; padding-top: 22px; color: var(--rose-light); font: 650 .875rem/1.5 var(--sans); }
+.reputation-catalog a:hover { background: var(--panel); border-color: var(--rose-light); transform: translateY(-5px); }
+.reputation-catalog a[aria-current='location'] { background: #432430; border-color: var(--rose-light); box-shadow: 0 0 0 1px var(--rose-light); }
+.reputation-catalog a[aria-current='location']::after { content: 'Close guide'; color: var(--cream); }
+
+/* Long-form guides: readable copy, picture galleries, and clear requirement cards. */
+.quest-entry, .reputation-guide { border: 1px solid #70404d; border-radius: 16px; overflow: hidden; background: var(--panel); scroll-margin-top: calc(var(--header-height) + 24px); box-shadow: 0 12px 35px #0a050633; }
+.quest-entry-header { padding: 34px 40px; background: #3b202b; border-color: #784554; align-items: center; }
+.quest-entry-header h2, .reputation-heading h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
+.quest-entry-meta { gap: 9px; }
+.quest-entry-meta span { padding: 7px 12px; font-size: .875rem; color: #edbdc7; border-color: #9b6073; border-radius: 30px; }
+.quest-guide { grid-template-columns: minmax(260px, .7fr) minmax(0, 1.4fr); background: var(--panel); }
+.quest-gallery { background: #1c1016; padding: 24px; border-color: var(--line); }
+.quest-gallery figure { border: 1px solid #70404d; border-radius: 10px; overflow: hidden; margin-bottom: 24px; }
+.quest-gallery figcaption, .reputation-figure figcaption { color: var(--muted); font-size: .875rem; line-height: 1.6; padding: 14px 18px; letter-spacing: 0; }
+.quest-copy, .reputation-copy { padding: 40px; }
+.quest-copy h2 { font-size: 2.25rem; }
+.quest-copy h3, .reputation-block h3 { font-size: 1.75rem; }
+.quest-copy :is(p:not(.eyebrow), li), .quest-archive-body :is(ol, ul),
+.secret-quest-card p:not(.eyebrow), .secret-quest-card ol,
+.treasure-guide p:not(.eyebrow), .secret-quest-guide .quest-intro,
+.quest-archive > .quest-intro { font-size: 1rem; line-height: 1.8; color: var(--muted); }
+.quest-requirement-grid, .quest-material-grid { gap: 16px; }
+.quest-requirement-grid > div, .quest-material-grid > div,
+.quest-help, .treasure-map-card, .treasure-clues li, .treasure-stones li,
+.secret-quest-card, .quest-archive details { border-color: #754452; border-radius: 12px; background: #301c24; }
+.quest-requirement-grid > div, .quest-material-grid > div { padding: 22px; }
+.quest-requirement-grid h3, .quest-material-grid h3 { font-size: 1.5rem; }
+.quest-steps li { grid-template-columns: minmax(180px, .65fr) minmax(0, 1fr); gap: 24px; padding: 25px 0; border-color: #78455466; }
+.quest-steps h3 { font-size: 1.375rem; }
+.quest-steps li > div span { border-radius: 50%; width: 32px; height: 32px; background: #492633; font-size: .875rem; }
+.quest-help { padding: 28px; }
+.treasure-guide section > h3, .secret-quest-card h3 { font-size: 1.75rem; }
+.treasure-guide h4 { font-size: 1.375rem; }
+.treasure-clues, .treasure-stones { gap: 20px; }
+.quest-archive summary { padding: 22px; }
+.quest-archive summary strong { font-size: 1.5rem; }
+.quest-archive summary small { font-size: .875rem; }
+.quest-archive-number { border-radius: 50%; }
+.quest-archive-body { padding: 25px; }
+.quest-archive-body figcaption, .secret-quest-images figcaption { font-size: .875rem; line-height: 1.5; }
+.reputation-page { gap: 54px; }
+.reputation-image-column, .reputation-guide-reversed .reputation-image-column { background: #1c1016; border-color: var(--line); }
+.reputation-summary { padding: 26px; gap: 20px; }
+.reputation-summary span { font-size: .875rem; color: var(--muted); letter-spacing: 0; text-transform: none; }
+.reputation-summary strong { font: 1.0625rem/1.5 var(--sans); }
+.reputation-heading { padding-bottom: 28px; }
+.reputation-heading > span { border-radius: 50%; width: 48px; height: 48px; }
+.reputation-lead { font-size: 1.25rem; line-height: 1.7; }
+.reputation-block { margin-top: 32px; }
+.reputation-block > p, .reputation-steps span, .reputation-detail-grid p,
+.reputation-grind .reputation-detail-grid p, .reputation-list span,
+.reputation-list-compact li { font-size: 1rem; line-height: 1.8; }
+.reputation-steps li { grid-template-columns: 30px minmax(130px, .5fr) minmax(0, 1fr); padding: 22px 0; gap: 14px; }
+.reputation-steps li::before { font-size: .875rem; }
+.reputation-steps strong, .reputation-list strong { font-size: 1.25rem; }
+.reputation-detail-grid, .reputation-list { gap: 18px; }
+.reputation-detail-grid > div, .reputation-grind .reputation-detail-grid > div,
+.reputation-list li, .reputation-finale { padding: 24px; border-color: #754452; border-radius: 12px; background: #301c24; }
+.reputation-detail-grid h4 { font-size: 1.5rem; }
+.kallters-resources { grid-template-columns: 1fr; }
+.kallters-resources li { font-size: .9375rem; padding: 12px; border-radius: 7px; }
+.reputation-grind .reputation-detail-grid .kallters-card-label { font-size: .75rem; }
+.reputation-list-compact li::before { top: 34px; }
+.reputation-list-compact li { padding-left: 32px; }
+.reputation-grind .reputation-detail-grid .kallters-reward { padding: 0; }
+.fishing-payouts { padding-top: 32px; }
+
+/* Map: an explorer's workspace, with clear controls and a proper map frame. */
+.map-page { width: min(1440px, calc(100% - 80px)); grid-template-columns: 320px minmax(0, 1fr); gap: 26px; padding: 60px 0 90px; align-items: start; }
+.map-sidebar { padding: 26px; border: 1px solid #70404d; border-radius: 14px; background: var(--panel); }
+.map-sidebar-heading { display: block; margin-bottom: 28px; }
+.map-sidebar-heading .eyebrow { font-size: .75rem; margin-bottom: 10px; }
+.map-sidebar h2 { font-size: 2.25rem; }
+.map-count { display: inline-block; margin-top: 16px; padding: 7px 12px; border-color: #8b4e61; border-radius: 30px; color: var(--rose-light); font-size: .875rem; letter-spacing: 0; }
+.map-field { gap: 10px; margin-top: 24px; }
+.map-field > span { font-size: .875rem; color: var(--muted); letter-spacing: 0; text-transform: none; }
+.map-field input, .map-field select { height: 48px; border-color: #70404d; border-radius: 8px; background-color: #1c1116; font-size: 1rem; padding-inline: 13px; }
+.map-field select { padding-right: 36px; }
+.map-actions { grid-template-columns: 48px 1fr 48px; gap: 9px; margin: 25px 0; }
+.map-actions button { height: 48px; border-radius: 30px; background: #492633; border-color: #8a4d60; font-size: .875rem; }
+.map-actions button:hover { background: #643144; border-color: var(--rose-light); }
+.map-selected { min-height: 220px; padding: 24px; border-color: #875064; border-radius: 12px; background: linear-gradient(145deg, #512738, #2c1922); }
+.map-selected .eyebrow { font-size: .75rem; padding-right: 0; }
+.map-selected h3 { font-size: 1.75rem; padding-right: 0; }
+.map-selected p:not(.eyebrow) { font-size: 1rem; line-height: 1.75; }
+.map-selected-coordinates { padding: 6px 10px; font-size: .875rem; border-radius: 5px; }
+.map-city-note { margin-top: 22px; font-size: .875rem; line-height: 1.75; color: var(--muted); }
+.map-viewer-wrap { padding: 14px; border: 1px solid #70404d; border-radius: 14px; background: var(--panel); box-shadow: 0 12px 35px #0a050633; }
+.map-toolbar { justify-content: center; min-height: 54px; padding: 4px 12px 16px; gap: 22px; font-size: .875rem; color: var(--muted); letter-spacing: 0; flex-wrap: wrap; }
+.map-viewer { height: clamp(600px, 76vh, 900px); border-radius: 8px; background: #160d12; }
+.map-tooltip { padding: 20px; border-radius: 10px; border-color: var(--rose-light); }
+.map-tooltip strong { font-size: 1.5rem; }
+.map-tooltip span { font-size: .8125rem; border-radius: 4px; }
+.map-tooltip p { font-size: .9375rem; line-height: 1.7; }
+.map-loading { font-size: 1rem; border-radius: 30px; }
+
+/* Schedules: a full-width timetable, day pills, and a separate field guide. */
+#spirit.view .page-banner, #championship.view .page-banner { min-height: 320px; padding: 50px 0 58px; }
+#spirit.view .page-banner h1, #championship.view .page-banner h1 { font-size: clamp(2.75rem, 5vw, 4.5rem); }
+#spirit.view .page-banner .eyebrow, #championship.view .page-banner .eyebrow { margin-bottom: 16px; font-size: .75rem; }
+#spirit.view .page-banner p:not(.eyebrow), #championship.view .page-banner p:not(.eyebrow) { font-size: 1rem; margin-top: 18px; }
+.spirit-layout { display: grid; grid-template-columns: minmax(0, 1fr) 260px; width: min(1660px, calc(100% - 48px)); align-items: start; gap: 24px; }
+.championship-content { width: min(1540px, calc(100% - 48px)); }
+.schedule-panel { padding: 20px; border: 1px solid #70404d; border-radius: 12px; background: var(--panel); box-shadow: 0 12px 35px #0a050633; }
+.schedule-top { gap: 20px; margin-bottom: 16px; align-items: center; }
+.schedule-top h2, .championship-content h2 { font-size: clamp(1.75rem, 2.5vw, 2.25rem); }
+.schedule-top .eyebrow { margin-bottom: 10px; }
+.time-badge { padding: 7px 12px; border: 1px solid #986074; border-radius: 30px; background: #432330; color: var(--rose-light); font-size: .75rem; letter-spacing: .03em; white-space: nowrap; }
+.table-hint { font-size: .8125rem; color: var(--muted); margin: 12px 0 16px; }
+.schedule-days { display: flex; gap: 7px; flex-wrap: wrap; padding: 4px 0 0; }
+.schedule-days button { min-height: 38px; padding: 8px 13px; border: 1px solid #875064; border-radius: 30px; background: #2e1923; color: var(--muted); font: .8125rem/1.4 var(--sans); cursor: pointer; }
+.schedule-days button:hover { background: #4b2838; color: var(--cream); }
+.schedule-days button[aria-pressed='true'] { color: #210e15; background: var(--rose); border-color: var(--rose); font-weight: 650; }
+.schedule-selection { font-size: .75rem; color: var(--rose-light); margin: 16px 0 10px; }
+.table-scroll { border: 1px solid #754452; border-radius: 12px; scrollbar-color: #9a5267 #21131b; }
+.schedule-table, .championship-table { width: 100%; min-width: 0; table-layout: fixed; border-collapse: separate; border-spacing: 0; font-size: .8125rem; line-height: 1.5; }
+.schedule-table th, .schedule-table td { min-width: 0; padding: 11px 8px; border: 0; border-bottom: 1px solid #70404d66; border-right: 1px solid #70404d44; text-align: left; overflow-wrap: anywhere; }
+.schedule-table thead th { background: #613040; color: var(--cream); font: 600 .8125rem/1.5 var(--sans); }
+.schedule-table tbody td { color: #e4cdd2; background: #2b1921; }
+.schedule-table tbody tr:nth-child(even) td { background: #34202a; }
+.schedule-table tbody th, .schedule-table th:first-child { position: static; width: 80px; min-width: 0; background: #452431; color: #f3bac7; font: 650 .8125rem/1.5 var(--sans); z-index: 1; }
+.schedule-table thead th:first-child { background: #613040; }
+.schedule-table tr:last-child :is(th, td) { border-bottom: 0; }
+.schedule-table tbody tr:hover td { background: #4e2a39; }
+.schedule-table .current-location { background: #9b3b55 !important; color: #fff5f5 !important; box-shadow: inset 0 0 0 2px var(--rose-light); }
+.schedule-table[data-selected-day] { min-width: 0; }
+.schedule-table[data-selected-day] th, .schedule-table[data-selected-day] td { min-width: 0; }
+.schedule-table[data-selected-day] th:first-child { width: 145px; }
+.schedule-table[data-selected-day='0'] :is(th, td):not(:first-child):not(:nth-child(2)),
+.schedule-table[data-selected-day='1'] :is(th, td):not(:first-child):not(:nth-child(3)),
+.schedule-table[data-selected-day='2'] :is(th, td):not(:first-child):not(:nth-child(4)),
+.schedule-table[data-selected-day='3'] :is(th, td):not(:first-child):not(:nth-child(5)),
+.schedule-table[data-selected-day='4'] :is(th, td):not(:first-child):not(:nth-child(6)),
+.schedule-table[data-selected-day='5'] :is(th, td):not(:first-child):not(:nth-child(7)),
+.schedule-table[data-selected-day='6'] :is(th, td):not(:first-child):not(:nth-child(8)) { display: none; }
+.schedule-notes { display: block; position: static; max-height: none; overflow: visible; padding: 20px; border: 1px solid #70404d; border-radius: 10px; background: var(--panel); }
+.schedule-notes h2 { font-size: 1.625rem; margin: 0 0 16px; }
+.schedule-notes .eyebrow { font-size: .6875rem; margin-bottom: 10px; }
+.schedule-notes h2 br { display: none; }
+.key-list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
+.key-list > div { display: grid; grid-template-columns: 30px minmax(0, 1fr); align-items: start; gap: 10px; padding: 9px 0; border-bottom: 1px solid #8d50614d; }
+.key-list b { padding: 5px 3px; border-radius: 5px; text-align: center; background: #663246; color: #f1c1cd; font: 600 .75rem/1.5 var(--sans); }
+.key-list p { font-size: .875rem; line-height: 1.5; color: var(--muted); }
+.schedule-extra { margin-top: 20px; padding-top: 18px; }
+.schedule-extra h3 { font-size: 1.375rem; }
+.schedule-extra p { font-size: .8125rem; line-height: 1.65; max-width: 900px; }
+.champ-next { margin: 20px 0; padding: 24px; border: 1px solid #9a586d; border-radius: 12px; background: radial-gradient(ellipse at 0 0, #71354c88, transparent 65%), #2b1921; }
+.champ-next-venue { font-size: clamp(1.75rem, 2.8vw, 2.5rem); }
+.champ-next-time { font-size: .875rem; }
+.champ-next-crest { width: 44px; }
+.champ-clock-value { font-size: 2rem; }
+.champ-clock-tile { background: #432330; border-color: #905367; border-radius: 10px; }
+.champ-clock-unit { font-size: .8125rem; }
+.champ-note { border: 1px solid #70404d; border-radius: 12px; padding: 20px; margin-top: 28px; background: var(--panel); }
+.champ-note p { font-size: 1rem; }
+.fishing-payouts .schedule-table, .schedule-table.fishing-rotation { min-width: 650px; font-size: .875rem; }
+.fishing-payouts .schedule-table :is(th, td), .schedule-table.fishing-rotation :is(th, td) { min-width: 90px; padding: 14px; }
+.fishing-payouts thead small { font-size: .8125rem; }
+
+/* Keep the community pages in the same visual family as the guides and tools. */
+.waitlist-content, .socials-wrap { width: min(1240px, calc(100% - 80px)); padding-top: 64px; padding-bottom: 80px; gap: 40px; }
+.waitlist-steps h2, .social-card h2 { font-size: clamp(2.5rem, 4.5vw, 4rem); }
+.waitlist-steps li { padding: 26px 0; gap: 18px; }
+.waitlist-steps li > span { display: grid; place-items: center; width: 40px; height: 40px; border: 1px solid #8a4d60; border-radius: 50%; background: #432330; font-size: 1rem; }
+.waitlist-steps li h3 { font-size: 1.75rem; margin-bottom: 12px; }
+.waitlist-steps li p, .waitlist-aside p, .social-card > p:not(.eyebrow) { font-size: 1rem; line-height: 1.8; }
+.waitlist-aside, .social-card { padding: 40px; border: 1px solid #70404d; border-radius: 16px; background: linear-gradient(145deg, #3b202b, #24171a); }
+.waitlist-aside h3 { font-size: 2rem; }
+.rose-art { height: 220px; }
+.rose-art img { width: 260px; max-width: 100%; height: auto; border-radius: 10px; }
+.rose-art span { font-size: .75rem; }
+.social-card { min-height: 440px; }
+.social-card > p:not(.eyebrow) { margin-bottom: 30px; max-width: 500px; }
+.social-caption, .social-footnote, .waitlist-steps .small-note { font-size: .875rem; line-height: 1.8; }
+.social-footnote { width: min(1240px, calc(100% - 80px)); }
+
+@media (max-width: 1150px) {
+  .catalogue-layout { grid-template-columns: 235px minmax(0, 1fr); gap: 24px; }
+  .catalogue-filters { padding: 20px; }
+  .catalogue-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quest-catalog, .reputation-catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .map-page { grid-template-columns: 290px minmax(0, 1fr); gap: 20px; }
+  .map-sidebar { padding: 22px; }
+  .map-toolbar { gap: 10px 20px; }
+  .spirit-layout { grid-template-columns: minmax(0, 1fr) 220px; gap: 18px; }
+  .schedule-panel { padding: 16px; }
+  .schedule-table th, .schedule-table td { padding: 10px 5px; }
+  .schedule-table th:first-child { width: 72px; }
+}
+@media (max-width: 980px) {
+  .spirit-layout { grid-template-columns: minmax(0, 1fr); }
+  .schedule-notes { position: static; max-height: none; overflow: visible; }
+  .key-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quest-guide, .reputation-guide, .reputation-guide-reversed { grid-template-columns: minmax(0, 1fr); }
+  .quest-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .quest-gallery figure { margin: 0; }
+  .reputation-image-column, .reputation-guide-reversed .reputation-image-column { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .reputation-figure img { min-height: 0; }
+  .quest-entry-header { align-items: start; }
+  .quest-entry-meta { justify-content: flex-start; }
+  .map-page { grid-template-columns: minmax(0, 1fr); }
+  .map-sidebar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; }
+  .map-sidebar-heading, .map-selected, .map-city-note { grid-column: 1 / -1; }
+  .map-sidebar-heading { display: flex; align-items: center; margin: 0; }
+  .map-count { margin: 0; }
+  .map-field { margin-top: 0; }
+  .map-actions { grid-column: 1 / -1; margin: 0; }
+  .map-selected { min-height: 0; }
+  .map-city-note { margin-top: 0; }
+}
+/* A compact week reads vertically in cards, rather than sliding off the screen. */
+@media (max-width: 900px) {
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) { display: block; table-layout: auto; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody { display: block; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody th { display: block; grid-column: 1 / -1; width: auto; background: #613040; padding: 14px 18px; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td { display: block; padding: 12px; font-size: .875rem; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td::before { display: block; margin-bottom: 7px; color: var(--rose-light); font: 650 .75rem/1.5 var(--sans); }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td:nth-child(2)::before { content: 'Monday'; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td:nth-child(3)::before { content: 'Tuesday'; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td:nth-child(4)::before { content: 'Wednesday'; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td:nth-child(5)::before { content: 'Thursday'; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td:nth-child(6)::before { content: 'Friday'; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td:nth-child(7)::before { content: 'Saturday'; }
+  :is(#spirit, #championship) .schedule-table:not([data-selected-day]) tbody td:nth-child(8)::before { content: 'Sunday'; }
+}
+@media (max-width: 800px) {
+  .catalogue-wrap, .quests-page, .reputation-page, .map-page,
+  .spirit-layout, .championship-content { width: calc(100% - 40px); padding-top: 45px; padding-bottom: 60px; }
+  .view:not(#home) .page-banner { padding: 65px 0 70px; min-height: 360px; }
+  .view:not(#home) .page-banner h1 { font-size: clamp(3rem, 8vw, 4.75rem); }
+  .view:not(#home) .page-banner p:not(.eyebrow) { font-size: 1rem; }
+  .catalogue-banner-layout { align-items: center; }
+  .catalogue-search { margin-top: -75px; min-height: 60px; }
+  .catalogue-layout { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .catalogue-filters { padding: 24px; }
+  .catalogue-filters .category-list { gap: 8px; }
+  .catalogue-filters .category-button { padding: 10px 14px; }
+  .catalogue-refinements { gap: 12px 18px; }
+  .catalogue-filters .filter-group { margin-top: 8px; }
+  .catalogue-shortcuts { margin-bottom: 26px; gap: 8px; }
+  .catalogue-shortcuts button { padding-inline: 15px; }
+  .catalogue-picture { height: 260px; }
+  .catalogue-dialog-content { grid-template-columns: minmax(0, 1fr); }
+  .catalogue-dialog-visual { position: static; padding: 28px 28px 0; }
+  .catalogue-dialog-copy { padding: 30px; }
+  .catalogue-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quest-entry-header { display: block; padding: 30px; }
+  .quest-entry-meta { margin-top: 18px; }
+  .quest-copy, .reputation-copy { padding: 30px; }
+  .quest-steps li { grid-template-columns: 1fr; gap: 12px; }
+  .reputation-steps li { grid-template-columns: 28px minmax(0, 1fr); }
+  .reputation-steps li span { grid-column: 2; }
+  .reputation-detail-grid, .reputation-list { grid-template-columns: minmax(0, 1fr); }
+  .schedule-panel { padding: 20px; }
+  .schedule-notes { padding: 20px; }
+  .schedule-top { flex-wrap: wrap; gap: 16px; }
+  .champ-next { padding: 22px; }
+  .map-viewer { min-height: 480px; height: 65vh; }
+  .map-toolbar { justify-content: flex-start; white-space: normal; overflow: visible; }
+  .waitlist-content, .socials-wrap, .social-footnote { width: calc(100% - 40px); }
+  .waitlist-content { grid-template-columns: minmax(0, 1fr); }
+  .waitlist-aside { max-width: 100%; margin: 0; }
+}
+@media (max-width: 540px) {
+  #spirit.view .page-banner h1, #championship.view .page-banner h1 { font-size: clamp(2rem, 9vw, 2.75rem); }
+  .view:not(#home) .page-banner { padding: 55px 0 65px; min-height: 330px; }
+  .view:not(#home) .page-banner h1 { font-size: clamp(2.5rem, 10vw, 3rem); max-width: 100%; }
+  .view:not(#home) .page-banner .eyebrow { font-size: .75rem; line-height: 1.8; }
+  .catalogue-summary div, .catalogue-summary div:first-child { padding-inline: 18px; }
+  .catalogue-summary dd { font-size: 1.75rem; }
+  .catalogue-summary dt { font-size: .6875rem; }
+  .catalogue-search { padding-inline: 20px; }
+  .catalogue-search input { font-size: 1rem; }
+  .catalogue-search kbd { display: none; }
+  .catalogue-shortcuts { justify-content: flex-start; }
+  .catalogue-shortcuts button { font-size: .875rem; }
+  .catalogue-refinements, .catalogue-advanced-content { grid-template-columns: minmax(0, 1fr); }
+  .catalogue-budget-row { grid-column: auto; }
+  .catalogue-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .catalogue-picture { height: 275px; }
+  .catalogue-card-body { padding: 24px; }
+  .catalogue-card h3 { font-size: 2rem; }
+  .catalogue-card-top { font-size: .75rem; }
+  .catalogue-results-head { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .catalogue-results-head p { max-width: none; }
+  .catalogue-sort label { display: block; }
+  .catalogue-sort select { max-width: 200px; }
+  .catalogue-variant-count { font-size: .75rem; padding: 6px 11px; }
+  .catalogue-dialog { width: calc(100vw - 20px); }
+  .catalogue-dialog-visual { padding: 20px 20px 0; }
+  .catalogue-dialog-copy { padding: 26px 22px; }
+  .catalogue-dialog-copy h2 { font-size: 2.25rem; }
+  .catalogue-picture-large { height: 300px; }
+  .catalogue-variant-choices { grid-template-columns: repeat(3, minmax(0, 1fr)); max-height: 300px; }
+  .catalogue-facts { grid-template-columns: minmax(0, 1fr); }
+  .quest-catalog, .reputation-catalog { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .quest-card-image, .reputation-catalog img { height: 220px; }
+  .quest-catalog button > span { top: 200px; }
+  .quest-catalog strong, .reputation-catalog span { font-size: 2rem; }
+  .quest-catalog button > span { font-size: .75rem; }
+  .quest-gallery { grid-template-columns: minmax(0, 1fr); padding: 20px; }
+  .quest-copy, .reputation-copy, .quest-entry-header { padding: 26px 22px; }
+  .quest-requirement-grid, .quest-material-grid { grid-template-columns: minmax(0, 1fr); }
+  .quest-help { padding: 22px; }
+  .treasure-clues, .treasure-stones { grid-template-columns: minmax(0, 1fr); }
+  .secret-quest-card { grid-template-columns: minmax(0, 1fr); }
+  .quest-archive summary { padding: 18px; gap: 10px; }
+  .quest-archive-body { padding: 20px; }
+  .reputation-image-column, .reputation-guide-reversed .reputation-image-column { display: block; }
+  .reputation-figure img { height: auto; aspect-ratio: 1.5; }
+  .reputation-summary { gap: 14px; padding: 22px; }
+  .reputation-detail-grid > div, .reputation-list li, .reputation-finale { padding: 20px; }
+  .reputation-heading { gap: 14px; }
+  .reputation-heading > span { width: 38px; min-width: 38px; height: 38px; }
+  .reputation-heading h2 { font-size: 2rem; }
+  .map-sidebar { display: block; padding: 24px; }
+  .map-sidebar-heading { display: block; }
+  .map-count { margin-top: 16px; }
+  .map-field { margin-top: 24px; }
+  .map-actions { margin-block: 24px; }
+  .map-city-note { margin-top: 20px; }
+  .map-viewer-wrap { padding: 10px; }
+  .map-toolbar { gap: 8px 16px; padding-inline: 6px; }
+  .map-toolbar span:nth-child(3) { display: inline; }
+  .map-viewer { min-height: 440px; }
+  .map-loading { max-width: calc(100% - 24px); width: max-content; padding: 12px; text-align: center; }
+  .schedule-panel { padding: 22px 16px; }
+  .schedule-top .eyebrow { font-size: .75rem; }
+  .schedule-days { flex-wrap: wrap; padding: 4px 0 10px; }
+  .schedule-days button { flex-shrink: 0; min-height: 44px; }
+  .schedule-table[data-selected-day] th:first-child { width: 105px; }
+  .schedule-table[data-selected-day] :is(th, td) { padding: 12px; font-size: .875rem; }
+  .key-list { grid-template-columns: minmax(0, 1fr); }
+  .schedule-notes { padding: 22px; }
+  .champ-next { padding: 24px 20px; }
+  .champ-next-details { align-items: flex-start; }
+  .champ-next-crest { width: 44px; }
+  .champ-clock { flex-basis: 100%; }
+  .champ-clock-unit { font-size: .75rem; }
+  .socials-wrap { grid-template-columns: minmax(0, 1fr); }
+  .social-card, .waitlist-aside { padding: 28px; }
+  .social-card .button { padding-inline: 22px; font-size: .9375rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .quest-catalog button:hover, .reputation-catalog a:hover, .catalogue-card:hover { transform: none; }
+}
